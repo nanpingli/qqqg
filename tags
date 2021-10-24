@@ -1,0 +1,1141 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+Add	pkg/time/timer.go	/^func (t *Timer) Add(expire itime.Duration, fn func()) (td *TimerData) {$/;"	f
+AddMapping	internal/logic/dao/redis.go	/^func (d *Dao) AddMapping(c context.Context, mid int64, key, server string) (err error) {$/;"	f
+AddServerOnline	internal/logic/dao/redis.go	/^func (d *Dao) AddServerOnline(c context.Context, server string, online *model.Online) (err error) {$/;"	f
+AuthToken	benchmarks/client/main.go	/^type AuthToken struct {$/;"	t
+Available	pkg/bufio/bufio.go	/^func (b *Writer) Available() int { return len(b.buf) - b.n }$/;"	f
+Backoff	api/logic/logic.pb.go	/^type Backoff struct {$/;"	t
+Backoff	internal/logic/conf/conf.go	/^type Backoff struct {$/;"	t
+BenchmarkReaderCopyNoWriteTo	pkg/bufio/bufio_test.go	/^func BenchmarkReaderCopyNoWriteTo(b *testing.B) {$/;"	f
+BenchmarkReaderCopyOptimal	pkg/bufio/bufio_test.go	/^func BenchmarkReaderCopyOptimal(b *testing.B) {$/;"	f
+BenchmarkReaderCopyUnoptimal	pkg/bufio/bufio_test.go	/^func BenchmarkReaderCopyUnoptimal(b *testing.B) {$/;"	f
+BenchmarkReaderEmpty	pkg/bufio/bufio_test.go	/^func BenchmarkReaderEmpty(b *testing.B) {$/;"	f
+BenchmarkWriterCopyNoReadFrom	pkg/bufio/bufio_test.go	/^func BenchmarkWriterCopyNoReadFrom(b *testing.B) {$/;"	f
+BenchmarkWriterCopyOptimal	pkg/bufio/bufio_test.go	/^func BenchmarkWriterCopyOptimal(b *testing.B) {$/;"	f
+BenchmarkWriterCopyUnoptimal	pkg/bufio/bufio_test.go	/^func BenchmarkWriterCopyUnoptimal(b *testing.B) {$/;"	f
+BenchmarkWriterEmpty	pkg/bufio/bufio_test.go	/^func BenchmarkWriterEmpty(b *testing.B) {$/;"	f
+BenchmarkWriterFlush	pkg/bufio/bufio_test.go	/^func BenchmarkWriterFlush(b *testing.B) {$/;"	f
+BigEndian	pkg/encoding/binary/endian.go	/^var BigEndian bigEndian$/;"	v
+BinaryMessage	pkg/websocket/conn.go	/^	BinaryMessage = 2$/;"	c
+Broadcast	api/comet/comet.pb.go	/^func (*UnimplementedCometServer) Broadcast(ctx context.Context, req *BroadcastReq) (*BroadcastReply, error) {$/;"	f
+Broadcast	api/comet/comet.pb.go	/^func (c *cometClient) Broadcast(ctx context.Context, in *BroadcastReq, opts ...grpc.CallOption) (*BroadcastReply, error) {$/;"	f
+Broadcast	internal/comet/bucket.go	/^func (b *Bucket) Broadcast(p *protocol.Proto, op int32) {$/;"	f
+Broadcast	internal/comet/grpc/server.go	/^func (s *server) Broadcast(ctx context.Context, req *pb.BroadcastReq) (*pb.BroadcastReply, error) {$/;"	f
+Broadcast	internal/job/comet.go	/^func (c *Comet) Broadcast(arg *comet.BroadcastReq) (err error) {$/;"	f
+BroadcastMsg	internal/logic/dao/kafka.go	/^func (d *Dao) BroadcastMsg(c context.Context, op, speed int32, msg []byte) (err error) {$/;"	f
+BroadcastReply	api/comet/comet.pb.go	/^type BroadcastReply struct {$/;"	t
+BroadcastReq	api/comet/comet.pb.go	/^type BroadcastReq struct {$/;"	t
+BroadcastRoom	api/comet/comet.pb.go	/^func (*UnimplementedCometServer) BroadcastRoom(ctx context.Context, req *BroadcastRoomReq) (*BroadcastRoomReply, error) {$/;"	f
+BroadcastRoom	api/comet/comet.pb.go	/^func (c *cometClient) BroadcastRoom(ctx context.Context, in *BroadcastRoomReq, opts ...grpc.CallOption) (*BroadcastRoomReply, error) {$/;"	f
+BroadcastRoom	internal/comet/bucket.go	/^func (b *Bucket) BroadcastRoom(arg *pb.BroadcastRoomReq) {$/;"	f
+BroadcastRoom	internal/comet/grpc/server.go	/^func (s *server) BroadcastRoom(ctx context.Context, req *pb.BroadcastRoomReq) (*pb.BroadcastRoomReply, error) {$/;"	f
+BroadcastRoom	internal/job/comet.go	/^func (c *Comet) BroadcastRoom(arg *comet.BroadcastRoomReq) (err error) {$/;"	f
+BroadcastRoomMsg	internal/logic/dao/kafka.go	/^func (d *Dao) BroadcastRoomMsg(c context.Context, op int32, room string, msg []byte) (err error) {$/;"	f
+BroadcastRoomReply	api/comet/comet.pb.go	/^type BroadcastRoomReply struct {$/;"	t
+BroadcastRoomReq	api/comet/comet.pb.go	/^type BroadcastRoomReq struct {$/;"	t
+Bucket	internal/comet/bucket.go	/^type Bucket struct {$/;"	t
+Bucket	internal/comet/conf/conf.go	/^type Bucket struct {$/;"	t
+Bucket	internal/comet/server.go	/^func (s *Server) Bucket(subKey string) *Bucket {$/;"	f
+Buckets	internal/comet/server.go	/^func (s *Server) Buckets() []*Bucket {$/;"	f
+Buffer	pkg/bytes/buffer.go	/^type Buffer struct {$/;"	t
+Buffer	pkg/bytes/writer.go	/^func (w *Writer) Buffer() []byte {$/;"	f
+Buffered	pkg/bufio/bufio.go	/^func (b *Reader) Buffered() int { return b.w - b.r }$/;"	f
+Buffered	pkg/bufio/bufio.go	/^func (b *Writer) Buffered() int { return b.n }$/;"	f
+Bytes	pkg/bytes/buffer.go	/^func (b *Buffer) Bytes() []byte {$/;"	f
+ChangeRoom	internal/comet/bucket.go	/^func (b *Bucket) ChangeRoom(nrid string, ch *Channel) (err error) {$/;"	f
+Channel	internal/comet/bucket.go	/^func (b *Bucket) Channel(key string) (ch *Channel) {$/;"	f
+Channel	internal/comet/channel.go	/^type Channel struct {$/;"	t
+ChannelCount	internal/comet/bucket.go	/^func (b *Bucket) ChannelCount() int {$/;"	f
+Client	examples/javascript/client.js	/^    var Client = function(options) {$/;"	c
+Close	internal/comet/channel.go	/^func (c *Channel) Close() {$/;"	f
+Close	internal/comet/room.go	/^func (r *Room) Close() {$/;"	f
+Close	internal/comet/server.go	/^func (s *Server) Close() (err error) {$/;"	f
+Close	internal/job/comet.go	/^func (c *Comet) Close() (err error) {$/;"	f
+Close	internal/job/job.go	/^func (j *Job) Close() error {$/;"	f
+Close	internal/logic/dao/dao.go	/^func (d *Dao) Close() error {$/;"	f
+Close	internal/logic/http/server.go	/^func (s *Server) Close() {$/;"	f
+Close	internal/logic/logic.go	/^func (l *Logic) Close() {$/;"	f
+Close	pkg/websocket/conn.go	/^func (c *Conn) Close() error {$/;"	f
+CloseMessage	pkg/websocket/conn.go	/^	CloseMessage = 8$/;"	c
+Comet	internal/job/comet.go	/^type Comet struct {$/;"	t
+Comet	internal/job/conf/conf.go	/^type Comet struct {$/;"	t
+CometClient	api/comet/comet.pb.go	/^type CometClient interface {$/;"	t
+CometServer	api/comet/comet.pb.go	/^type CometServer interface {$/;"	t
+Conf	internal/comet/conf/conf.go	/^	Conf *Config$/;"	v
+Conf	internal/job/conf/conf.go	/^	Conf *Config$/;"	v
+Conf	internal/logic/conf/conf.go	/^	Conf *Config$/;"	v
+Config	internal/comet/conf/conf.go	/^type Config struct {$/;"	t
+Config	internal/job/conf/conf.go	/^type Config struct {$/;"	t
+Config	internal/logic/conf/conf.go	/^type Config struct {$/;"	t
+Conn	pkg/websocket/conn.go	/^type Conn struct {$/;"	t
+Connect	api/logic/logic.pb.go	/^func (*UnimplementedLogicServer) Connect(ctx context.Context, req *ConnectReq) (*ConnectReply, error) {$/;"	f
+Connect	api/logic/logic.pb.go	/^func (c *logicClient) Connect(ctx context.Context, in *ConnectReq, opts ...grpc.CallOption) (*ConnectReply, error) {$/;"	f
+Connect	internal/comet/operation.go	/^func (s *Server) Connect(c context.Context, p *protocol.Proto, cookie string) (mid int64, key, rid string, accepts []int32, heartbeat time.Duration, err error) {$/;"	f
+Connect	internal/logic/conn.go	/^func (l *Logic) Connect(c context.Context, server, cookie string, token []byte) (mid int64, key, roomID string, accepts []int32, hb int64, err error) {$/;"	f
+Connect	internal/logic/grpc/server.go	/^func (s *server) Connect(ctx context.Context, req *pb.ConnectReq) (*pb.ConnectReply, error) {$/;"	f
+ConnectReply	api/logic/logic.pb.go	/^type ConnectReply struct {$/;"	t
+ConnectReq	api/logic/logic.pb.go	/^type ConnectReq struct {$/;"	t
+Consume	internal/job/job.go	/^func (j *Job) Consume() {$/;"	f
+Contains	internal/comet/whitelist.go	/^func (w *Whitelist) Contains(mid int64) (ok bool) {$/;"	f
+Dao	internal/logic/dao/dao.go	/^type Dao struct {$/;"	t
+Debug	pkg/time/debug.go	/^	Debug = false$/;"	c
+DecodeRoomKey	internal/logic/model/room.go	/^func DecodeRoomKey(key string) (string, string, error) {$/;"	f
+Default	internal/comet/conf/conf.go	/^func Default() *Config {$/;"	f
+Default	internal/job/conf/conf.go	/^func Default() *Config {$/;"	f
+Default	internal/logic/conf/conf.go	/^func Default() *Config {$/;"	f
+Del	internal/comet/bucket.go	/^func (b *Bucket) Del(dch *Channel) {$/;"	f
+Del	internal/comet/room.go	/^func (r *Room) Del(ch *Channel) bool {$/;"	f
+Del	pkg/time/timer.go	/^func (t *Timer) Del(td *TimerData) {$/;"	f
+DelMapping	internal/logic/dao/redis.go	/^func (d *Dao) DelMapping(c context.Context, mid int64, key, server string) (has bool, err error) {$/;"	f
+DelRoom	internal/comet/bucket.go	/^func (b *Bucket) DelRoom(room *Room) {$/;"	f
+DelServerOnline	internal/logic/dao/redis.go	/^func (d *Dao) DelServerOnline(c context.Context, server string) (err error) {$/;"	f
+Delay	pkg/time/timer.go	/^func (td *TimerData) Delay() itime.Duration {$/;"	f
+Descriptor	api/comet/comet.pb.go	/^func (*BroadcastReply) Descriptor() ([]byte, []int) {$/;"	f
+Descriptor	api/comet/comet.pb.go	/^func (*BroadcastReq) Descriptor() ([]byte, []int) {$/;"	f
+Descriptor	api/comet/comet.pb.go	/^func (*BroadcastRoomReply) Descriptor() ([]byte, []int) {$/;"	f
+Descriptor	api/comet/comet.pb.go	/^func (*BroadcastRoomReq) Descriptor() ([]byte, []int) {$/;"	f
+Descriptor	api/comet/comet.pb.go	/^func (*PushMsgReply) Descriptor() ([]byte, []int) {$/;"	f
+Descriptor	api/comet/comet.pb.go	/^func (*PushMsgReq) Descriptor() ([]byte, []int) {$/;"	f
+Descriptor	api/comet/comet.pb.go	/^func (*RoomsReply) Descriptor() ([]byte, []int) {$/;"	f
+Descriptor	api/comet/comet.pb.go	/^func (*RoomsReq) Descriptor() ([]byte, []int) {$/;"	f
+Descriptor	api/logic/logic.pb.go	/^func (*Backoff) Descriptor() ([]byte, []int) {$/;"	f
+Descriptor	api/logic/logic.pb.go	/^func (*ConnectReply) Descriptor() ([]byte, []int) {$/;"	f
+Descriptor	api/logic/logic.pb.go	/^func (*ConnectReq) Descriptor() ([]byte, []int) {$/;"	f
+Descriptor	api/logic/logic.pb.go	/^func (*DisconnectReply) Descriptor() ([]byte, []int) {$/;"	f
+Descriptor	api/logic/logic.pb.go	/^func (*DisconnectReq) Descriptor() ([]byte, []int) {$/;"	f
+Descriptor	api/logic/logic.pb.go	/^func (*HeartbeatReply) Descriptor() ([]byte, []int) {$/;"	f
+Descriptor	api/logic/logic.pb.go	/^func (*HeartbeatReq) Descriptor() ([]byte, []int) {$/;"	f
+Descriptor	api/logic/logic.pb.go	/^func (*NodesReply) Descriptor() ([]byte, []int) {$/;"	f
+Descriptor	api/logic/logic.pb.go	/^func (*NodesReq) Descriptor() ([]byte, []int) {$/;"	f
+Descriptor	api/logic/logic.pb.go	/^func (*OnlineReply) Descriptor() ([]byte, []int) {$/;"	f
+Descriptor	api/logic/logic.pb.go	/^func (*OnlineReq) Descriptor() ([]byte, []int) {$/;"	f
+Descriptor	api/logic/logic.pb.go	/^func (*PushMsg) Descriptor() ([]byte, []int) {$/;"	f
+Descriptor	api/logic/logic.pb.go	/^func (*ReceiveReply) Descriptor() ([]byte, []int) {$/;"	f
+Descriptor	api/logic/logic.pb.go	/^func (*ReceiveReq) Descriptor() ([]byte, []int) {$/;"	f
+Descriptor	api/protocol/protocol.pb.go	/^func (*Proto) Descriptor() ([]byte, []int) {$/;"	f
+Discard	pkg/bufio/bufio.go	/^func (b *Reader) Discard(n int) (discarded int, err error) {$/;"	f
+Disconnect	api/logic/logic.pb.go	/^func (*UnimplementedLogicServer) Disconnect(ctx context.Context, req *DisconnectReq) (*DisconnectReply, error) {$/;"	f
+Disconnect	api/logic/logic.pb.go	/^func (c *logicClient) Disconnect(ctx context.Context, in *DisconnectReq, opts ...grpc.CallOption) (*DisconnectReply, error) {$/;"	f
+Disconnect	internal/comet/operation.go	/^func (s *Server) Disconnect(c context.Context, mid int64, key string) (err error) {$/;"	f
+Disconnect	internal/logic/conn.go	/^func (l *Logic) Disconnect(c context.Context, mid int64, key, server string) (has bool, err error) {$/;"	f
+Disconnect	internal/logic/grpc/server.go	/^func (s *server) Disconnect(ctx context.Context, req *pb.DisconnectReq) (*pb.DisconnectReply, error) {$/;"	f
+DisconnectReply	api/logic/logic.pb.go	/^type DisconnectReply struct {$/;"	t
+DisconnectReq	api/logic/logic.pb.go	/^type DisconnectReq struct {$/;"	t
+Duration	pkg/time/duration.go	/^type Duration xtime.Duration$/;"	t
+EncodeRoomKey	internal/logic/model/room.go	/^func EncodeRoomKey(typ string, room string) string {$/;"	f
+EnumDescriptor	api/logic/logic.pb.go	/^func (PushMsg_Type) EnumDescriptor() ([]byte, []int) {$/;"	f
+Env	internal/comet/conf/conf.go	/^type Env struct {$/;"	t
+Env	internal/job/conf/conf.go	/^type Env struct {$/;"	t
+Env	internal/logic/conf/conf.go	/^type Env struct {$/;"	t
+ErrBadRequestMethod	pkg/websocket/server.go	/^	ErrBadRequestMethod = errors.New("bad method")$/;"	v
+ErrBadWebSocketVersion	pkg/websocket/server.go	/^	ErrBadWebSocketVersion = errors.New("missing or bad WebSocket Version")$/;"	v
+ErrBroadCastArg	internal/comet/errors/errors.go	/^	ErrBroadCastArg     = errors.New("rpc broadcast arg error")$/;"	v
+ErrBroadCastRoomArg	internal/comet/errors/errors.go	/^	ErrBroadCastRoomArg = errors.New("rpc broadcast  room arg error")$/;"	v
+ErrBufferFull	pkg/bufio/bufio.go	/^	ErrBufferFull = errors.New("bufio: buffer full")$/;"	v
+ErrChallengeResponse	pkg/websocket/server.go	/^	ErrChallengeResponse = errors.New("mismatch challenge\/response")$/;"	v
+ErrComet	internal/job/room.go	/^	ErrComet = errors.New("comet rpc is not available")$/;"	v
+ErrCometFull	internal/job/room.go	/^	ErrCometFull = errors.New("comet proto chan full")$/;"	v
+ErrHandshake	internal/comet/errors/errors.go	/^	ErrHandshake = errors.New("handshake failed")$/;"	v
+ErrInvalidUnreadByte	pkg/bufio/bufio.go	/^	ErrInvalidUnreadByte = errors.New("bufio: invalid use of UnreadByte")$/;"	v
+ErrInvalidUnreadRune	pkg/bufio/bufio.go	/^	ErrInvalidUnreadRune = errors.New("bufio: invalid use of UnreadRune")$/;"	v
+ErrLogic	internal/comet/errors/errors.go	/^	ErrLogic = errors.New("logic rpc is not available")$/;"	v
+ErrMPushMsgArg	internal/comet/errors/errors.go	/^	ErrMPushMsgArg  = errors.New("rpc mpushmsg arg error")$/;"	v
+ErrMPushMsgsArg	internal/comet/errors/errors.go	/^	ErrMPushMsgsArg = errors.New("rpc mpushmsgs arg error")$/;"	v
+ErrMessageClose	pkg/websocket/conn.go	/^	ErrMessageClose = errors.New("close control message")$/;"	v
+ErrMessageMaxRead	pkg/websocket/conn.go	/^	ErrMessageMaxRead = errors.New("continuation frame max read")$/;"	v
+ErrNegativeCount	pkg/bufio/bufio.go	/^	ErrNegativeCount = errors.New("bufio: negative count")$/;"	v
+ErrNotWebSocket	pkg/websocket/server.go	/^	ErrNotWebSocket = errors.New("not websocket protocol")$/;"	v
+ErrOperation	internal/comet/errors/errors.go	/^	ErrOperation = errors.New("request operation not valid")$/;"	v
+ErrProtoHeaderLen	api/protocol/protocol.go	/^	ErrProtoHeaderLen = errors.New("default server codec header length error")$/;"	v
+ErrProtoPackLen	api/protocol/protocol.go	/^	ErrProtoPackLen = errors.New("default server codec pack length error")$/;"	v
+ErrPushMsgArg	internal/comet/errors/errors.go	/^	ErrPushMsgArg   = errors.New("rpc pushmsg arg error")$/;"	v
+ErrPushMsgsArg	internal/comet/errors/errors.go	/^	ErrPushMsgsArg  = errors.New("rpc pushmsgs arg error")$/;"	v
+ErrRingEmpty	internal/comet/errors/errors.go	/^	ErrRingEmpty = errors.New("ring buffer empty")$/;"	v
+ErrRingFull	internal/comet/errors/errors.go	/^	ErrRingFull  = errors.New("ring buffer full")$/;"	v
+ErrRoomDroped	internal/comet/errors/errors.go	/^	ErrRoomDroped = errors.New("room droped")$/;"	v
+ErrRoomFull	internal/job/room.go	/^	ErrRoomFull = errors.New("room proto chan full")$/;"	v
+ErrTimerEmpty	internal/comet/errors/errors.go	/^	ErrTimerEmpty  = errors.New("timer empty")$/;"	v
+ErrTimerFull	internal/comet/errors/errors.go	/^	ErrTimerFull   = errors.New("timer full")$/;"	v
+ErrTimerNoItem	internal/comet/errors/errors.go	/^	ErrTimerNoItem = errors.New("timer item not exist")$/;"	v
+ExpireMapping	internal/logic/dao/redis.go	/^func (d *Dao) ExpireMapping(c context.Context, mid int64, key string) (has bool, err error) {$/;"	f
+ExpireString	pkg/time/timer.go	/^func (td *TimerData) ExpireString() string {$/;"	f
+Flush	pkg/bufio/bufio.go	/^func (b *Writer) Flush() error {$/;"	f
+Flush	pkg/websocket/conn.go	/^func (c *Conn) Flush() error {$/;"	f
+GOBUILD	Makefile	/^GOBUILD=$(GOCMD) build$/;"	m
+GOCMD	Makefile	/^GOCMD=GO111MODULE=on go$/;"	m
+GOTEST	Makefile	/^GOTEST=$(GOCMD) test$/;"	m
+Get	internal/comet/ring.go	/^func (r *Ring) Get() (proto *protocol.Proto, err error) {$/;"	f
+Get	pkg/bytes/buffer.go	/^func (p *Pool) Get() (b *Buffer) {$/;"	f
+GetAccepts	api/logic/logic.pb.go	/^func (m *ConnectReply) GetAccepts() []int32 {$/;"	f
+GetAdv	internal/comet/ring.go	/^func (r *Ring) GetAdv() {$/;"	f
+GetAllRoomCount	api/logic/logic.pb.go	/^func (m *OnlineReply) GetAllRoomCount() map[string]int32 {$/;"	f
+GetBackoff	api/logic/logic.pb.go	/^func (m *NodesReply) GetBackoff() *Backoff {$/;"	f
+GetBaseDelay	api/logic/logic.pb.go	/^func (m *Backoff) GetBaseDelay() int32 {$/;"	f
+GetBody	api/protocol/protocol.pb.go	/^func (m *Proto) GetBody() []byte {$/;"	f
+GetClientIP	api/logic/logic.pb.go	/^func (m *NodesReq) GetClientIP() string {$/;"	f
+GetCookie	api/logic/logic.pb.go	/^func (m *ConnectReq) GetCookie() string {$/;"	f
+GetDomain	api/logic/logic.pb.go	/^func (m *NodesReply) GetDomain() string {$/;"	f
+GetFactor	api/logic/logic.pb.go	/^func (m *Backoff) GetFactor() float32 {$/;"	f
+GetHas	api/logic/logic.pb.go	/^func (m *DisconnectReply) GetHas() bool {$/;"	f
+GetHeartbeat	api/logic/logic.pb.go	/^func (m *ConnectReply) GetHeartbeat() int64 {$/;"	f
+GetHeartbeat	api/logic/logic.pb.go	/^func (m *NodesReply) GetHeartbeat() int32 {$/;"	f
+GetHeartbeatMax	api/logic/logic.pb.go	/^func (m *NodesReply) GetHeartbeatMax() int32 {$/;"	f
+GetJitter	api/logic/logic.pb.go	/^func (m *Backoff) GetJitter() float32 {$/;"	f
+GetKey	api/logic/logic.pb.go	/^func (m *ConnectReply) GetKey() string {$/;"	f
+GetKey	api/logic/logic.pb.go	/^func (m *DisconnectReq) GetKey() string {$/;"	f
+GetKey	api/logic/logic.pb.go	/^func (m *HeartbeatReq) GetKey() string {$/;"	f
+GetKeys	api/comet/comet.pb.go	/^func (m *PushMsgReq) GetKeys() []string {$/;"	f
+GetKeys	api/logic/logic.pb.go	/^func (m *PushMsg) GetKeys() []string {$/;"	f
+GetMaxDelay	api/logic/logic.pb.go	/^func (m *Backoff) GetMaxDelay() int32 {$/;"	f
+GetMid	api/logic/logic.pb.go	/^func (m *ConnectReply) GetMid() int64 {$/;"	f
+GetMid	api/logic/logic.pb.go	/^func (m *DisconnectReq) GetMid() int64 {$/;"	f
+GetMid	api/logic/logic.pb.go	/^func (m *HeartbeatReq) GetMid() int64 {$/;"	f
+GetMid	api/logic/logic.pb.go	/^func (m *ReceiveReq) GetMid() int64 {$/;"	f
+GetMsg	api/logic/logic.pb.go	/^func (m *PushMsg) GetMsg() []byte {$/;"	f
+GetNodes	api/logic/logic.pb.go	/^func (m *NodesReply) GetNodes() []string {$/;"	f
+GetOp	api/protocol/protocol.pb.go	/^func (m *Proto) GetOp() int32 {$/;"	f
+GetOperation	api/logic/logic.pb.go	/^func (m *PushMsg) GetOperation() int32 {$/;"	f
+GetPlatform	api/logic/logic.pb.go	/^func (m *NodesReq) GetPlatform() string {$/;"	f
+GetProto	api/comet/comet.pb.go	/^func (m *BroadcastReq) GetProto() *protocol.Proto {$/;"	f
+GetProto	api/comet/comet.pb.go	/^func (m *BroadcastRoomReq) GetProto() *protocol.Proto {$/;"	f
+GetProto	api/comet/comet.pb.go	/^func (m *PushMsgReq) GetProto() *protocol.Proto {$/;"	f
+GetProto	api/logic/logic.pb.go	/^func (m *ReceiveReq) GetProto() *protocol.Proto {$/;"	f
+GetProtoOp	api/comet/comet.pb.go	/^func (m *BroadcastReq) GetProtoOp() int32 {$/;"	f
+GetProtoOp	api/comet/comet.pb.go	/^func (m *PushMsgReq) GetProtoOp() int32 {$/;"	f
+GetRoom	api/logic/logic.pb.go	/^func (m *PushMsg) GetRoom() string {$/;"	f
+GetRoomCount	api/logic/logic.pb.go	/^func (m *OnlineReq) GetRoomCount() map[string]int32 {$/;"	f
+GetRoomID	api/comet/comet.pb.go	/^func (m *BroadcastRoomReq) GetRoomID() string {$/;"	f
+GetRoomID	api/logic/logic.pb.go	/^func (m *ConnectReply) GetRoomID() string {$/;"	f
+GetRooms	api/comet/comet.pb.go	/^func (m *RoomsReply) GetRooms() map[string]bool {$/;"	f
+GetSeq	api/protocol/protocol.pb.go	/^func (m *Proto) GetSeq() int32 {$/;"	f
+GetServer	api/logic/logic.pb.go	/^func (m *ConnectReq) GetServer() string {$/;"	f
+GetServer	api/logic/logic.pb.go	/^func (m *DisconnectReq) GetServer() string {$/;"	f
+GetServer	api/logic/logic.pb.go	/^func (m *HeartbeatReq) GetServer() string {$/;"	f
+GetServer	api/logic/logic.pb.go	/^func (m *OnlineReq) GetServer() string {$/;"	f
+GetServer	api/logic/logic.pb.go	/^func (m *PushMsg) GetServer() string {$/;"	f
+GetSpeed	api/comet/comet.pb.go	/^func (m *BroadcastReq) GetSpeed() int32 {$/;"	f
+GetSpeed	api/logic/logic.pb.go	/^func (m *PushMsg) GetSpeed() int32 {$/;"	f
+GetTcpPort	api/logic/logic.pb.go	/^func (m *NodesReply) GetTcpPort() int32 {$/;"	f
+GetToken	api/logic/logic.pb.go	/^func (m *ConnectReq) GetToken() []byte {$/;"	f
+GetType	api/logic/logic.pb.go	/^func (m *PushMsg) GetType() PushMsg_Type {$/;"	f
+GetVer	api/protocol/protocol.pb.go	/^func (m *Proto) GetVer() int32 {$/;"	f
+GetWsPort	api/logic/logic.pb.go	/^func (m *NodesReply) GetWsPort() int32 {$/;"	f
+GetWssPort	api/logic/logic.pb.go	/^func (m *NodesReply) GetWssPort() int32 {$/;"	f
+HTTPServer	internal/logic/conf/conf.go	/^type HTTPServer struct {$/;"	t
+Heartbeat	api/logic/logic.pb.go	/^func (*UnimplementedLogicServer) Heartbeat(ctx context.Context, req *HeartbeatReq) (*HeartbeatReply, error) {$/;"	f
+Heartbeat	api/logic/logic.pb.go	/^func (c *logicClient) Heartbeat(ctx context.Context, in *HeartbeatReq, opts ...grpc.CallOption) (*HeartbeatReply, error) {$/;"	f
+Heartbeat	internal/comet/operation.go	/^func (s *Server) Heartbeat(ctx context.Context, mid int64, key string) (err error) {$/;"	f
+Heartbeat	internal/logic/conn.go	/^func (l *Logic) Heartbeat(c context.Context, mid int64, key, server string) (err error) {$/;"	f
+Heartbeat	internal/logic/grpc/server.go	/^func (s *server) Heartbeat(ctx context.Context, req *pb.HeartbeatReq) (*pb.HeartbeatReply, error) {$/;"	f
+HeartbeatReply	api/logic/logic.pb.go	/^type HeartbeatReply struct {$/;"	t
+HeartbeatReq	api/logic/logic.pb.go	/^type HeartbeatReq struct {$/;"	t
+IPCount	internal/comet/bucket.go	/^func (b *Bucket) IPCount() (res map[string]struct{}) {$/;"	f
+Init	internal/comet/conf/conf.go	/^func Init() (err error) {$/;"	f
+Init	internal/comet/ring.go	/^func (r *Ring) Init(num int) {$/;"	f
+Init	internal/job/conf/conf.go	/^func Init() (err error) {$/;"	f
+Init	internal/logic/conf/conf.go	/^func Init() (err error) {$/;"	f
+Init	pkg/bytes/buffer.go	/^func (p *Pool) Init(num, size int) {$/;"	f
+Init	pkg/time/timer.go	/^func (t *Timer) Init(num int) {$/;"	f
+InitTCP	internal/comet/server_tcp.go	/^func InitTCP(server *Server, addrs []string, accept int) (err error) {$/;"	f
+InitWebsocket	internal/comet/server_websocket.go	/^func InitWebsocket(server *Server, addrs []string, accept int) (err error) {$/;"	f
+InitWebsocketWithTLS	internal/comet/server_websocket.go	/^func InitWebsocketWithTLS(server *Server, addrs []string, certFile, privateFile string, accept int) (err error) {$/;"	f
+InitWhitelist	internal/comet/whitelist.go	/^func InitWhitelist(c *conf.Whitelist) (err error) {$/;"	f
+Int16	pkg/encoding/binary/endian.go	/^func (bigEndian) Int16(b []byte) int16 { return int16(b[1]) | int16(b[0])<<8 }$/;"	f
+Int32	pkg/encoding/binary/endian.go	/^func (bigEndian) Int32(b []byte) int32 {$/;"	f
+Int8	pkg/encoding/binary/endian.go	/^func (bigEndian) Int8(b []byte) int8 { return int8(b[0]) }$/;"	f
+InternalIP	pkg/ip/ip.go	/^func InternalIP() string {$/;"	f
+Job	internal/job/job.go	/^type Job struct {$/;"	t
+JoinInt32s	pkg/strings/ints.go	/^func JoinInt32s(is []int32, p string) string {$/;"	f
+JoinInt64s	pkg/strings/ints.go	/^func JoinInt64s(is []int64, p string) string {$/;"	f
+Kafka	internal/job/conf/conf.go	/^type Kafka struct {$/;"	t
+Kafka	internal/logic/conf/conf.go	/^type Kafka struct {$/;"	t
+KeysByMids	internal/logic/dao/redis.go	/^func (d *Dao) KeysByMids(c context.Context, mids []int64) (ress map[string]string, olMids []int64, err error) {$/;"	f
+Len	pkg/bytes/writer.go	/^func (w *Writer) Len() int {$/;"	f
+LoadBalancer	internal/logic/balancer.go	/^type LoadBalancer struct {$/;"	t
+Logic	internal/logic/logic.go	/^type Logic struct {$/;"	t
+LogicClient	api/logic/logic.pb.go	/^type LogicClient interface {$/;"	t
+LogicServer	api/logic/logic.pb.go	/^type LogicServer interface {$/;"	t
+MaxBodySize	api/protocol/protocol.go	/^	MaxBodySize = int32(1 << 12)$/;"	c
+MetaAddrs	internal/logic/model/metadata.go	/^	MetaAddrs = "addrs"$/;"	c
+MetaConnCount	internal/logic/model/metadata.go	/^	MetaConnCount = "conn_count"$/;"	c
+MetaIPCount	internal/logic/model/metadata.go	/^	MetaIPCount = "ip_count"$/;"	c
+MetaOffline	internal/logic/model/metadata.go	/^	MetaOffline = "offline"$/;"	c
+MetaWeight	internal/logic/model/metadata.go	/^	MetaWeight = "weight"$/;"	c
+NeedPush	internal/comet/channel.go	/^func (c *Channel) NeedPush(op int32) bool {$/;"	f
+New	internal/comet/grpc/server.go	/^func New(c *conf.RPCServer, s *comet.Server) *grpc.Server {$/;"	f
+New	internal/job/job.go	/^func New(c *conf.Config) *Job {$/;"	f
+New	internal/logic/dao/dao.go	/^func New(c *conf.Config) *Dao {$/;"	f
+New	internal/logic/grpc/server.go	/^func New(c *conf.RPCServer, l *logic.Logic) *grpc.Server {$/;"	f
+New	internal/logic/http/server.go	/^func New(c *conf.HTTPServer, l *logic.Logic) *Server {$/;"	f
+New	internal/logic/logic.go	/^func New(c *conf.Config) (l *Logic) {$/;"	f
+NewBucket	internal/comet/bucket.go	/^func NewBucket(c *conf.Bucket) (b *Bucket) {$/;"	f
+NewChannel	internal/comet/channel.go	/^func NewChannel(cli, svr int) *Channel {$/;"	f
+NewComet	internal/job/comet.go	/^func NewComet(in *naming.Instance, c *conf.Comet) (*Comet, error) {$/;"	f
+NewCometClient	api/comet/comet.pb.go	/^func NewCometClient(cc *grpc.ClientConn) CometClient {$/;"	f
+NewLoadBalancer	internal/logic/balancer.go	/^func NewLoadBalancer() *LoadBalancer {$/;"	f
+NewLogicClient	api/logic/logic.pb.go	/^func NewLogicClient(cc *grpc.ClientConn) LogicClient {$/;"	f
+NewPool	pkg/bytes/buffer.go	/^func NewPool(num, size int) (p *Pool) {$/;"	f
+NewReader	pkg/bufio/bufio.go	/^func NewReader(rd io.Reader) *Reader {$/;"	f
+NewReaderSize	pkg/bufio/bufio.go	/^func NewReaderSize(rd io.Reader, size int) *Reader {$/;"	f
+NewRing	internal/comet/ring.go	/^func NewRing(num int) *Ring {$/;"	f
+NewRoom	internal/comet/room.go	/^func NewRoom(id string) (r *Room) {$/;"	f
+NewRoom	internal/job/room.go	/^func NewRoom(job *Job, id string, c *conf.Room) (r *Room) {$/;"	f
+NewRound	internal/comet/round.go	/^func NewRound(c *conf.Config) (r *Round) {$/;"	f
+NewServer	internal/comet/server.go	/^func NewServer(c *conf.Config) *Server {$/;"	f
+NewTimer	pkg/time/timer.go	/^func NewTimer(num int) (t *Timer) {$/;"	f
+NewWriter	pkg/bufio/bufio.go	/^func NewWriter(w io.Writer) *Writer {$/;"	f
+NewWriterSize	pkg/bufio/bufio.go	/^func NewWriterSize(w io.Writer, size int) *Writer {$/;"	f
+NewWriterSize	pkg/bytes/writer.go	/^func NewWriterSize(n int) *Writer {$/;"	f
+Node	internal/logic/conf/conf.go	/^type Node struct {$/;"	t
+NodeAddrs	internal/logic/balancer.go	/^func (lb *LoadBalancer) NodeAddrs(region, domain string, regionWeight float64) (domains, addrs []string) {$/;"	f
+Nodes	api/logic/logic.pb.go	/^func (*UnimplementedLogicServer) Nodes(ctx context.Context, req *NodesReq) (*NodesReply, error) {$/;"	f
+Nodes	api/logic/logic.pb.go	/^func (c *logicClient) Nodes(ctx context.Context, in *NodesReq, opts ...grpc.CallOption) (*NodesReply, error) {$/;"	f
+Nodes	internal/logic/grpc/server.go	/^func (s *server) Nodes(ctx context.Context, req *pb.NodesReq) (*pb.NodesReply, error) {$/;"	f
+NodesInstances	internal/logic/nodes.go	/^func (l *Logic) NodesInstances(c context.Context) (res []*naming.Instance) {$/;"	f
+NodesReply	api/logic/logic.pb.go	/^type NodesReply struct {$/;"	t
+NodesReq	api/logic/logic.pb.go	/^type NodesReq struct {$/;"	t
+NodesWeighted	internal/logic/nodes.go	/^func (l *Logic) NodesWeighted(c context.Context, platform, clientIP string) *pb.NodesReply {$/;"	f
+OK	internal/logic/http/result.go	/^	OK = 0$/;"	c
+Online	internal/logic/model/online.go	/^type Online struct {$/;"	t
+OnlineNum	internal/comet/room.go	/^func (r *Room) OnlineNum() int32 {$/;"	f
+OnlineReply	api/logic/logic.pb.go	/^type OnlineReply struct {$/;"	t
+OnlineReq	api/logic/logic.pb.go	/^type OnlineReq struct {$/;"	t
+OnlineRoom	internal/logic/online.go	/^func (l *Logic) OnlineRoom(c context.Context, typ string, rooms []string) (res map[string]int32, err error) {$/;"	f
+OnlineTop	internal/logic/online.go	/^func (l *Logic) OnlineTop(c context.Context, typ string, n int) (tops []*model.Top, err error) {$/;"	f
+OnlineTotal	internal/logic/online.go	/^func (l *Logic) OnlineTotal(c context.Context) (int64, int64) {$/;"	f
+OpAuth	api/protocol/operation.go	/^	OpAuth = int32(7)$/;"	c
+OpAuthReply	api/protocol/operation.go	/^	OpAuthReply = int32(8)$/;"	c
+OpChangeRoom	api/protocol/operation.go	/^	OpChangeRoom = int32(12)$/;"	c
+OpChangeRoomReply	api/protocol/operation.go	/^	OpChangeRoomReply = int32(13)$/;"	c
+OpDisconnectReply	api/protocol/operation.go	/^	OpDisconnectReply = int32(6)$/;"	c
+OpHandshake	api/protocol/operation.go	/^	OpHandshake = int32(0)$/;"	c
+OpHandshakeReply	api/protocol/operation.go	/^	OpHandshakeReply = int32(1)$/;"	c
+OpHeartbeat	api/protocol/operation.go	/^	OpHeartbeat = int32(2)$/;"	c
+OpHeartbeatReply	api/protocol/operation.go	/^	OpHeartbeatReply = int32(3)$/;"	c
+OpProtoFinish	api/protocol/operation.go	/^	OpProtoFinish = int32(11)$/;"	c
+OpProtoReady	api/protocol/operation.go	/^	OpProtoReady = int32(10)$/;"	c
+OpRaw	api/protocol/operation.go	/^	OpRaw = int32(9)$/;"	c
+OpSendMsg	api/protocol/operation.go	/^	OpSendMsg = int32(4)$/;"	c
+OpSendMsgReply	api/protocol/operation.go	/^	OpSendMsgReply = int32(5)$/;"	c
+OpSub	api/protocol/operation.go	/^	OpSub = int32(14)$/;"	c
+OpSubReply	api/protocol/operation.go	/^	OpSubReply = int32(15)$/;"	c
+OpUnsub	api/protocol/operation.go	/^	OpUnsub = int32(16)$/;"	c
+OpUnsubReply	api/protocol/operation.go	/^	OpUnsubReply = int32(17)$/;"	c
+Operate	internal/comet/operation.go	/^func (s *Server) Operate(ctx context.Context, p *protocol.Proto, ch *Channel, b *Bucket) error {$/;"	f
+Peek	pkg/bufio/bufio.go	/^func (b *Reader) Peek(n int) ([]byte, error) {$/;"	f
+Peek	pkg/bufio/bufio.go	/^func (b *Writer) Peek(n int) ([]byte, error) {$/;"	f
+Peek	pkg/bytes/writer.go	/^func (w *Writer) Peek(n int) []byte {$/;"	f
+Peek	pkg/websocket/conn.go	/^func (c *Conn) Peek(n int) ([]byte, error) {$/;"	f
+Ping	internal/logic/dao/dao.go	/^func (d *Dao) Ping(c context.Context) error {$/;"	f
+Ping	internal/logic/logic.go	/^func (l *Logic) Ping(c context.Context) (err error) {$/;"	f
+PingMessage	pkg/websocket/conn.go	/^	PingMessage = 9$/;"	c
+PlatformWeb	internal/logic/model/metadata.go	/^	PlatformWeb = "web"$/;"	c
+PongMessage	pkg/websocket/conn.go	/^	PongMessage = 10$/;"	c
+Pool	pkg/bytes/buffer.go	/^type Pool struct {$/;"	t
+Pop	pkg/bufio/bufio.go	/^func (b *Reader) Pop(n int) ([]byte, error) {$/;"	f
+Printf	internal/comet/whitelist.go	/^func (w *Whitelist) Printf(format string, v ...interface{}) {$/;"	f
+Proto	api/protocol/protocol.pb.go	/^type Proto struct {$/;"	t
+Proto	benchmarks/client/main.go	/^type Proto struct {$/;"	t
+ProtoFinish	api/protocol/protocol.go	/^	ProtoFinish = &Proto{Op: OpProtoFinish}$/;"	v
+ProtoMessage	api/comet/comet.pb.go	/^func (*BroadcastReply) ProtoMessage()    {}$/;"	f
+ProtoMessage	api/comet/comet.pb.go	/^func (*BroadcastReq) ProtoMessage()    {}$/;"	f
+ProtoMessage	api/comet/comet.pb.go	/^func (*BroadcastRoomReply) ProtoMessage()    {}$/;"	f
+ProtoMessage	api/comet/comet.pb.go	/^func (*BroadcastRoomReq) ProtoMessage()    {}$/;"	f
+ProtoMessage	api/comet/comet.pb.go	/^func (*PushMsgReply) ProtoMessage()    {}$/;"	f
+ProtoMessage	api/comet/comet.pb.go	/^func (*PushMsgReq) ProtoMessage()    {}$/;"	f
+ProtoMessage	api/comet/comet.pb.go	/^func (*RoomsReply) ProtoMessage()    {}$/;"	f
+ProtoMessage	api/comet/comet.pb.go	/^func (*RoomsReq) ProtoMessage()    {}$/;"	f
+ProtoMessage	api/logic/logic.pb.go	/^func (*Backoff) ProtoMessage()    {}$/;"	f
+ProtoMessage	api/logic/logic.pb.go	/^func (*ConnectReply) ProtoMessage()    {}$/;"	f
+ProtoMessage	api/logic/logic.pb.go	/^func (*ConnectReq) ProtoMessage()    {}$/;"	f
+ProtoMessage	api/logic/logic.pb.go	/^func (*DisconnectReply) ProtoMessage()    {}$/;"	f
+ProtoMessage	api/logic/logic.pb.go	/^func (*DisconnectReq) ProtoMessage()    {}$/;"	f
+ProtoMessage	api/logic/logic.pb.go	/^func (*HeartbeatReply) ProtoMessage()    {}$/;"	f
+ProtoMessage	api/logic/logic.pb.go	/^func (*HeartbeatReq) ProtoMessage()    {}$/;"	f
+ProtoMessage	api/logic/logic.pb.go	/^func (*NodesReply) ProtoMessage()    {}$/;"	f
+ProtoMessage	api/logic/logic.pb.go	/^func (*NodesReq) ProtoMessage()    {}$/;"	f
+ProtoMessage	api/logic/logic.pb.go	/^func (*OnlineReply) ProtoMessage()    {}$/;"	f
+ProtoMessage	api/logic/logic.pb.go	/^func (*OnlineReq) ProtoMessage()    {}$/;"	f
+ProtoMessage	api/logic/logic.pb.go	/^func (*PushMsg) ProtoMessage()    {}$/;"	f
+ProtoMessage	api/logic/logic.pb.go	/^func (*ReceiveReply) ProtoMessage()    {}$/;"	f
+ProtoMessage	api/logic/logic.pb.go	/^func (*ReceiveReq) ProtoMessage()    {}$/;"	f
+ProtoMessage	api/protocol/protocol.pb.go	/^func (*Proto) ProtoMessage()    {}$/;"	f
+ProtoReady	api/protocol/protocol.go	/^	ProtoReady = &Proto{Op: OpProtoReady}$/;"	v
+Protocol	internal/comet/conf/conf.go	/^type Protocol struct {$/;"	t
+Push	internal/comet/channel.go	/^func (c *Channel) Push(p *protocol.Proto) (err error) {$/;"	f
+Push	internal/comet/room.go	/^func (r *Room) Push(p *protocol.Proto) {$/;"	f
+Push	internal/job/comet.go	/^func (c *Comet) Push(arg *comet.PushMsgReq) (err error) {$/;"	f
+Push	internal/job/room.go	/^func (r *Room) Push(op int32, msg []byte) (err error) {$/;"	f
+PushAll	internal/logic/push.go	/^func (l *Logic) PushAll(c context.Context, op, speed int32, msg []byte) (err error) {$/;"	f
+PushKeys	internal/logic/push.go	/^func (l *Logic) PushKeys(c context.Context, op int32, keys []string, msg []byte) (err error) {$/;"	f
+PushMids	internal/logic/push.go	/^func (l *Logic) PushMids(c context.Context, op int32, mids []int64, msg []byte) (err error) {$/;"	f
+PushMsg	api/comet/comet.pb.go	/^func (*UnimplementedCometServer) PushMsg(ctx context.Context, req *PushMsgReq) (*PushMsgReply, error) {$/;"	f
+PushMsg	api/comet/comet.pb.go	/^func (c *cometClient) PushMsg(ctx context.Context, in *PushMsgReq, opts ...grpc.CallOption) (*PushMsgReply, error) {$/;"	f
+PushMsg	api/logic/logic.pb.go	/^type PushMsg struct {$/;"	t
+PushMsg	internal/comet/grpc/server.go	/^func (s *server) PushMsg(ctx context.Context, req *pb.PushMsgReq) (reply *pb.PushMsgReply, err error) {$/;"	f
+PushMsg	internal/logic/dao/kafka.go	/^func (d *Dao) PushMsg(c context.Context, op int32, server string, keys []string, msg []byte) (err error) {$/;"	f
+PushMsgReply	api/comet/comet.pb.go	/^type PushMsgReply struct {$/;"	t
+PushMsgReq	api/comet/comet.pb.go	/^type PushMsgReq struct {$/;"	t
+PushMsg_BROADCAST	api/logic/logic.pb.go	/^	PushMsg_BROADCAST PushMsg_Type = 2$/;"	c
+PushMsg_PUSH	api/logic/logic.pb.go	/^	PushMsg_PUSH      PushMsg_Type = 0$/;"	c
+PushMsg_ROOM	api/logic/logic.pb.go	/^	PushMsg_ROOM      PushMsg_Type = 1$/;"	c
+PushMsg_Type	api/logic/logic.pb.go	/^type PushMsg_Type int32$/;"	t
+PushMsg_Type_name	api/logic/logic.pb.go	/^var PushMsg_Type_name = map[int32]string{$/;"	v
+PushMsg_Type_value	api/logic/logic.pb.go	/^var PushMsg_Type_value = map[string]int32{$/;"	v
+PushRoom	internal/logic/push.go	/^func (l *Logic) PushRoom(c context.Context, op int32, typ, room string, msg []byte) (err error) {$/;"	f
+Put	internal/comet/bucket.go	/^func (b *Bucket) Put(rid string, ch *Channel) (err error) {$/;"	f
+Put	internal/comet/room.go	/^func (r *Room) Put(ch *Channel) (err error) {$/;"	f
+Put	pkg/bytes/buffer.go	/^func (p *Pool) Put(b *Buffer) {$/;"	f
+PutInt16	pkg/encoding/binary/endian.go	/^func (bigEndian) PutInt16(b []byte, v int16) {$/;"	f
+PutInt32	pkg/encoding/binary/endian.go	/^func (bigEndian) PutInt32(b []byte, v int32) {$/;"	f
+PutInt8	pkg/encoding/binary/endian.go	/^func (bigEndian) PutInt8(b []byte, v int8) {$/;"	f
+RPCClient	internal/comet/conf/conf.go	/^type RPCClient struct {$/;"	t
+RPCClient	internal/logic/conf/conf.go	/^type RPCClient struct {$/;"	t
+RPCServer	internal/comet/conf/conf.go	/^type RPCServer struct {$/;"	t
+RPCServer	internal/logic/conf/conf.go	/^type RPCServer struct {$/;"	t
+RandServerHearbeat	internal/comet/server.go	/^func (s *Server) RandServerHearbeat() time.Duration {$/;"	f
+Read	pkg/bufio/bufio.go	/^func (b *Reader) Read(p []byte) (n int, err error) {$/;"	f
+Read	pkg/bufio/bufio_test.go	/^func (r *errorThenGoodReader) Read(p []byte) (int, error) {$/;"	f
+Read	pkg/bufio/bufio_test.go	/^func (r *negativeReader) Read([]byte) (int, error) { return -1, nil }$/;"	f
+Read	pkg/bufio/bufio_test.go	/^func (r dataAndEOFReader) Read(p []byte) (int, error) {$/;"	f
+Read	pkg/bufio/bufio_test.go	/^func (r13 *rot13Reader) Read(p []byte) (int, error) {$/;"	f
+Read	pkg/bufio/bufio_test.go	/^func (sr *scriptedReader) Read(p []byte) (n int, err error) {$/;"	f
+Read	pkg/bufio/bufio_test.go	/^func (t *testReader) Read(buf []byte) (n int, err error) {$/;"	f
+Read	pkg/bufio/bufio_test.go	/^func (zeroReader) Read(p []byte) (int, error) {$/;"	f
+ReadByte	pkg/bufio/bufio.go	/^func (b *Reader) ReadByte() (c byte, err error) {$/;"	f
+ReadLine	pkg/bufio/bufio.go	/^func (b *Reader) ReadLine() (line []byte, isPrefix bool, err error) {$/;"	f
+ReadMessage	pkg/websocket/conn.go	/^func (c *Conn) ReadMessage() (op int, payload []byte, err error) {$/;"	f
+ReadRequest	pkg/websocket/request.go	/^func ReadRequest(r *bufio.Reader) (req *Request, err error) {$/;"	f
+ReadSlice	pkg/bufio/bufio.go	/^func (b *Reader) ReadSlice(delim byte) (line []byte, err error) {$/;"	f
+ReadTCP	api/protocol/protocol.go	/^func (p *Proto) ReadTCP(rr *bufio.Reader) (err error) {$/;"	f
+ReadWebsocket	api/protocol/protocol.go	/^func (p *Proto) ReadWebsocket(ws *websocket.Conn) (err error) {$/;"	f
+Reader	internal/comet/round.go	/^func (r *Round) Reader(rn int) *bytes.Pool {$/;"	f
+Reader	pkg/bufio/bufio.go	/^type Reader struct {$/;"	t
+Ready	internal/comet/channel.go	/^func (c *Channel) Ready() *protocol.Proto {$/;"	f
+Receive	api/logic/logic.pb.go	/^func (*UnimplementedLogicServer) Receive(ctx context.Context, req *ReceiveReq) (*ReceiveReply, error) {$/;"	f
+Receive	api/logic/logic.pb.go	/^func (c *logicClient) Receive(ctx context.Context, in *ReceiveReq, opts ...grpc.CallOption) (*ReceiveReply, error) {$/;"	f
+Receive	internal/comet/operation.go	/^func (s *Server) Receive(ctx context.Context, mid int64, p *protocol.Proto) (err error) {$/;"	f
+Receive	internal/logic/conn.go	/^func (l *Logic) Receive(c context.Context, mid int64, proto *protocol.Proto) (err error) {$/;"	f
+Receive	internal/logic/grpc/server.go	/^func (s *server) Receive(ctx context.Context, req *pb.ReceiveReq) (*pb.ReceiveReply, error) {$/;"	f
+ReceiveReply	api/logic/logic.pb.go	/^type ReceiveReply struct {$/;"	t
+ReceiveReq	api/logic/logic.pb.go	/^type ReceiveReq struct {$/;"	t
+Redis	internal/logic/conf/conf.go	/^type Redis struct {$/;"	t
+RegisterCometServer	api/comet/comet.pb.go	/^func RegisterCometServer(s *grpc.Server, srv CometServer) {$/;"	f
+RegisterLogicServer	api/logic/logic.pb.go	/^func RegisterLogicServer(s *grpc.Server, srv LogicServer) {$/;"	f
+RenewOnline	api/logic/logic.pb.go	/^func (*UnimplementedLogicServer) RenewOnline(ctx context.Context, req *OnlineReq) (*OnlineReply, error) {$/;"	f
+RenewOnline	api/logic/logic.pb.go	/^func (c *logicClient) RenewOnline(ctx context.Context, in *OnlineReq, opts ...grpc.CallOption) (*OnlineReply, error) {$/;"	f
+RenewOnline	internal/comet/operation.go	/^func (s *Server) RenewOnline(ctx context.Context, serverID string, roomCount map[string]int32) (allRoom map[string]int32, err error) {$/;"	f
+RenewOnline	internal/logic/conn.go	/^func (l *Logic) RenewOnline(c context.Context, server string, roomCount map[string]int32) (map[string]int32, error) {$/;"	f
+RenewOnline	internal/logic/grpc/server.go	/^func (s *server) RenewOnline(ctx context.Context, req *pb.OnlineReq) (*pb.OnlineReply, error) {$/;"	f
+Request	pkg/websocket/request.go	/^type Request struct {$/;"	t
+RequestErr	internal/logic/http/result.go	/^	RequestErr = -400$/;"	c
+Reset	api/comet/comet.pb.go	/^func (m *BroadcastReply) Reset()         { *m = BroadcastReply{} }$/;"	f
+Reset	api/comet/comet.pb.go	/^func (m *BroadcastReq) Reset()         { *m = BroadcastReq{} }$/;"	f
+Reset	api/comet/comet.pb.go	/^func (m *BroadcastRoomReply) Reset()         { *m = BroadcastRoomReply{} }$/;"	f
+Reset	api/comet/comet.pb.go	/^func (m *BroadcastRoomReq) Reset()         { *m = BroadcastRoomReq{} }$/;"	f
+Reset	api/comet/comet.pb.go	/^func (m *PushMsgReply) Reset()         { *m = PushMsgReply{} }$/;"	f
+Reset	api/comet/comet.pb.go	/^func (m *PushMsgReq) Reset()         { *m = PushMsgReq{} }$/;"	f
+Reset	api/comet/comet.pb.go	/^func (m *RoomsReply) Reset()         { *m = RoomsReply{} }$/;"	f
+Reset	api/comet/comet.pb.go	/^func (m *RoomsReq) Reset()         { *m = RoomsReq{} }$/;"	f
+Reset	api/logic/logic.pb.go	/^func (m *Backoff) Reset()         { *m = Backoff{} }$/;"	f
+Reset	api/logic/logic.pb.go	/^func (m *ConnectReply) Reset()         { *m = ConnectReply{} }$/;"	f
+Reset	api/logic/logic.pb.go	/^func (m *ConnectReq) Reset()         { *m = ConnectReq{} }$/;"	f
+Reset	api/logic/logic.pb.go	/^func (m *DisconnectReply) Reset()         { *m = DisconnectReply{} }$/;"	f
+Reset	api/logic/logic.pb.go	/^func (m *DisconnectReq) Reset()         { *m = DisconnectReq{} }$/;"	f
+Reset	api/logic/logic.pb.go	/^func (m *HeartbeatReply) Reset()         { *m = HeartbeatReply{} }$/;"	f
+Reset	api/logic/logic.pb.go	/^func (m *HeartbeatReq) Reset()         { *m = HeartbeatReq{} }$/;"	f
+Reset	api/logic/logic.pb.go	/^func (m *NodesReply) Reset()         { *m = NodesReply{} }$/;"	f
+Reset	api/logic/logic.pb.go	/^func (m *NodesReq) Reset()         { *m = NodesReq{} }$/;"	f
+Reset	api/logic/logic.pb.go	/^func (m *OnlineReply) Reset()         { *m = OnlineReply{} }$/;"	f
+Reset	api/logic/logic.pb.go	/^func (m *OnlineReq) Reset()         { *m = OnlineReq{} }$/;"	f
+Reset	api/logic/logic.pb.go	/^func (m *PushMsg) Reset()         { *m = PushMsg{} }$/;"	f
+Reset	api/logic/logic.pb.go	/^func (m *ReceiveReply) Reset()         { *m = ReceiveReply{} }$/;"	f
+Reset	api/logic/logic.pb.go	/^func (m *ReceiveReq) Reset()         { *m = ReceiveReq{} }$/;"	f
+Reset	api/protocol/protocol.pb.go	/^func (m *Proto) Reset()         { *m = Proto{} }$/;"	f
+Reset	internal/comet/ring.go	/^func (r *Ring) Reset() {$/;"	f
+Reset	pkg/bufio/bufio.go	/^func (b *Reader) Reset(r io.Reader) {$/;"	f
+Reset	pkg/bufio/bufio.go	/^func (b *Writer) Reset(w io.Writer) {$/;"	f
+Reset	pkg/bytes/writer.go	/^func (w *Writer) Reset() {$/;"	f
+ResetBuffer	pkg/bufio/bufio.go	/^func (b *Reader) ResetBuffer(r io.Reader, buf []byte) {$/;"	f
+ResetBuffer	pkg/bufio/bufio.go	/^func (b *Writer) ResetBuffer(w io.Writer, buf []byte) {$/;"	f
+Ring	internal/comet/ring.go	/^type Ring struct {$/;"	t
+Room	internal/comet/bucket.go	/^func (b *Bucket) Room(rid string) (room *Room) {$/;"	f
+Room	internal/comet/room.go	/^type Room struct {$/;"	t
+Room	internal/job/conf/conf.go	/^type Room struct {$/;"	t
+Room	internal/job/room.go	/^type Room struct {$/;"	t
+RoomCount	internal/comet/bucket.go	/^func (b *Bucket) RoomCount() int {$/;"	f
+Rooms	api/comet/comet.pb.go	/^func (*UnimplementedCometServer) Rooms(ctx context.Context, req *RoomsReq) (*RoomsReply, error) {$/;"	f
+Rooms	api/comet/comet.pb.go	/^func (c *cometClient) Rooms(ctx context.Context, in *RoomsReq, opts ...grpc.CallOption) (*RoomsReply, error) {$/;"	f
+Rooms	internal/comet/bucket.go	/^func (b *Bucket) Rooms() (res map[string]struct{}) {$/;"	f
+Rooms	internal/comet/grpc/server.go	/^func (s *server) Rooms(ctx context.Context, req *pb.RoomsReq) (*pb.RoomsReply, error) {$/;"	f
+RoomsCount	internal/comet/bucket.go	/^func (b *Bucket) RoomsCount() (res map[string]int32) {$/;"	f
+RoomsReply	api/comet/comet.pb.go	/^type RoomsReply struct {$/;"	t
+RoomsReq	api/comet/comet.pb.go	/^type RoomsReq struct {$/;"	t
+Round	internal/comet/round.go	/^type Round struct {$/;"	t
+RoundOptions	internal/comet/round.go	/^type RoundOptions struct {$/;"	t
+ServeTCP	internal/comet/server_tcp.go	/^func (s *Server) ServeTCP(conn *net.TCPConn, rp, wp *bytes.Pool, tr *xtime.Timer) {$/;"	f
+ServeWebsocket	internal/comet/server_websocket.go	/^func (s *Server) ServeWebsocket(conn net.Conn, rp, wp *bytes.Pool, tr *xtime.Timer) {$/;"	f
+Server	internal/comet/server.go	/^type Server struct {$/;"	t
+Server	internal/logic/http/server.go	/^type Server struct {$/;"	t
+ServerErr	internal/logic/http/result.go	/^	ServerErr = -500$/;"	c
+ServerOnline	internal/logic/dao/redis.go	/^func (d *Dao) ServerOnline(c context.Context, server string) (online *model.Online, err error) {$/;"	f
+ServersByKeys	internal/logic/dao/redis.go	/^func (d *Dao) ServersByKeys(c context.Context, keys []string) (res []string, err error) {$/;"	f
+Set	internal/comet/ring.go	/^func (r *Ring) Set() (proto *protocol.Proto, err error) {$/;"	f
+Set	pkg/time/timer.go	/^func (t *Timer) Set(td *TimerData, expire itime.Duration) {$/;"	f
+SetAdv	internal/comet/ring.go	/^func (r *Ring) SetAdv() {$/;"	f
+Signal	internal/comet/channel.go	/^func (c *Channel) Signal() {$/;"	f
+Size	internal/logic/balancer.go	/^func (lb *LoadBalancer) Size() int {$/;"	f
+Size	pkg/bytes/writer.go	/^func (w *Writer) Size() int {$/;"	f
+SplitInt32s	pkg/strings/ints.go	/^func SplitInt32s(s, p string) ([]int32, error) {$/;"	f
+SplitInt64s	pkg/strings/ints.go	/^func SplitInt64s(s, p string) ([]int64, error) {$/;"	f
+String	api/comet/comet.pb.go	/^func (m *BroadcastReply) String() string { return proto.CompactTextString(m) }$/;"	f
+String	api/comet/comet.pb.go	/^func (m *BroadcastReq) String() string { return proto.CompactTextString(m) }$/;"	f
+String	api/comet/comet.pb.go	/^func (m *BroadcastRoomReply) String() string { return proto.CompactTextString(m) }$/;"	f
+String	api/comet/comet.pb.go	/^func (m *BroadcastRoomReq) String() string { return proto.CompactTextString(m) }$/;"	f
+String	api/comet/comet.pb.go	/^func (m *PushMsgReply) String() string { return proto.CompactTextString(m) }$/;"	f
+String	api/comet/comet.pb.go	/^func (m *PushMsgReq) String() string { return proto.CompactTextString(m) }$/;"	f
+String	api/comet/comet.pb.go	/^func (m *RoomsReply) String() string { return proto.CompactTextString(m) }$/;"	f
+String	api/comet/comet.pb.go	/^func (m *RoomsReq) String() string { return proto.CompactTextString(m) }$/;"	f
+String	api/logic/logic.pb.go	/^func (m *Backoff) String() string { return proto.CompactTextString(m) }$/;"	f
+String	api/logic/logic.pb.go	/^func (m *ConnectReply) String() string { return proto.CompactTextString(m) }$/;"	f
+String	api/logic/logic.pb.go	/^func (m *ConnectReq) String() string { return proto.CompactTextString(m) }$/;"	f
+String	api/logic/logic.pb.go	/^func (m *DisconnectReply) String() string { return proto.CompactTextString(m) }$/;"	f
+String	api/logic/logic.pb.go	/^func (m *DisconnectReq) String() string { return proto.CompactTextString(m) }$/;"	f
+String	api/logic/logic.pb.go	/^func (m *HeartbeatReply) String() string { return proto.CompactTextString(m) }$/;"	f
+String	api/logic/logic.pb.go	/^func (m *HeartbeatReq) String() string { return proto.CompactTextString(m) }$/;"	f
+String	api/logic/logic.pb.go	/^func (m *NodesReply) String() string { return proto.CompactTextString(m) }$/;"	f
+String	api/logic/logic.pb.go	/^func (m *NodesReq) String() string { return proto.CompactTextString(m) }$/;"	f
+String	api/logic/logic.pb.go	/^func (m *OnlineReply) String() string { return proto.CompactTextString(m) }$/;"	f
+String	api/logic/logic.pb.go	/^func (m *OnlineReq) String() string { return proto.CompactTextString(m) }$/;"	f
+String	api/logic/logic.pb.go	/^func (m *PushMsg) String() string { return proto.CompactTextString(m) }$/;"	f
+String	api/logic/logic.pb.go	/^func (m *ReceiveReply) String() string { return proto.CompactTextString(m) }$/;"	f
+String	api/logic/logic.pb.go	/^func (m *ReceiveReq) String() string { return proto.CompactTextString(m) }$/;"	f
+String	api/logic/logic.pb.go	/^func (x PushMsg_Type) String() string {$/;"	f
+String	api/protocol/protocol.pb.go	/^func (m *Proto) String() string { return proto.CompactTextString(m) }$/;"	f
+String	internal/logic/balancer.go	/^func (w *weightedNode) String() string {$/;"	f
+TCP	internal/comet/conf/conf.go	/^type TCP struct {$/;"	t
+TestBuffer	pkg/bytes/buffer_test.go	/^func TestBuffer(t *testing.T) {$/;"	f
+TestBufferFull	pkg/bufio/bufio_test.go	/^func TestBufferFull(t *testing.T) {$/;"	f
+TestConnect	internal/logic/conn_test.go	/^func TestConnect(t *testing.T) {$/;"	f
+TestDaoAddMapping	internal/logic/dao/redis_test.go	/^func TestDaoAddMapping(t *testing.T) {$/;"	f
+TestDaoAddServerOnline	internal/logic/dao/redis_test.go	/^func TestDaoAddServerOnline(t *testing.T) {$/;"	f
+TestDaoBroadcastMsg	internal/logic/dao/kafka_test.go	/^func TestDaoBroadcastMsg(t *testing.T) {$/;"	f
+TestDaoBroadcastRoomMsg	internal/logic/dao/kafka_test.go	/^func TestDaoBroadcastRoomMsg(t *testing.T) {$/;"	f
+TestDaoPushMsg	internal/logic/dao/kafka_test.go	/^func TestDaoPushMsg(t *testing.T) {$/;"	f
+TestDaopingRedis	internal/logic/dao/redis_test.go	/^func TestDaopingRedis(t *testing.T) {$/;"	f
+TestDurationText	pkg/time/duration_test.go	/^func TestDurationText(t *testing.T) {$/;"	f
+TestIP	pkg/ip/ip_test.go	/^func TestIP(t *testing.T) {$/;"	f
+TestInt16	pkg/encoding/binary/endian_test.go	/^func TestInt16(t *testing.T) {$/;"	f
+TestInt32	pkg/encoding/binary/endian_test.go	/^func TestInt32(t *testing.T) {$/;"	f
+TestInt32	pkg/strings/ints_test.go	/^func TestInt32(t *testing.T) {$/;"	f
+TestInt64	pkg/strings/ints_test.go	/^func TestInt64(t *testing.T) {$/;"	f
+TestInt8	pkg/encoding/binary/endian_test.go	/^func TestInt8(t *testing.T) {$/;"	f
+TestLineTooLong	pkg/bufio/bufio_test.go	/^func TestLineTooLong(t *testing.T) {$/;"	f
+TestLinesAfterRead	pkg/bufio/bufio_test.go	/^func TestLinesAfterRead(t *testing.T) {$/;"	f
+TestLoadBalancer	internal/logic/balancer_test.go	/^func TestLoadBalancer(t *testing.T) {$/;"	f
+TestMain	internal/logic/dao/dao_test.go	/^func TestMain(m *testing.M) {$/;"	f
+TestMain	internal/logic/logic_test.go	/^func TestMain(m *testing.M) {$/;"	f
+TestNegativeRead	pkg/bufio/bufio_test.go	/^func TestNegativeRead(t *testing.T) {$/;"	f
+TestNewReaderSizeIdempotent	pkg/bufio/bufio_test.go	/^func TestNewReaderSizeIdempotent(t *testing.T) {$/;"	f
+TestNewWriterSizeIdempotent	pkg/bufio/bufio_test.go	/^func TestNewWriterSizeIdempotent(t *testing.T) {$/;"	f
+TestNodes	internal/logic/nodes_test.go	/^func TestNodes(t *testing.T) {$/;"	f
+TestOnline	internal/logic/online_test.go	/^func TestOnline(t *testing.T) {$/;"	f
+TestPeek	pkg/bufio/bufio_test.go	/^func TestPeek(t *testing.T) {$/;"	f
+TestPushAll	internal/logic/push_test.go	/^func TestPushAll(t *testing.T) {$/;"	f
+TestPushKeys	internal/logic/push_test.go	/^func TestPushKeys(t *testing.T) {$/;"	f
+TestPushMids	internal/logic/push_test.go	/^func TestPushMids(t *testing.T) {$/;"	f
+TestPushRoom	internal/logic/push_test.go	/^func TestPushRoom(t *testing.T) {$/;"	f
+TestReadAfterLines	pkg/bufio/bufio_test.go	/^func TestReadAfterLines(t *testing.T) {$/;"	f
+TestReadEmptyBuffer	pkg/bufio/bufio_test.go	/^func TestReadEmptyBuffer(t *testing.T) {$/;"	f
+TestReadLine	pkg/bufio/bufio_test.go	/^func TestReadLine(t *testing.T) {$/;"	f
+TestReadLineNewlines	pkg/bufio/bufio_test.go	/^func TestReadLineNewlines(t *testing.T) {$/;"	f
+TestReadLineNonNilLineOrError	pkg/bufio/bufio_test.go	/^func TestReadLineNonNilLineOrError(t *testing.T) {$/;"	f
+TestReader	pkg/bufio/bufio_test.go	/^func TestReader(t *testing.T) {$/;"	f
+TestReaderClearError	pkg/bufio/bufio_test.go	/^func TestReaderClearError(t *testing.T) {$/;"	f
+TestReaderDiscard	pkg/bufio/bufio_test.go	/^func TestReaderDiscard(t *testing.T) {$/;"	f
+TestReaderReset	pkg/bufio/bufio_test.go	/^func TestReaderReset(t *testing.T) {$/;"	f
+TestReaderSimple	pkg/bufio/bufio_test.go	/^func TestReaderSimple(t *testing.T) {$/;"	f
+TestServer	pkg/websocket/server_test.go	/^func TestServer(t *testing.T) {$/;"	f
+TestTimer	pkg/time/timer_test.go	/^func TestTimer(t *testing.T) {$/;"	f
+TestWeightedNode	internal/logic/balancer_test.go	/^func TestWeightedNode(t *testing.T) {$/;"	f
+TestWriteErrors	pkg/bufio/bufio_test.go	/^func TestWriteErrors(t *testing.T) {$/;"	f
+TestWriteString	pkg/bufio/bufio_test.go	/^func TestWriteString(t *testing.T) {$/;"	f
+TestWriter	pkg/bufio/bufio_test.go	/^func TestWriter(t *testing.T) {$/;"	f
+TestWriter	pkg/bytes/writer_test.go	/^func TestWriter(t *testing.T) {$/;"	f
+TestWriterReadFromCounts	pkg/bufio/bufio_test.go	/^func TestWriterReadFromCounts(t *testing.T) {$/;"	f
+TestWriterReset	pkg/bufio/bufio_test.go	/^func TestWriterReset(t *testing.T) {$/;"	f
+TestZeroReader	pkg/bufio/bufio_test.go	/^func TestZeroReader(t *testing.T) {$/;"	f
+TextMessage	pkg/websocket/conn.go	/^	TextMessage = 1$/;"	c
+Timer	internal/comet/round.go	/^func (r *Round) Timer(rn int) *time.Timer {$/;"	f
+Timer	pkg/time/timer.go	/^type Timer struct {$/;"	t
+TimerData	pkg/time/timer.go	/^type TimerData struct {$/;"	t
+Top	internal/logic/model/online.go	/^type Top struct {$/;"	t
+UnWatch	internal/comet/channel.go	/^func (c *Channel) UnWatch(accepts ...int32) {$/;"	f
+UnimplementedCometServer	api/comet/comet.pb.go	/^type UnimplementedCometServer struct {$/;"	t
+UnimplementedLogicServer	api/logic/logic.pb.go	/^type UnimplementedLogicServer struct {$/;"	t
+UnmarshalText	pkg/time/duration.go	/^func (d *Duration) UnmarshalText(text []byte) error {$/;"	f
+UpRoomsCount	internal/comet/bucket.go	/^func (b *Bucket) UpRoomsCount(roomCountMap map[string]int32) {$/;"	f
+Update	internal/logic/balancer.go	/^func (lb *LoadBalancer) Update(ins []*naming.Instance) {$/;"	f
+Upgrade	pkg/websocket/server.go	/^func Upgrade(rwc io.ReadWriteCloser, rr *bufio.Reader, wr *bufio.Writer, req *Request) (conn *Conn, err error) {$/;"	f
+Watch	internal/comet/channel.go	/^func (c *Channel) Watch(accepts ...int32) {$/;"	f
+Websocket	internal/comet/conf/conf.go	/^type Websocket struct {$/;"	t
+Whitelist	internal/comet/conf/conf.go	/^type Whitelist struct {$/;"	t
+Whitelist	internal/comet/whitelist.go	/^type Whitelist struct {$/;"	t
+Write	pkg/bufio/bufio.go	/^func (b *Writer) Write(p []byte) (nn int, err error) {$/;"	f
+Write	pkg/bufio/bufio_test.go	/^func (w *writeCountingDiscard) Write(p []byte) (int, error) {$/;"	f
+Write	pkg/bufio/bufio_test.go	/^func (w errorWriterTest) Write(p []byte) (int, error) {$/;"	f
+Write	pkg/bytes/writer.go	/^func (w *Writer) Write(p []byte) {$/;"	f
+WriteBody	pkg/websocket/conn.go	/^func (c *Conn) WriteBody(b []byte) (err error) {$/;"	f
+WriteHeader	pkg/websocket/conn.go	/^func (c *Conn) WriteHeader(msgType int, length int) (err error) {$/;"	f
+WriteMessage	pkg/websocket/conn.go	/^func (c *Conn) WriteMessage(msgType int, msg []byte) (err error) {$/;"	f
+WriteRaw	pkg/bufio/bufio.go	/^func (b *Writer) WriteRaw(p []byte) (nn int, err error) {$/;"	f
+WriteString	pkg/bufio/bufio.go	/^func (b *Writer) WriteString(s string) (int, error) {$/;"	f
+WriteTCP	api/protocol/protocol.go	/^func (p *Proto) WriteTCP(wr *bufio.Writer) (err error) {$/;"	f
+WriteTCPHeart	api/protocol/protocol.go	/^func (p *Proto) WriteTCPHeart(wr *bufio.Writer, online int32) (err error) {$/;"	f
+WriteTo	api/protocol/protocol.go	/^func (p *Proto) WriteTo(b *bytes.Writer) {$/;"	f
+WriteWebsocket	api/protocol/protocol.go	/^func (p *Proto) WriteWebsocket(ws *websocket.Conn) (err error) {$/;"	f
+WriteWebsocketHeart	api/protocol/protocol.go	/^func (p *Proto) WriteWebsocketHeart(wr *websocket.Conn, online int32) (err error) {$/;"	f
+Writer	internal/comet/round.go	/^func (r *Round) Writer(rn int) *bytes.Pool {$/;"	f
+Writer	pkg/bufio/bufio.go	/^type Writer struct {$/;"	t
+Writer	pkg/bytes/writer.go	/^type Writer struct {$/;"	t
+XXX_DiscardUnknown	api/comet/comet.pb.go	/^func (m *BroadcastReply) XXX_DiscardUnknown() {$/;"	f
+XXX_DiscardUnknown	api/comet/comet.pb.go	/^func (m *BroadcastReq) XXX_DiscardUnknown() {$/;"	f
+XXX_DiscardUnknown	api/comet/comet.pb.go	/^func (m *BroadcastRoomReply) XXX_DiscardUnknown() {$/;"	f
+XXX_DiscardUnknown	api/comet/comet.pb.go	/^func (m *BroadcastRoomReq) XXX_DiscardUnknown() {$/;"	f
+XXX_DiscardUnknown	api/comet/comet.pb.go	/^func (m *PushMsgReply) XXX_DiscardUnknown() {$/;"	f
+XXX_DiscardUnknown	api/comet/comet.pb.go	/^func (m *PushMsgReq) XXX_DiscardUnknown() {$/;"	f
+XXX_DiscardUnknown	api/comet/comet.pb.go	/^func (m *RoomsReply) XXX_DiscardUnknown() {$/;"	f
+XXX_DiscardUnknown	api/comet/comet.pb.go	/^func (m *RoomsReq) XXX_DiscardUnknown() {$/;"	f
+XXX_DiscardUnknown	api/logic/logic.pb.go	/^func (m *Backoff) XXX_DiscardUnknown() {$/;"	f
+XXX_DiscardUnknown	api/logic/logic.pb.go	/^func (m *ConnectReply) XXX_DiscardUnknown() {$/;"	f
+XXX_DiscardUnknown	api/logic/logic.pb.go	/^func (m *ConnectReq) XXX_DiscardUnknown() {$/;"	f
+XXX_DiscardUnknown	api/logic/logic.pb.go	/^func (m *DisconnectReply) XXX_DiscardUnknown() {$/;"	f
+XXX_DiscardUnknown	api/logic/logic.pb.go	/^func (m *DisconnectReq) XXX_DiscardUnknown() {$/;"	f
+XXX_DiscardUnknown	api/logic/logic.pb.go	/^func (m *HeartbeatReply) XXX_DiscardUnknown() {$/;"	f
+XXX_DiscardUnknown	api/logic/logic.pb.go	/^func (m *HeartbeatReq) XXX_DiscardUnknown() {$/;"	f
+XXX_DiscardUnknown	api/logic/logic.pb.go	/^func (m *NodesReply) XXX_DiscardUnknown() {$/;"	f
+XXX_DiscardUnknown	api/logic/logic.pb.go	/^func (m *NodesReq) XXX_DiscardUnknown() {$/;"	f
+XXX_DiscardUnknown	api/logic/logic.pb.go	/^func (m *OnlineReply) XXX_DiscardUnknown() {$/;"	f
+XXX_DiscardUnknown	api/logic/logic.pb.go	/^func (m *OnlineReq) XXX_DiscardUnknown() {$/;"	f
+XXX_DiscardUnknown	api/logic/logic.pb.go	/^func (m *PushMsg) XXX_DiscardUnknown() {$/;"	f
+XXX_DiscardUnknown	api/logic/logic.pb.go	/^func (m *ReceiveReply) XXX_DiscardUnknown() {$/;"	f
+XXX_DiscardUnknown	api/logic/logic.pb.go	/^func (m *ReceiveReq) XXX_DiscardUnknown() {$/;"	f
+XXX_DiscardUnknown	api/protocol/protocol.pb.go	/^func (m *Proto) XXX_DiscardUnknown() {$/;"	f
+XXX_Marshal	api/comet/comet.pb.go	/^func (m *BroadcastReply) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {$/;"	f
+XXX_Marshal	api/comet/comet.pb.go	/^func (m *BroadcastReq) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {$/;"	f
+XXX_Marshal	api/comet/comet.pb.go	/^func (m *BroadcastRoomReply) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {$/;"	f
+XXX_Marshal	api/comet/comet.pb.go	/^func (m *BroadcastRoomReq) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {$/;"	f
+XXX_Marshal	api/comet/comet.pb.go	/^func (m *PushMsgReply) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {$/;"	f
+XXX_Marshal	api/comet/comet.pb.go	/^func (m *PushMsgReq) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {$/;"	f
+XXX_Marshal	api/comet/comet.pb.go	/^func (m *RoomsReply) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {$/;"	f
+XXX_Marshal	api/comet/comet.pb.go	/^func (m *RoomsReq) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {$/;"	f
+XXX_Marshal	api/logic/logic.pb.go	/^func (m *Backoff) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {$/;"	f
+XXX_Marshal	api/logic/logic.pb.go	/^func (m *ConnectReply) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {$/;"	f
+XXX_Marshal	api/logic/logic.pb.go	/^func (m *ConnectReq) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {$/;"	f
+XXX_Marshal	api/logic/logic.pb.go	/^func (m *DisconnectReply) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {$/;"	f
+XXX_Marshal	api/logic/logic.pb.go	/^func (m *DisconnectReq) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {$/;"	f
+XXX_Marshal	api/logic/logic.pb.go	/^func (m *HeartbeatReply) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {$/;"	f
+XXX_Marshal	api/logic/logic.pb.go	/^func (m *HeartbeatReq) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {$/;"	f
+XXX_Marshal	api/logic/logic.pb.go	/^func (m *NodesReply) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {$/;"	f
+XXX_Marshal	api/logic/logic.pb.go	/^func (m *NodesReq) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {$/;"	f
+XXX_Marshal	api/logic/logic.pb.go	/^func (m *OnlineReply) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {$/;"	f
+XXX_Marshal	api/logic/logic.pb.go	/^func (m *OnlineReq) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {$/;"	f
+XXX_Marshal	api/logic/logic.pb.go	/^func (m *PushMsg) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {$/;"	f
+XXX_Marshal	api/logic/logic.pb.go	/^func (m *ReceiveReply) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {$/;"	f
+XXX_Marshal	api/logic/logic.pb.go	/^func (m *ReceiveReq) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {$/;"	f
+XXX_Marshal	api/protocol/protocol.pb.go	/^func (m *Proto) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {$/;"	f
+XXX_Merge	api/comet/comet.pb.go	/^func (m *BroadcastReply) XXX_Merge(src proto.Message) {$/;"	f
+XXX_Merge	api/comet/comet.pb.go	/^func (m *BroadcastReq) XXX_Merge(src proto.Message) {$/;"	f
+XXX_Merge	api/comet/comet.pb.go	/^func (m *BroadcastRoomReply) XXX_Merge(src proto.Message) {$/;"	f
+XXX_Merge	api/comet/comet.pb.go	/^func (m *BroadcastRoomReq) XXX_Merge(src proto.Message) {$/;"	f
+XXX_Merge	api/comet/comet.pb.go	/^func (m *PushMsgReply) XXX_Merge(src proto.Message) {$/;"	f
+XXX_Merge	api/comet/comet.pb.go	/^func (m *PushMsgReq) XXX_Merge(src proto.Message) {$/;"	f
+XXX_Merge	api/comet/comet.pb.go	/^func (m *RoomsReply) XXX_Merge(src proto.Message) {$/;"	f
+XXX_Merge	api/comet/comet.pb.go	/^func (m *RoomsReq) XXX_Merge(src proto.Message) {$/;"	f
+XXX_Merge	api/logic/logic.pb.go	/^func (m *Backoff) XXX_Merge(src proto.Message) {$/;"	f
+XXX_Merge	api/logic/logic.pb.go	/^func (m *ConnectReply) XXX_Merge(src proto.Message) {$/;"	f
+XXX_Merge	api/logic/logic.pb.go	/^func (m *ConnectReq) XXX_Merge(src proto.Message) {$/;"	f
+XXX_Merge	api/logic/logic.pb.go	/^func (m *DisconnectReply) XXX_Merge(src proto.Message) {$/;"	f
+XXX_Merge	api/logic/logic.pb.go	/^func (m *DisconnectReq) XXX_Merge(src proto.Message) {$/;"	f
+XXX_Merge	api/logic/logic.pb.go	/^func (m *HeartbeatReply) XXX_Merge(src proto.Message) {$/;"	f
+XXX_Merge	api/logic/logic.pb.go	/^func (m *HeartbeatReq) XXX_Merge(src proto.Message) {$/;"	f
+XXX_Merge	api/logic/logic.pb.go	/^func (m *NodesReply) XXX_Merge(src proto.Message) {$/;"	f
+XXX_Merge	api/logic/logic.pb.go	/^func (m *NodesReq) XXX_Merge(src proto.Message) {$/;"	f
+XXX_Merge	api/logic/logic.pb.go	/^func (m *OnlineReply) XXX_Merge(src proto.Message) {$/;"	f
+XXX_Merge	api/logic/logic.pb.go	/^func (m *OnlineReq) XXX_Merge(src proto.Message) {$/;"	f
+XXX_Merge	api/logic/logic.pb.go	/^func (m *PushMsg) XXX_Merge(src proto.Message) {$/;"	f
+XXX_Merge	api/logic/logic.pb.go	/^func (m *ReceiveReply) XXX_Merge(src proto.Message) {$/;"	f
+XXX_Merge	api/logic/logic.pb.go	/^func (m *ReceiveReq) XXX_Merge(src proto.Message) {$/;"	f
+XXX_Merge	api/protocol/protocol.pb.go	/^func (m *Proto) XXX_Merge(src proto.Message) {$/;"	f
+XXX_Size	api/comet/comet.pb.go	/^func (m *BroadcastReply) XXX_Size() int {$/;"	f
+XXX_Size	api/comet/comet.pb.go	/^func (m *BroadcastReq) XXX_Size() int {$/;"	f
+XXX_Size	api/comet/comet.pb.go	/^func (m *BroadcastRoomReply) XXX_Size() int {$/;"	f
+XXX_Size	api/comet/comet.pb.go	/^func (m *BroadcastRoomReq) XXX_Size() int {$/;"	f
+XXX_Size	api/comet/comet.pb.go	/^func (m *PushMsgReply) XXX_Size() int {$/;"	f
+XXX_Size	api/comet/comet.pb.go	/^func (m *PushMsgReq) XXX_Size() int {$/;"	f
+XXX_Size	api/comet/comet.pb.go	/^func (m *RoomsReply) XXX_Size() int {$/;"	f
+XXX_Size	api/comet/comet.pb.go	/^func (m *RoomsReq) XXX_Size() int {$/;"	f
+XXX_Size	api/logic/logic.pb.go	/^func (m *Backoff) XXX_Size() int {$/;"	f
+XXX_Size	api/logic/logic.pb.go	/^func (m *ConnectReply) XXX_Size() int {$/;"	f
+XXX_Size	api/logic/logic.pb.go	/^func (m *ConnectReq) XXX_Size() int {$/;"	f
+XXX_Size	api/logic/logic.pb.go	/^func (m *DisconnectReply) XXX_Size() int {$/;"	f
+XXX_Size	api/logic/logic.pb.go	/^func (m *DisconnectReq) XXX_Size() int {$/;"	f
+XXX_Size	api/logic/logic.pb.go	/^func (m *HeartbeatReply) XXX_Size() int {$/;"	f
+XXX_Size	api/logic/logic.pb.go	/^func (m *HeartbeatReq) XXX_Size() int {$/;"	f
+XXX_Size	api/logic/logic.pb.go	/^func (m *NodesReply) XXX_Size() int {$/;"	f
+XXX_Size	api/logic/logic.pb.go	/^func (m *NodesReq) XXX_Size() int {$/;"	f
+XXX_Size	api/logic/logic.pb.go	/^func (m *OnlineReply) XXX_Size() int {$/;"	f
+XXX_Size	api/logic/logic.pb.go	/^func (m *OnlineReq) XXX_Size() int {$/;"	f
+XXX_Size	api/logic/logic.pb.go	/^func (m *PushMsg) XXX_Size() int {$/;"	f
+XXX_Size	api/logic/logic.pb.go	/^func (m *ReceiveReply) XXX_Size() int {$/;"	f
+XXX_Size	api/logic/logic.pb.go	/^func (m *ReceiveReq) XXX_Size() int {$/;"	f
+XXX_Size	api/protocol/protocol.pb.go	/^func (m *Proto) XXX_Size() int {$/;"	f
+XXX_Unmarshal	api/comet/comet.pb.go	/^func (m *BroadcastReply) XXX_Unmarshal(b []byte) error {$/;"	f
+XXX_Unmarshal	api/comet/comet.pb.go	/^func (m *BroadcastReq) XXX_Unmarshal(b []byte) error {$/;"	f
+XXX_Unmarshal	api/comet/comet.pb.go	/^func (m *BroadcastRoomReply) XXX_Unmarshal(b []byte) error {$/;"	f
+XXX_Unmarshal	api/comet/comet.pb.go	/^func (m *BroadcastRoomReq) XXX_Unmarshal(b []byte) error {$/;"	f
+XXX_Unmarshal	api/comet/comet.pb.go	/^func (m *PushMsgReply) XXX_Unmarshal(b []byte) error {$/;"	f
+XXX_Unmarshal	api/comet/comet.pb.go	/^func (m *PushMsgReq) XXX_Unmarshal(b []byte) error {$/;"	f
+XXX_Unmarshal	api/comet/comet.pb.go	/^func (m *RoomsReply) XXX_Unmarshal(b []byte) error {$/;"	f
+XXX_Unmarshal	api/comet/comet.pb.go	/^func (m *RoomsReq) XXX_Unmarshal(b []byte) error {$/;"	f
+XXX_Unmarshal	api/logic/logic.pb.go	/^func (m *Backoff) XXX_Unmarshal(b []byte) error {$/;"	f
+XXX_Unmarshal	api/logic/logic.pb.go	/^func (m *ConnectReply) XXX_Unmarshal(b []byte) error {$/;"	f
+XXX_Unmarshal	api/logic/logic.pb.go	/^func (m *ConnectReq) XXX_Unmarshal(b []byte) error {$/;"	f
+XXX_Unmarshal	api/logic/logic.pb.go	/^func (m *DisconnectReply) XXX_Unmarshal(b []byte) error {$/;"	f
+XXX_Unmarshal	api/logic/logic.pb.go	/^func (m *DisconnectReq) XXX_Unmarshal(b []byte) error {$/;"	f
+XXX_Unmarshal	api/logic/logic.pb.go	/^func (m *HeartbeatReply) XXX_Unmarshal(b []byte) error {$/;"	f
+XXX_Unmarshal	api/logic/logic.pb.go	/^func (m *HeartbeatReq) XXX_Unmarshal(b []byte) error {$/;"	f
+XXX_Unmarshal	api/logic/logic.pb.go	/^func (m *NodesReply) XXX_Unmarshal(b []byte) error {$/;"	f
+XXX_Unmarshal	api/logic/logic.pb.go	/^func (m *NodesReq) XXX_Unmarshal(b []byte) error {$/;"	f
+XXX_Unmarshal	api/logic/logic.pb.go	/^func (m *OnlineReply) XXX_Unmarshal(b []byte) error {$/;"	f
+XXX_Unmarshal	api/logic/logic.pb.go	/^func (m *OnlineReq) XXX_Unmarshal(b []byte) error {$/;"	f
+XXX_Unmarshal	api/logic/logic.pb.go	/^func (m *PushMsg) XXX_Unmarshal(b []byte) error {$/;"	f
+XXX_Unmarshal	api/logic/logic.pb.go	/^func (m *ReceiveReply) XXX_Unmarshal(b []byte) error {$/;"	f
+XXX_Unmarshal	api/logic/logic.pb.go	/^func (m *ReceiveReq) XXX_Unmarshal(b []byte) error {$/;"	f
+XXX_Unmarshal	api/protocol/protocol.pb.go	/^func (m *Proto) XXX_Unmarshal(b []byte) error {$/;"	f
+_	api/comet/comet.pb.go	/^const _ = grpc.SupportPackageIsVersion4$/;"	c
+_	api/comet/comet.pb.go	/^const _ = proto.ProtoPackageIsVersion3 \/\/ please upgrade the proto package$/;"	c
+_	api/comet/comet.pb.go	/^var _ = fmt.Errorf$/;"	v
+_	api/comet/comet.pb.go	/^var _ = math.Inf$/;"	v
+_	api/comet/comet.pb.go	/^var _ = proto.Marshal$/;"	v
+_	api/comet/comet.pb.go	/^var _ context.Context$/;"	v
+_	api/comet/comet.pb.go	/^var _ grpc.ClientConn$/;"	v
+_	api/logic/logic.pb.go	/^const _ = grpc.SupportPackageIsVersion4$/;"	c
+_	api/logic/logic.pb.go	/^const _ = proto.ProtoPackageIsVersion3 \/\/ please upgrade the proto package$/;"	c
+_	api/logic/logic.pb.go	/^var _ = fmt.Errorf$/;"	v
+_	api/logic/logic.pb.go	/^var _ = math.Inf$/;"	v
+_	api/logic/logic.pb.go	/^var _ = proto.Marshal$/;"	v
+_	api/logic/logic.pb.go	/^var _ context.Context$/;"	v
+_	api/logic/logic.pb.go	/^var _ grpc.ClientConn$/;"	v
+_	api/protocol/protocol.pb.go	/^const _ = proto.ProtoPackageIsVersion3 \/\/ please upgrade the proto package$/;"	c
+_	api/protocol/protocol.pb.go	/^var _ = fmt.Errorf$/;"	v
+_	api/protocol/protocol.pb.go	/^var _ = math.Inf$/;"	v
+_	api/protocol/protocol.pb.go	/^var _ = proto.Marshal$/;"	v
+_	internal/comet/grpc/server.go	/^var _ pb.CometServer = &server{}$/;"	v
+_	internal/logic/grpc/server.go	/^var _ pb.LogicServer = &server{}$/;"	v
+_Comet_BroadcastRoom_Handler	api/comet/comet.pb.go	/^func _Comet_BroadcastRoom_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {$/;"	f
+_Comet_Broadcast_Handler	api/comet/comet.pb.go	/^func _Comet_Broadcast_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {$/;"	f
+_Comet_PushMsg_Handler	api/comet/comet.pb.go	/^func _Comet_PushMsg_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {$/;"	f
+_Comet_Rooms_Handler	api/comet/comet.pb.go	/^func _Comet_Rooms_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {$/;"	f
+_Comet_serviceDesc	api/comet/comet.pb.go	/^var _Comet_serviceDesc = grpc.ServiceDesc{$/;"	v
+_Logic_Connect_Handler	api/logic/logic.pb.go	/^func _Logic_Connect_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {$/;"	f
+_Logic_Disconnect_Handler	api/logic/logic.pb.go	/^func _Logic_Disconnect_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {$/;"	f
+_Logic_Heartbeat_Handler	api/logic/logic.pb.go	/^func _Logic_Heartbeat_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {$/;"	f
+_Logic_Nodes_Handler	api/logic/logic.pb.go	/^func _Logic_Nodes_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {$/;"	f
+_Logic_Receive_Handler	api/logic/logic.pb.go	/^func _Logic_Receive_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {$/;"	f
+_Logic_RenewOnline_Handler	api/logic/logic.pb.go	/^func _Logic_RenewOnline_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {$/;"	f
+_Logic_serviceDesc	api/logic/logic.pb.go	/^var _Logic_serviceDesc = grpc.ServiceDesc{$/;"	v
+_emptyTops	internal/logic/online.go	/^	_emptyTops = make([]*model.Top, 0)$/;"	v
+_headerOffset	api/protocol/protocol.go	/^	_headerOffset = _packOffset + _packSize$/;"	c
+_headerSize	api/protocol/protocol.go	/^	_headerSize    = 2$/;"	c
+_heartOffset	api/protocol/protocol.go	/^	_heartOffset  = _seqOffset + _seqSize$/;"	c
+_heartSize	api/protocol/protocol.go	/^	_heartSize     = 4$/;"	c
+_maxNodes	internal/logic/balancer.go	/^	_maxNodes  = 5$/;"	c
+_maxPackSize	api/protocol/protocol.go	/^	_maxPackSize   = MaxBodySize + int32(_rawHeaderSize)$/;"	c
+_maxWeight	internal/logic/balancer.go	/^	_maxWeight = 1 << 20$/;"	c
+_minWeight	internal/logic/balancer.go	/^	_minWeight = 1$/;"	c
+_onlineDeadline	internal/logic/logic.go	/^	_onlineDeadline = time.Minute * 5$/;"	c
+_onlineTick	internal/logic/logic.go	/^	_onlineTick     = time.Second * 10$/;"	c
+_opOffset	api/protocol/protocol.go	/^	_opOffset     = _verOffset + _verSize$/;"	c
+_opSize	api/protocol/protocol.go	/^	_opSize        = 4$/;"	c
+_packOffset	api/protocol/protocol.go	/^	_packOffset   = 0$/;"	c
+_packSize	api/protocol/protocol.go	/^	_packSize      = 4$/;"	c
+_prefixKeyServer	internal/logic/dao/redis.go	/^	_prefixKeyServer    = "key_%s" \/\/ key -> server$/;"	c
+_prefixMidServer	internal/logic/dao/redis.go	/^	_prefixMidServer    = "mid_%d" \/\/ mid -> key:server$/;"	c
+_prefixServerOnline	internal/logic/dao/redis.go	/^	_prefixServerOnline = "ol_%s"  \/\/ server -> online$/;"	c
+_rawHeaderSize	api/protocol/protocol.go	/^	_rawHeaderSize = _packSize + _headerSize + _verSize + _opSize + _seqSize$/;"	c
+_seqOffset	api/protocol/protocol.go	/^	_seqOffset    = _opOffset + _opSize$/;"	c
+_seqSize	api/protocol/protocol.go	/^	_seqSize       = 4$/;"	c
+_verOffset	api/protocol/protocol.go	/^	_verOffset    = _headerOffset + _headerSize$/;"	c
+_verSize	api/protocol/protocol.go	/^	_verSize       = 2$/;"	c
+acceptTCP	internal/comet/server_tcp.go	/^func acceptTCP(server *Server, lis *net.TCPListener) {$/;"	f
+acceptWebsocket	internal/comet/server_websocket.go	/^func acceptWebsocket(server *Server, lis *net.TCPListener) {$/;"	f
+acceptWebsocketWithTLS	internal/comet/server_websocket.go	/^func acceptWebsocketWithTLS(server *Server, lis net.Listener) {$/;"	f
+add	pkg/time/timer.go	/^func (t *Timer) add(td *TimerData) {$/;"	f
+addServerOnline	internal/logic/dao/redis.go	/^func (d *Dao) addServerOnline(c context.Context, key string, hashKey string, online *model.Online) (err error) {$/;"	f
+addrs	internal/comet/conf/conf.go	/^	addrs     string$/;"	v
+aliveCount	benchmarks/client/main.go	/^	aliveCount int64$/;"	v
+api	api/generate.go	/^package api$/;"	p
+appendMsg	examples/javascript/client.js	/^    var appendMsg = function(text) {$/;"	f
+appid	cmd/comet/main.go	/^	appid = "goim.comet"$/;"	c
+appid	cmd/logic/main.go	/^	appid = "goim.logic"$/;"	c
+auth	examples/javascript/client.js	/^            function auth() {$/;"	f	function:function
+authTCP	internal/comet/server_tcp.go	/^func (s *Server) authTCP(ctx context.Context, rr *bufio.Reader, wr *bufio.Writer, p *protocol.Proto) (mid int64, key, rid string, accepts []int32, hb time.Duration, err error) {$/;"	f
+authWebsocket	internal/comet/server_websocket.go	/^func (s *Server) authWebsocket(ctx context.Context, ws *websocket.Conn, p *protocol.Proto, cookie string) (mid int64, key, rid string, accepts []int32, hb time.Duration, err error) {$/;"	f
+bfPool	pkg/strings/ints.go	/^	bfPool = sync.Pool{$/;"	v
+bigEndian	pkg/encoding/binary/endian.go	/^type bigEndian struct{}$/;"	t
+binary	pkg/encoding/binary/endian.go	/^package binary$/;"	p
+binary	pkg/encoding/binary/endian_test.go	/^package binary$/;"	p
+broadcast	internal/job/push.go	/^func (j *Job) broadcast(operation int32, body []byte, speed int32) (err error) {$/;"	f
+broadcastRoomRawBytes	internal/job/push.go	/^func (j *Job) broadcastRoomRawBytes(roomID string, body []byte) (err error) {$/;"	f
+bufReader	pkg/bufio/bufio_test.go	/^type bufReader struct {$/;"	t
+bufio	pkg/bufio/bufio.go	/^package bufio$/;"	p
+bufio_test	pkg/bufio/bufio_test.go	/^package bufio_test$/;"	p
+bufreaders	pkg/bufio/bufio_test.go	/^var bufreaders = []bufReader{$/;"	v
+bufsizes	pkg/bufio/bufio_test.go	/^var bufsizes = []int{$/;"	v
+bytes	pkg/bytes/buffer.go	/^package bytes$/;"	p
+bytes	pkg/bytes/buffer_test.go	/^package bytes$/;"	p
+bytes	pkg/bytes/writer.go	/^package bytes$/;"	p
+bytes	pkg/bytes/writer_test.go	/^package bytes$/;"	p
+calculateWeight	internal/logic/balancer.go	/^func (w *weightedNode) calculateWeight(totalWeight, totalConns int64, gainWeight float64) {$/;"	f
+char2ab	examples/javascript/client.js	/^            function char2ab(str) {$/;"	f	function:function
+chosen	internal/logic/balancer.go	/^func (w *weightedNode) chosen() {$/;"	f
+client	benchmarks/client/main.go	/^func client(mid int64) {$/;"	f
+comet	api/comet/comet.pb.go	/^package comet$/;"	p
+comet	internal/comet/bucket.go	/^package comet$/;"	p
+comet	internal/comet/channel.go	/^package comet$/;"	p
+comet	internal/comet/operation.go	/^package comet$/;"	p
+comet	internal/comet/ring.go	/^package comet$/;"	p
+comet	internal/comet/room.go	/^package comet$/;"	p
+comet	internal/comet/round.go	/^package comet$/;"	p
+comet	internal/comet/server.go	/^package comet$/;"	p
+comet	internal/comet/server_tcp.go	/^package comet$/;"	p
+comet	internal/comet/server_websocket.go	/^package comet$/;"	p
+comet	internal/comet/whitelist.go	/^package comet$/;"	p
+cometClient	api/comet/comet.pb.go	/^type cometClient struct {$/;"	t
+computeAcceptKey	pkg/websocket/server.go	/^func computeAcceptKey(challengeKey string) string {$/;"	f
+conf	Makefile	/^	nohup target\/comet -conf=target\/comet.toml -region=sh -zone=sh001 -deploy.env=dev -weight=10 -addrs=127.0.0.1 -debug=true 2>&1 > target\/comet.log &$/;"	m
+conf	Makefile	/^	nohup target\/job -conf=target\/job.toml -region=sh -zone=sh001 -deploy.env=dev 2>&1 > target\/job.log &$/;"	m
+conf	internal/comet/conf/conf.go	/^package conf$/;"	p
+conf	internal/job/conf/conf.go	/^package conf$/;"	p
+conf	internal/logic/conf/conf.go	/^package conf$/;"	p
+confPath	internal/comet/conf/conf.go	/^	confPath  string$/;"	v
+confPath	internal/job/conf/conf.go	/^	confPath  string$/;"	v
+confPath	internal/logic/conf/conf.go	/^	confPath  string$/;"	v
+connect	examples/javascript/client.js	/^        function connect() {$/;"	f	function:function
+contextErrCode	internal/logic/http/result.go	/^	contextErrCode = "context\/err\/code"$/;"	c
+continuationFrame	pkg/websocket/conn.go	/^	continuationFrame        = 0$/;"	c
+continuationFrameMaxRead	pkg/websocket/conn.go	/^	continuationFrameMaxRead = 100$/;"	c
+countDown	benchmarks/client/main.go	/^	countDown  int64$/;"	v
+createConnect	examples/javascript/client.js	/^    Client.prototype.createConnect = function(max, delay) {$/;"	m	class:Client
+d	internal/logic/dao/dao_test.go	/^	d *Dao$/;"	v
+dao	internal/logic/dao/dao.go	/^package dao$/;"	p
+dao	internal/logic/dao/dao_test.go	/^package dao$/;"	p
+dao	internal/logic/dao/kafka.go	/^package dao$/;"	p
+dao	internal/logic/dao/kafka_test.go	/^package dao$/;"	p
+dao	internal/logic/dao/redis.go	/^package dao$/;"	p
+dao	internal/logic/dao/redis_test.go	/^package dao$/;"	p
+dataAndEOFReader	pkg/bufio/bufio_test.go	/^type dataAndEOFReader string$/;"	t
+debug	internal/comet/conf/conf.go	/^	debug     bool$/;"	v
+defaultBufSize	pkg/bufio/bufio.go	/^	defaultBufSize = 4096$/;"	c
+del	pkg/time/timer.go	/^func (t *Timer) del(td *TimerData) {$/;"	f
+delRoom	internal/job/room.go	/^func (j *Job) delRoom(roomID string) {$/;"	f
+deployEnv	internal/comet/conf/conf.go	/^	deployEnv string$/;"	v
+deployEnv	internal/job/conf/conf.go	/^	deployEnv string$/;"	v
+deployEnv	internal/logic/conf/conf.go	/^	deployEnv string$/;"	v
+dispatchTCP	internal/comet/server_tcp.go	/^func (s *Server) dispatchTCP(conn *net.TCPConn, wr *bufio.Writer, wp *bytes.Pool, wb *bytes.Buffer, ch *Channel) {$/;"	f
+dispatchWebsocket	internal/comet/server_websocket.go	/^func (s *Server) dispatchWebsocket(ws *websocket.Conn, wp *bytes.Pool, wb *bytes.Buffer, ch *Channel) {$/;"	f
+down	pkg/time/timer.go	/^func (t *Timer) down(i, n int) {$/;"	f
+errFake	pkg/bufio/bufio_test.go	/^var errFake = errors.New("fake error")$/;"	v
+errNegativeRead	pkg/bufio/bufio.go	/^var errNegativeRead = errors.New("bufio: reader returned negative count from Read")$/;"	v
+errorThenGoodReader	pkg/bufio/bufio_test.go	/^type errorThenGoodReader struct {$/;"	t
+errorWriterTest	pkg/bufio/bufio_test.go	/^type errorWriterTest struct {$/;"	t
+errorWriterTests	pkg/bufio/bufio_test.go	/^var errorWriterTests = []errorWriterTest{$/;"	v
+errors	internal/comet/errors/errors.go	/^package errors$/;"	p
+errors	internal/logic/http/result.go	/^func errors(c *gin.Context, code int, msg string) {$/;"	f
+expire	pkg/time/timer.go	/^func (t *Timer) expire() {$/;"	f
+fileDescriptor_2dfb3aef05fe3328	api/logic/logic.pb.go	/^var fileDescriptor_2dfb3aef05fe3328 = []byte{$/;"	v
+fileDescriptor_327b4a7d084564be	api/comet/comet.pb.go	/^var fileDescriptor_327b4a7d084564be = []byte{$/;"	v
+fileDescriptor_87968d26f3046c60	api/protocol/protocol.pb.go	/^var fileDescriptor_87968d26f3046c60 = []byte{$/;"	v
+fill	pkg/bufio/bufio.go	/^func (b *Reader) fill() {$/;"	f
+finBit	pkg/websocket/conn.go	/^	finBit  = 1 << 7$/;"	c
+flush	pkg/bufio/bufio.go	/^func (b *Writer) flush() error {$/;"	f
+get	pkg/time/timer.go	/^func (t *Timer) get() (td *TimerData) {$/;"	f
+getRoom	internal/job/room.go	/^func (j *Job) getRoom(roomID string) *Room {$/;"	f
+grow	pkg/bytes/buffer.go	/^func (p *Pool) grow() {$/;"	f
+grow	pkg/bytes/writer.go	/^func (w *Writer) grow(n int) {$/;"	f
+grow	pkg/time/timer.go	/^func (t *Timer) grow() {$/;"	f
+grpc	internal/comet/grpc/server.go	/^package grpc$/;"	p
+grpc	internal/logic/grpc/server.go	/^package grpc$/;"	p
+grpcBackoffMaxDelay	internal/comet/server.go	/^	grpcBackoffMaxDelay       = time.Second * 3$/;"	c
+grpcBackoffMaxDelay	internal/job/comet.go	/^	grpcBackoffMaxDelay  = time.Duration(3) * time.Second$/;"	v
+grpcInitialConnWindowSize	internal/comet/server.go	/^	grpcInitialConnWindowSize = 1 << 24$/;"	c
+grpcInitialConnWindowSize	internal/job/comet.go	/^	grpcInitialConnWindowSize = 1 << 24$/;"	c
+grpcInitialWindowSize	internal/comet/server.go	/^	grpcInitialWindowSize     = 1 << 24$/;"	c
+grpcInitialWindowSize	internal/job/comet.go	/^	grpcInitialWindowSize     = 1 << 24$/;"	c
+grpcKeepAliveTime	internal/comet/server.go	/^	grpcKeepAliveTime         = time.Second * 10$/;"	c
+grpcKeepAliveTime	internal/job/comet.go	/^	grpcKeepAliveTime    = time.Duration(10) * time.Second$/;"	v
+grpcKeepAliveTimeout	internal/comet/server.go	/^	grpcKeepAliveTimeout      = time.Second * 3$/;"	c
+grpcKeepAliveTimeout	internal/job/comet.go	/^	grpcKeepAliveTimeout = time.Duration(3) * time.Second$/;"	v
+grpcMaxCallMsgSize	internal/comet/server.go	/^	grpcMaxCallMsgSize        = 1 << 24$/;"	c
+grpcMaxCallMsgSize	internal/job/comet.go	/^	grpcMaxCallMsgSize   = 1 << 24$/;"	v
+grpcMaxSendMsgSize	internal/comet/server.go	/^	grpcMaxSendMsgSize        = 1 << 24$/;"	c
+grpcMaxSendMsgSize	internal/job/comet.go	/^	grpcMaxSendMsgSize   = 1 << 24$/;"	v
+heart	benchmarks/client/main.go	/^	heart        = 240 * time.Second$/;"	c
+heartbeat	examples/javascript/client.js	/^            function heartbeat() {$/;"	f	function:function
+host	internal/comet/conf/conf.go	/^	host      string$/;"	v
+host	internal/job/conf/conf.go	/^	host      string$/;"	v
+host	internal/logic/conf/conf.go	/^	host      string$/;"	v
+http	internal/logic/http/middleware.go	/^package http$/;"	p
+http	internal/logic/http/nodes.go	/^package http$/;"	p
+http	internal/logic/http/online.go	/^package http$/;"	p
+http	internal/logic/http/push.go	/^package http$/;"	p
+http	internal/logic/http/result.go	/^package http$/;"	p
+http	internal/logic/http/server.go	/^package http$/;"	p
+httpClient	benchmarks/multi_push/main.go	/^	httpClient *http.Client$/;"	v
+httpClient	benchmarks/push/main.go	/^	httpClient *http.Client$/;"	v
+httpClient	benchmarks/push_rooms/main.go	/^	httpClient *http.Client$/;"	v
+httpPost	benchmarks/multi_push/main.go	/^func httpPost(url string, contentType string, body io.Reader) (*http.Response, error) {$/;"	f
+httpPost	benchmarks/push/main.go	/^func httpPost(url string, contentType string, body io.Reader) (*http.Response, error) {$/;"	f
+infiniteDuration	pkg/time/timer.go	/^	infiniteDuration = itime.Duration(1<<63 - 1)$/;"	c
+init	api/comet/comet.pb.go	/^func init() { proto.RegisterFile("comet\/comet.proto", fileDescriptor_327b4a7d084564be) }$/;"	f
+init	api/comet/comet.pb.go	/^func init() {$/;"	f
+init	api/logic/logic.pb.go	/^func init() { proto.RegisterFile("logic\/logic.proto", fileDescriptor_2dfb3aef05fe3328) }$/;"	f
+init	api/logic/logic.pb.go	/^func init() {$/;"	f
+init	api/protocol/protocol.pb.go	/^func init() { proto.RegisterFile("protocol\/protocol.proto", fileDescriptor_87968d26f3046c60) }$/;"	f
+init	api/protocol/protocol.pb.go	/^func init() {$/;"	f
+init	benchmarks/multi_push/main.go	/^func init() {$/;"	f
+init	benchmarks/push/main.go	/^func init() {$/;"	f
+init	benchmarks/push_rooms/main.go	/^func init() {$/;"	f
+init	internal/comet/conf/conf.go	/^func init() {$/;"	f
+init	internal/comet/ring.go	/^func (r *Ring) init(num uint64) {$/;"	f
+init	internal/job/conf/conf.go	/^func init() {$/;"	f
+init	internal/logic/conf/conf.go	/^func init() {$/;"	f
+init	pkg/bytes/buffer.go	/^func (p *Pool) init(num, size int) {$/;"	f
+init	pkg/time/timer.go	/^func (t *Timer) init(num int) {$/;"	f
+initNodes	internal/logic/logic.go	/^func (l *Logic) initNodes() {$/;"	f
+initRegions	internal/logic/logic.go	/^func (l *Logic) initRegions() {$/;"	f
+initRouter	internal/logic/http/server.go	/^func (s *Server) initRouter() {$/;"	f
+ip	pkg/ip/ip.go	/^package ip$/;"	p
+ip	pkg/ip/ip_test.go	/^package ip$/;"	p
+job	internal/job/comet.go	/^package job$/;"	p
+job	internal/job/job.go	/^package job$/;"	p
+job	internal/job/push.go	/^package job$/;"	p
+job	internal/job/room.go	/^package job$/;"	p
+keyGUID	pkg/websocket/server.go	/^	keyGUID = []byte("258EAFA5-E914-47DA-95CA-C5AB0DC85B11")$/;"	v
+keyKeyServer	internal/logic/dao/redis.go	/^func keyKeyServer(key string) string {$/;"	f
+keyMidServer	internal/logic/dao/redis.go	/^func keyMidServer(mid int64) string {$/;"	f
+keyServerOnline	internal/logic/dao/redis.go	/^func keyServerOnline(key string) string {$/;"	f
+lenBit	pkg/websocket/conn.go	/^	lenBit  = 0x7f$/;"	c
+less	pkg/time/timer.go	/^func (t *Timer) less(i, j int) bool {$/;"	f
+lg	benchmarks/multi_push/main.go	/^	lg         *log.Logger$/;"	v
+lg	internal/logic/logic_test.go	/^	lg *Logic$/;"	v
+loadOnline	internal/logic/logic.go	/^func (l *Logic) loadOnline() (err error) {$/;"	f
+location	internal/logic/nodes.go	/^func (l *Logic) location(c context.Context, clientIP string) (province string, err error) {$/;"	f
+loggerHandler	internal/logic/http/middleware.go	/^func loggerHandler(c *gin.Context) {$/;"	f
+logic	api/logic/logic.pb.go	/^package logic$/;"	p
+logic	internal/logic/balancer.go	/^package logic$/;"	p
+logic	internal/logic/balancer_test.go	/^package logic$/;"	p
+logic	internal/logic/conn.go	/^package logic$/;"	p
+logic	internal/logic/conn_test.go	/^package logic$/;"	p
+logic	internal/logic/logic.go	/^package logic$/;"	p
+logic	internal/logic/logic_test.go	/^package logic$/;"	p
+logic	internal/logic/nodes.go	/^package logic$/;"	p
+logic	internal/logic/nodes_test.go	/^package logic$/;"	p
+logic	internal/logic/online.go	/^package logic$/;"	p
+logic	internal/logic/online_test.go	/^package logic$/;"	p
+logic	internal/logic/push.go	/^package logic$/;"	p
+logic	internal/logic/push_test.go	/^package logic$/;"	p
+logicClient	api/logic/logic.pb.go	/^type logicClient struct {$/;"	t
+main	benchmarks/client/main.go	/^func main() {$/;"	f
+main	benchmarks/client/main.go	/^package main$/;"	p
+main	benchmarks/multi_push/main.go	/^func main() {$/;"	f
+main	benchmarks/multi_push/main.go	/^package main$/;"	p
+main	benchmarks/push/main.go	/^func main() {$/;"	f
+main	benchmarks/push/main.go	/^package main$/;"	p
+main	benchmarks/push_room/main.go	/^func main() {$/;"	f
+main	benchmarks/push_room/main.go	/^package main$/;"	p
+main	benchmarks/push_rooms/main.go	/^func main() {$/;"	f
+main	benchmarks/push_rooms/main.go	/^package main$/;"	p
+main	cmd/comet/main.go	/^func main() {$/;"	f
+main	cmd/comet/main.go	/^package main$/;"	p
+main	cmd/job/main.go	/^func main() {$/;"	f
+main	cmd/job/main.go	/^package main$/;"	p
+main	cmd/logic/main.go	/^func main() {$/;"	f
+main	cmd/logic/main.go	/^package main$/;"	p
+main	examples/javascript/main.go	/^func main() {$/;"	f
+main	examples/javascript/main.go	/^package main$/;"	p
+maskBit	pkg/websocket/conn.go	/^	maskBit = 1 << 7$/;"	c
+maskBytes	pkg/websocket/conn.go	/^func maskBytes(key []byte, pos int, b []byte) int {$/;"	f
+maxConsecutiveEmptyReads	pkg/bufio/bufio.go	/^const maxConsecutiveEmptyReads = 100$/;"	c
+maxInt	internal/comet/server_tcp.go	/^	maxInt = 1<<31 - 1$/;"	c
+maxServerHeartbeat	internal/comet/server.go	/^	maxServerHeartbeat = time.Minute * 30$/;"	c
+mergeArrayBuffer	examples/javascript/client.js	/^            function mergeArrayBuffer(ab1, ab2) {$/;"	f	function:function
+messageReceived	examples/javascript/client.js	/^            function messageReceived(ver, body) {$/;"	f	function:function
+minReadBufferSize	pkg/bufio/bufio.go	/^const minReadBufferSize = 16$/;"	c
+minReadBufferSize	pkg/bufio/bufio_test.go	/^const minReadBufferSize = 16$/;"	c
+minServerHeartbeat	internal/comet/server.go	/^	minServerHeartbeat = time.Minute * 10$/;"	c
+model	internal/logic/model/metadata.go	/^package model$/;"	p
+model	internal/logic/model/online.go	/^package model$/;"	p
+model	internal/logic/model/room.go	/^package model$/;"	p
+negativeReader	pkg/bufio/bufio_test.go	/^type negativeReader int$/;"	t
+newAddress	internal/job/job.go	/^func (j *Job) newAddress(insMap map[string][]*naming.Instance) error {$/;"	f
+newCometClient	internal/job/comet.go	/^func newCometClient(addr string) (comet.CometClient, error) {$/;"	f
+newConn	pkg/websocket/conn.go	/^func newConn(rwc io.ReadWriteCloser, r *bufio.Reader, w *bufio.Writer) *Conn {$/;"	f
+newKafkaPub	internal/logic/dao/dao.go	/^func newKafkaPub(c *conf.Kafka) kafka.SyncProducer {$/;"	f
+newKafkaSub	internal/job/job.go	/^func newKafkaSub(c *conf.Kafka) *cluster.Consumer {$/;"	f
+newLogicClient	internal/comet/server.go	/^func newLogicClient(c *conf.RPCClient) logic.LogicClient {$/;"	f
+newNodes	internal/logic/logic.go	/^func (l *Logic) newNodes(res naming.Resolver) {$/;"	f
+newRedis	internal/logic/dao/dao.go	/^func newRedis(c *conf.Redis) *redis.Pool {$/;"	f
+newRot13Reader	pkg/bufio/bufio_test.go	/^func newRot13Reader(r io.Reader) *rot13Reader {$/;"	f
+newScriptedReader	pkg/bufio/bufio_test.go	/^func newScriptedReader(steps ...func(p []byte) (n int, err error)) io.Reader {$/;"	f
+nodeAddrs	internal/logic/nodes.go	/^func (l *Logic) nodeAddrs(c context.Context, clientIP string) (domains, addrs []string) {$/;"	f
+nodesInstances	internal/logic/http/nodes.go	/^func (s *Server) nodesInstances(c *gin.Context) {$/;"	f
+nodesWeighted	internal/logic/http/nodes.go	/^func (s *Server) nodesWeighted(c *gin.Context) {$/;"	f
+offline	internal/comet/conf/conf.go	/^	offline   bool$/;"	v
+onlineRoom	internal/logic/http/online.go	/^func (s *Server) onlineRoom(c *gin.Context) {$/;"	f
+onlineTop	internal/logic/http/online.go	/^func (s *Server) onlineTop(c *gin.Context) {$/;"	f
+onlineTotal	internal/logic/http/online.go	/^func (s *Server) onlineTotal(c *gin.Context) {$/;"	f
+onlineproc	internal/comet/server.go	/^func (s *Server) onlineproc() {$/;"	f
+onlineproc	internal/logic/logic.go	/^func (l *Logic) onlineproc() {$/;"	f
+onlyReader	pkg/bufio/bufio_test.go	/^type onlyReader struct {$/;"	t
+onlyWriter	pkg/bufio/bufio_test.go	/^type onlyWriter struct {$/;"	t
+opAuth	benchmarks/client/main.go	/^	opAuth           = int32(7)$/;"	c
+opAuthReply	benchmarks/client/main.go	/^	opAuthReply      = int32(8)$/;"	c
+opBit	pkg/websocket/conn.go	/^	opBit   = 0x0f$/;"	c
+opHeartbeat	benchmarks/client/main.go	/^	opHeartbeat      = int32(2)$/;"	c
+opHeartbeatReply	benchmarks/client/main.go	/^	opHeartbeatReply = int32(3)$/;"	c
+parseRequestLine	pkg/websocket/request.go	/^func parseRequestLine(line string) (method, requestURI, proto string, ok bool) {$/;"	f
+pingRedis	internal/logic/dao/redis.go	/^func (d *Dao) pingRedis(c context.Context) (err error) {$/;"	f
+post	benchmarks/push_room/main.go	/^func post(addr string, i int64) {$/;"	f
+printTimer	pkg/time/timer_test.go	/^func printTimer(timer *Timer) {$/;"	f
+process	internal/job/comet.go	/^func (c *Comet) process(pushChan chan *comet.PushMsgReq, roomChan chan *comet.BroadcastRoomReq, broadcastChan chan *comet.BroadcastReq) {$/;"	f
+protocol	api/protocol/operation.go	/^package protocol$/;"	p
+protocol	api/protocol/protocol.go	/^package protocol$/;"	p
+protocol	api/protocol/protocol.pb.go	/^package protocol$/;"	p
+push	internal/job/push.go	/^func (j *Job) push(ctx context.Context, pushMsg *pb.PushMsg) (err error) {$/;"	f
+pushAll	internal/logic/http/push.go	/^func (s *Server) pushAll(c *gin.Context) {$/;"	f
+pushBodyMsg	benchmarks/push/main.go	/^type pushBodyMsg struct {$/;"	t
+pushKeys	internal/job/push.go	/^func (j *Job) pushKeys(operation int32, serverID string, subKeys []string, body []byte) (err error) {$/;"	f
+pushKeys	internal/logic/http/push.go	/^func (s *Server) pushKeys(c *gin.Context) {$/;"	f
+pushMids	internal/logic/http/push.go	/^func (s *Server) pushMids(c *gin.Context) {$/;"	f
+pushRoom	internal/logic/http/push.go	/^func (s *Server) pushRoom(c *gin.Context) {$/;"	f
+pushproc	internal/job/room.go	/^func (r *Room) pushproc(batch int, sigTime time.Duration) {$/;"	f
+pushsBodyMsg	benchmarks/multi_push/main.go	/^type pushsBodyMsg struct {$/;"	t
+put	pkg/time/timer.go	/^func (t *Timer) put(td *TimerData) {$/;"	f
+rawHeaderLen	benchmarks/client/main.go	/^	rawHeaderLen = uint16(16)$/;"	c
+reConnect	examples/javascript/client.js	/^        function reConnect() {$/;"	f
+readBytes	pkg/bufio/bufio_test.go	/^func readBytes(buf *Reader) string {$/;"	f
+readErr	pkg/bufio/bufio.go	/^func (b *Reader) readErr() error {$/;"	f
+readFrame	pkg/websocket/conn.go	/^func (c *Conn) readFrame() (fin bool, op int, payload []byte, err error) {$/;"	f
+readLine	pkg/websocket/request.go	/^func (r *Request) readLine() ([]byte, error) {$/;"	f
+readLineNewlinesTests	pkg/bufio/bufio_test.go	/^var readLineNewlinesTests = []struct {$/;"	v
+readLineResult	pkg/bufio/bufio_test.go	/^type readLineResult struct {$/;"	t
+readMIMEHeader	pkg/websocket/request.go	/^func (r *Request) readMIMEHeader() (header http.Header, err error) {$/;"	f
+readMaker	pkg/bufio/bufio_test.go	/^type readMaker struct {$/;"	t
+readMakers	pkg/bufio/bufio_test.go	/^var readMakers = []readMaker{$/;"	v
+reads	pkg/bufio/bufio_test.go	/^func reads(buf *Reader, m int) string {$/;"	f
+recoverHandler	internal/logic/http/middleware.go	/^func recoverHandler(c *gin.Context) {$/;"	f
+region	internal/comet/conf/conf.go	/^	region    string$/;"	v
+region	internal/job/conf/conf.go	/^	region    string$/;"	v
+region	internal/logic/conf/conf.go	/^	region    string$/;"	v
+register	cmd/comet/main.go	/^func register(dis *naming.Discovery, srv *comet.Server) context.CancelFunc {$/;"	f
+register	cmd/logic/main.go	/^func register(dis *naming.Discovery, srv *logic.Logic) context.CancelFunc {$/;"	f
+reset	internal/logic/balancer.go	/^func (w *weightedNode) reset() {$/;"	f
+reset	pkg/bufio/bufio.go	/^func (b *Reader) reset(buf []byte, r io.Reader) {$/;"	f
+resp	internal/logic/http/result.go	/^type resp struct {$/;"	t
+result	benchmarks/client/main.go	/^func result() {$/;"	f
+result	internal/logic/http/result.go	/^func result(c *gin.Context, data interface{}, code int) {$/;"	f
+roomReadyProto	internal/job/room.go	/^	roomReadyProto = new(protocol.Proto)$/;"	v
+roomproc	internal/comet/bucket.go	/^func (b *Bucket) roomproc(c chan *pb.BroadcastRoomReq) {$/;"	f
+rot13Reader	pkg/bufio/bufio_test.go	/^type rot13Reader struct {$/;"	t
+rsv1Bit	pkg/websocket/conn.go	/^	rsv1Bit = 1 << 6$/;"	c
+rsv2Bit	pkg/websocket/conn.go	/^	rsv2Bit = 1 << 5$/;"	c
+rsv3Bit	pkg/websocket/conn.go	/^	rsv3Bit = 1 << 4$/;"	c
+run	benchmarks/push_room/main.go	/^func run(addr string, delay time.Duration) {$/;"	f
+scriptedReader	pkg/bufio/bufio_test.go	/^type scriptedReader []func(p []byte) (n int, err error)$/;"	t
+serveTCP	internal/comet/server_tcp.go	/^func serveTCP(s *Server, conn *net.TCPConn, r int) {$/;"	f
+serveWebsocket	internal/comet/server_websocket.go	/^func serveWebsocket(s *Server, conn net.Conn, r int) {$/;"	f
+server	internal/comet/grpc/server.go	/^type server struct {$/;"	t
+server	internal/logic/grpc/server.go	/^type server struct {$/;"	t
+serverOnline	internal/logic/dao/redis.go	/^func (d *Dao) serverOnline(c context.Context, key string, hashKey string) (online *model.Online, err error) {$/;"	f
+start	pkg/time/timer.go	/^func (t *Timer) start() {$/;"	f
+startClient	benchmarks/client/main.go	/^func startClient(key int64) {$/;"	f
+startPush	benchmarks/multi_push/main.go	/^func startPush(b, e int) {$/;"	f
+startPush	benchmarks/push/main.go	/^func startPush(b, e int) {$/;"	f
+startPush	benchmarks/push_rooms/main.go	/^func startPush(b, e int, delay time.Duration) {$/;"	f
+stop	benchmarks/multi_push/main.go	/^func stop() {$/;"	f
+stop	benchmarks/push/main.go	/^func stop() {$/;"	f
+strings	pkg/strings/ints.go	/^package strings$/;"	p
+strings	pkg/strings/ints_test.go	/^package strings$/;"	p
+swap	pkg/time/timer.go	/^func (t *Timer) swap(i, j int) {$/;"	f
+t	benchmarks/multi_push/main.go	/^	t          int$/;"	v
+t	benchmarks/push/main.go	/^	t          int$/;"	v
+tcpReadProto	benchmarks/client/main.go	/^func tcpReadProto(rd *bufio.Reader, proto *Proto) (err error) {$/;"	f
+tcpWriteProto	benchmarks/client/main.go	/^func tcpWriteProto(wr *bufio.Writer, proto *Proto) (err error) {$/;"	f
+testContent	benchmarks/multi_push/main.go	/^const testContent = "{\\"test\\":1}"$/;"	c
+testContent	benchmarks/push/main.go	/^const testContent = "{\\"test\\":1}"$/;"	c
+testContent	benchmarks/push_rooms/main.go	/^const testContent = "{\\"test\\":1}"$/;"	c
+testInput	pkg/bufio/bufio_test.go	/^var testInput = []byte("012\\n345\\n678\\n9ab\\ncde\\nfgh\\nijk\\nlmn\\nopq\\nrst\\nuvw\\nxy")$/;"	v
+testInputrn	pkg/bufio/bufio_test.go	/^var testInputrn = []byte("012\\r\\n345\\r\\n678\\r\\n9ab\\r\\ncde\\r\\nfgh\\r\\nijk\\r\\nlmn\\r\\nopq\\r\\nrst\\r\\nuvw\\r\\nxy\\r\\n\\n\\r\\n")$/;"	v
+testOutput	pkg/bufio/bufio_test.go	/^var testOutput = []byte("0123456789abcdefghijklmnopqrstuvwxy")$/;"	v
+testReadLine	pkg/bufio/bufio_test.go	/^func testReadLine(t *testing.T, input []byte) {$/;"	f
+testReadLineNewlines	pkg/bufio/bufio_test.go	/^func testReadLineNewlines(t *testing.T, input string, expect []readLineResult) {$/;"	f
+testReader	pkg/bufio/bufio_test.go	/^type testReader struct {$/;"	t
+time	pkg/time/debug.go	/^package time$/;"	p
+time	pkg/time/duration.go	/^package time$/;"	p
+time	pkg/time/duration_test.go	/^package time$/;"	p
+time	pkg/time/timer.go	/^package time$/;"	p
+time	pkg/time/timer_test.go	/^package time$/;"	p
+timerFormat	pkg/time/timer.go	/^	timerFormat      = "2006-01-02 15:04:05"$/;"	c
+trim	pkg/websocket/request.go	/^func trim(s []byte) []byte {$/;"	f
+up	pkg/time/timer.go	/^func (t *Timer) up(j int) {$/;"	f
+ver	cmd/comet/main.go	/^	ver   = "2.0.0"$/;"	c
+ver	cmd/job/main.go	/^	ver = "2.0.0"$/;"	v
+ver	cmd/logic/main.go	/^	ver   = "2.0.0"$/;"	c
+watchComet	internal/job/job.go	/^func (j *Job) watchComet(c *naming.Config) {$/;"	f
+websocket	pkg/websocket/conn.go	/^package websocket$/;"	p
+websocket	pkg/websocket/request.go	/^package websocket$/;"	p
+websocket	pkg/websocket/server.go	/^package websocket$/;"	p
+websocket	pkg/websocket/server_test.go	/^package websocket$/;"	p
+weight	internal/comet/conf/conf.go	/^	weight    int64$/;"	v
+weight	internal/logic/conf/conf.go	/^	weight    int64$/;"	v
+weightedNode	internal/logic/balancer.go	/^type weightedNode struct {$/;"	t
+weightedNodes	internal/logic/balancer.go	/^func (lb *LoadBalancer) weightedNodes(region string, regionWeight float64) (nodes []*weightedNode) {$/;"	f
+whitelist	internal/comet/whitelist.go	/^var whitelist *Whitelist$/;"	v
+writeCountingDiscard	pkg/bufio/bufio_test.go	/^type writeCountingDiscard int$/;"	t
+ws.onclose	examples/javascript/client.js	/^            }$/;"	f
+ws.onmessage	examples/javascript/client.js	/^            }$/;"	f
+ws.onopen	examples/javascript/client.js	/^            ws.binaryType = 'arraybuffer';$/;"	f
+xxx_messageInfo_Backoff	api/logic/logic.pb.go	/^var xxx_messageInfo_Backoff proto.InternalMessageInfo$/;"	v
+xxx_messageInfo_BroadcastReply	api/comet/comet.pb.go	/^var xxx_messageInfo_BroadcastReply proto.InternalMessageInfo$/;"	v
+xxx_messageInfo_BroadcastReq	api/comet/comet.pb.go	/^var xxx_messageInfo_BroadcastReq proto.InternalMessageInfo$/;"	v
+xxx_messageInfo_BroadcastRoomReply	api/comet/comet.pb.go	/^var xxx_messageInfo_BroadcastRoomReply proto.InternalMessageInfo$/;"	v
+xxx_messageInfo_BroadcastRoomReq	api/comet/comet.pb.go	/^var xxx_messageInfo_BroadcastRoomReq proto.InternalMessageInfo$/;"	v
+xxx_messageInfo_ConnectReply	api/logic/logic.pb.go	/^var xxx_messageInfo_ConnectReply proto.InternalMessageInfo$/;"	v
+xxx_messageInfo_ConnectReq	api/logic/logic.pb.go	/^var xxx_messageInfo_ConnectReq proto.InternalMessageInfo$/;"	v
+xxx_messageInfo_DisconnectReply	api/logic/logic.pb.go	/^var xxx_messageInfo_DisconnectReply proto.InternalMessageInfo$/;"	v
+xxx_messageInfo_DisconnectReq	api/logic/logic.pb.go	/^var xxx_messageInfo_DisconnectReq proto.InternalMessageInfo$/;"	v
+xxx_messageInfo_HeartbeatReply	api/logic/logic.pb.go	/^var xxx_messageInfo_HeartbeatReply proto.InternalMessageInfo$/;"	v
+xxx_messageInfo_HeartbeatReq	api/logic/logic.pb.go	/^var xxx_messageInfo_HeartbeatReq proto.InternalMessageInfo$/;"	v
+xxx_messageInfo_NodesReply	api/logic/logic.pb.go	/^var xxx_messageInfo_NodesReply proto.InternalMessageInfo$/;"	v
+xxx_messageInfo_NodesReq	api/logic/logic.pb.go	/^var xxx_messageInfo_NodesReq proto.InternalMessageInfo$/;"	v
+xxx_messageInfo_OnlineReply	api/logic/logic.pb.go	/^var xxx_messageInfo_OnlineReply proto.InternalMessageInfo$/;"	v
+xxx_messageInfo_OnlineReq	api/logic/logic.pb.go	/^var xxx_messageInfo_OnlineReq proto.InternalMessageInfo$/;"	v
+xxx_messageInfo_Proto	api/protocol/protocol.pb.go	/^var xxx_messageInfo_Proto proto.InternalMessageInfo$/;"	v
+xxx_messageInfo_PushMsg	api/logic/logic.pb.go	/^var xxx_messageInfo_PushMsg proto.InternalMessageInfo$/;"	v
+xxx_messageInfo_PushMsgReply	api/comet/comet.pb.go	/^var xxx_messageInfo_PushMsgReply proto.InternalMessageInfo$/;"	v
+xxx_messageInfo_PushMsgReq	api/comet/comet.pb.go	/^var xxx_messageInfo_PushMsgReq proto.InternalMessageInfo$/;"	v
+xxx_messageInfo_ReceiveReply	api/logic/logic.pb.go	/^var xxx_messageInfo_ReceiveReply proto.InternalMessageInfo$/;"	v
+xxx_messageInfo_ReceiveReq	api/logic/logic.pb.go	/^var xxx_messageInfo_ReceiveReq proto.InternalMessageInfo$/;"	v
+xxx_messageInfo_RoomsReply	api/comet/comet.pb.go	/^var xxx_messageInfo_RoomsReply proto.InternalMessageInfo$/;"	v
+xxx_messageInfo_RoomsReq	api/comet/comet.pb.go	/^var xxx_messageInfo_RoomsReq proto.InternalMessageInfo$/;"	v
+zeroReader	pkg/bufio/bufio_test.go	/^type zeroReader struct{}$/;"	t
+zone	internal/comet/conf/conf.go	/^	zone      string$/;"	v
+zone	internal/job/conf/conf.go	/^	zone      string$/;"	v
+zone	internal/logic/conf/conf.go	/^	zone      string$/;"	v

@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+package qqqg.account;
+
+option go_package = "github.com/nanpingli/qqqg/api/account:account";
+
+service Accounter {
+  rpc CheckAuthToken (AuthToken) returns (AuthToken) {
+
+  }
+  rpc ListUser (ListOptions) returns (User) {
+  }
+}
+
+message AuthToken {
+  string message = 1;
+}
+
+message User {
+  string name = 'null';
+}
+
+
+
+
+
+

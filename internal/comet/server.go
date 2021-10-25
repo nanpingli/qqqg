@@ -60,6 +60,7 @@ type Server struct {
 
 	serverID  string
 	rpcClient logic.LogicClient
+	rpcClient account.AccounterClient
 }
 
 // NewServer returns a new Server.

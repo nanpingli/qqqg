@@ -7,9 +7,9 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/Terry-Mao/goim/api/comet"
-	"github.com/Terry-Mao/goim/internal/job/conf"
 	"github.com/bilibili/discovery/naming"
+	"github.com/nanpingli/qqqg/api/comet"
+	"github.com/nanpingli/qqqg/internal/job/conf"
 
 	log "github.com/golang/glog"
 	"google.golang.org/grpc"

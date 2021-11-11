@@ -7,12 +7,12 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Terry-Mao/goim/api/protocol"
-	"github.com/Terry-Mao/goim/internal/comet/conf"
-	"github.com/Terry-Mao/goim/pkg/bufio"
-	"github.com/Terry-Mao/goim/pkg/bytes"
-	xtime "github.com/Terry-Mao/goim/pkg/time"
 	log "github.com/golang/glog"
+	"github.com/nanpingli/qqqg/api/protocol"
+	"github.com/nanpingli/qqqg/internal/comet/conf"
+	"github.com/nanpingli/qqqg/pkg/bufio"
+	"github.com/nanpingli/qqqg/pkg/bytes"
+	xtime "github.com/nanpingli/qqqg/pkg/time"
 )
 
 const (

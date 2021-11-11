@@ -6,10 +6,10 @@ import (
 	"sync"
 	"time"
 
-	pb "github.com/Terry-Mao/goim/api/logic"
-	"github.com/Terry-Mao/goim/internal/job/conf"
 	"github.com/bilibili/discovery/naming"
 	"github.com/golang/protobuf/proto"
+	pb "github.com/nanpingli/qqqg/api/logic"
+	"github.com/nanpingli/qqqg/internal/job/conf"
 
 	cluster "github.com/bsm/sarama-cluster"
 	log "github.com/golang/glog"

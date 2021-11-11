@@ -11,13 +11,13 @@ import (
 
 	"github.com/bilibili/discovery/naming"
 	resolver "github.com/bilibili/discovery/naming/grpc"
-	"github.com/Terry-Mao/goim/internal/logic"
-	"github.com/Terry-Mao/goim/internal/logic/conf"
-	"github.com/Terry-Mao/goim/internal/logic/grpc"
-	"github.com/Terry-Mao/goim/internal/logic/http"
-	"github.com/Terry-Mao/goim/internal/logic/model"
-	"github.com/Terry-Mao/goim/pkg/ip"
 	log "github.com/golang/glog"
+	"github.com/nanpingli/qqqg/internal/logic"
+	"github.com/nanpingli/qqqg/internal/logic/conf"
+	"github.com/nanpingli/qqqg/internal/logic/grpc"
+	"github.com/nanpingli/qqqg/internal/logic/http"
+	"github.com/nanpingli/qqqg/internal/logic/model"
+	"github.com/nanpingli/qqqg/pkg/ip"
 )
 
 const (

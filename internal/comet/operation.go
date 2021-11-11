@@ -4,10 +4,10 @@ import (
 	"context"
 	"time"
 
-	"github.com/Terry-Mao/goim/api/logic"
-	"github.com/Terry-Mao/goim/api/protocol"
-	"github.com/Terry-Mao/goim/pkg/strings"
 	log "github.com/golang/glog"
+	"github.com/nanpingli/qqqg/api/logic"
+	"github.com/nanpingli/qqqg/api/protocol"
+	"github.com/nanpingli/qqqg/pkg/strings"
 
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/encoding/gzip"

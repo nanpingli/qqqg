@@ -3,8 +3,8 @@ package comet
 import (
 	"sync"
 
-	"github.com/Terry-Mao/goim/api/protocol"
-	"github.com/Terry-Mao/goim/pkg/bufio"
+	"github.com/nanpingli/qqqg/api/protocol"
+	"github.com/nanpingli/qqqg/pkg/bufio"
 )
 
 // Channel used by message pusher send msg to write goroutine.

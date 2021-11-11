@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-package goim.logic;
+package qqqg.logic;
 
-option go_package = "github.com/Terry-Mao/goim/api/logic;logic";
+option go_package = "github.com/nanpingli/qqqg/api/logic;logic";
 
-import "github.com/Terry-Mao/goim/api/protocol/protocol.proto";
+import "github.com/nanpingli/qqqg/api/protocol/protocol.proto";
 
 message PushMsg {
     enum Type {

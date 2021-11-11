@@ -1,11 +1,11 @@
 syntax = "proto3";
 
-package goim.protocol;
+package qqqg.protocol;
 
-option go_package = "github.com/Terry-Mao/goim/api/protocol;protocol";
+option go_package = "github.com/nanpingli/qqqg/api/protocol;protocol";
 
 /*
- * v1.0.0
+ * v1.0.0  ?
  * protocol
  */
 message Proto {

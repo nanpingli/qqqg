@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-package goim.comet;
+package qqqg.comet;
 
-option go_package = "github.com/Terry-Mao/goim/api/comet;comet";
+option go_package = "github.com/nanpingli/qqqg/api/comet;comet";
 
-import "github.com/Terry-Mao/goim/api/protocol/protocol.proto";
+import "github.com/nanpingli/qqqg/api/protocol/protocol.proto";
 
 message PushMsgReq {
     repeated string keys = 1;

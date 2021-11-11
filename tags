@@ -9,9 +9,7 @@ AddMapping	internal/logic/dao/redis.go	/^func (d *Dao) AddMapping(c context.Cont
 AddServerOnline	internal/logic/dao/redis.go	/^func (d *Dao) AddServerOnline(c context.Context, server string, online *model.Online) (err error) {$/;"	f
 AuthToken	benchmarks/client/main.go	/^type AuthToken struct {$/;"	t
 Available	pkg/bufio/bufio.go	/^func (b *Writer) Available() int { return len(b.buf) - b.n }$/;"	f
-Backoff	api/logic/logic.pb.go	/^type Backoff struct {$/;"	t
 Backoff	internal/logic/conf/conf.go	/^type Backoff struct {$/;"	t
-BenchmarkListUser	internal/account/service/v1/user_test.go	/^func BenchmarkListUser(b *testing.B) {$/;"	f
 BenchmarkReaderCopyNoWriteTo	pkg/bufio/bufio_test.go	/^func BenchmarkReaderCopyNoWriteTo(b *testing.B) {$/;"	f
 BenchmarkReaderCopyOptimal	pkg/bufio/bufio_test.go	/^func BenchmarkReaderCopyOptimal(b *testing.B) {$/;"	f
 BenchmarkReaderCopyUnoptimal	pkg/bufio/bufio_test.go	/^func BenchmarkReaderCopyUnoptimal(b *testing.B) {$/;"	f
@@ -23,22 +21,14 @@ BenchmarkWriterEmpty	pkg/bufio/bufio_test.go	/^func BenchmarkWriterEmpty(b *test
 BenchmarkWriterFlush	pkg/bufio/bufio_test.go	/^func BenchmarkWriterFlush(b *testing.B) {$/;"	f
 BigEndian	pkg/encoding/binary/endian.go	/^var BigEndian bigEndian$/;"	v
 BinaryMessage	pkg/websocket/conn.go	/^	BinaryMessage = 2$/;"	c
-Broadcast	api/comet/comet.pb.go	/^func (*UnimplementedCometServer) Broadcast(ctx context.Context, req *BroadcastReq) (*BroadcastReply, error) {$/;"	f
-Broadcast	api/comet/comet.pb.go	/^func (c *cometClient) Broadcast(ctx context.Context, in *BroadcastReq, opts ...grpc.CallOption) (*BroadcastReply, error) {$/;"	f
 Broadcast	internal/comet/bucket.go	/^func (b *Bucket) Broadcast(p *protocol.Proto, op int32) {$/;"	f
 Broadcast	internal/comet/grpc/server.go	/^func (s *server) Broadcast(ctx context.Context, req *pb.BroadcastReq) (*pb.BroadcastReply, error) {$/;"	f
 Broadcast	internal/job/comet.go	/^func (c *Comet) Broadcast(arg *comet.BroadcastReq) (err error) {$/;"	f
 BroadcastMsg	internal/logic/dao/kafka.go	/^func (d *Dao) BroadcastMsg(c context.Context, op, speed int32, msg []byte) (err error) {$/;"	f
-BroadcastReply	api/comet/comet.pb.go	/^type BroadcastReply struct {$/;"	t
-BroadcastReq	api/comet/comet.pb.go	/^type BroadcastReq struct {$/;"	t
-BroadcastRoom	api/comet/comet.pb.go	/^func (*UnimplementedCometServer) BroadcastRoom(ctx context.Context, req *BroadcastRoomReq) (*BroadcastRoomReply, error) {$/;"	f
-BroadcastRoom	api/comet/comet.pb.go	/^func (c *cometClient) BroadcastRoom(ctx context.Context, in *BroadcastRoomReq, opts ...grpc.CallOption) (*BroadcastRoomReply, error) {$/;"	f
 BroadcastRoom	internal/comet/bucket.go	/^func (b *Bucket) BroadcastRoom(arg *pb.BroadcastRoomReq) {$/;"	f
 BroadcastRoom	internal/comet/grpc/server.go	/^func (s *server) BroadcastRoom(ctx context.Context, req *pb.BroadcastRoomReq) (*pb.BroadcastRoomReply, error) {$/;"	f
 BroadcastRoom	internal/job/comet.go	/^func (c *Comet) BroadcastRoom(arg *comet.BroadcastRoomReq) (err error) {$/;"	f
 BroadcastRoomMsg	internal/logic/dao/kafka.go	/^func (d *Dao) BroadcastRoomMsg(c context.Context, op int32, room string, msg []byte) (err error) {$/;"	f
-BroadcastRoomReply	api/comet/comet.pb.go	/^type BroadcastRoomReply struct {$/;"	t
-BroadcastRoomReq	api/comet/comet.pb.go	/^type BroadcastRoomReq struct {$/;"	t
 Bucket	internal/comet/bucket.go	/^type Bucket struct {$/;"	t
 Bucket	internal/comet/conf/conf.go	/^type Bucket struct {$/;"	t
 Bucket	internal/comet/server.go	/^func (s *Server) Bucket(subKey string) *Bucket {$/;"	f
@@ -48,22 +38,11 @@ Buffer	pkg/bytes/writer.go	/^func (w *Writer) Buffer() []byte {$/;"	f
 Buffered	pkg/bufio/bufio.go	/^func (b *Reader) Buffered() int { return b.w - b.r }$/;"	f
 Buffered	pkg/bufio/bufio.go	/^func (b *Writer) Buffered() int { return b.n }$/;"	f
 Bytes	pkg/bytes/buffer.go	/^func (b *Buffer) Bytes() []byte {$/;"	f
-Cancel	internal/account/store/etcd/etcd.go	/^func (w *EtcdWatcher) Cancel() {$/;"	f
-ChangePassword	internal/account/service/v1/mock_service.go	/^func (m *MockUserSrv) ChangePassword(arg0 context.Context, arg1 *v1.User) error {$/;"	f
-ChangePassword	internal/account/service/v1/mock_service.go	/^func (mr *MockUserSrvMockRecorder) ChangePassword(arg0, arg1 interface{}) *gomock.Call {$/;"	f
-ChangePassword	internal/account/service/v1/user.go	/^func (u *userService) ChangePassword(ctx context.Context, user *v1.User) error {$/;"	f
 ChangeRoom	internal/comet/bucket.go	/^func (b *Bucket) ChangeRoom(nrid string, ch *Channel) (err error) {$/;"	f
 Channel	internal/comet/bucket.go	/^func (b *Bucket) Channel(key string) (ch *Channel) {$/;"	f
 Channel	internal/comet/channel.go	/^type Channel struct {$/;"	t
 ChannelCount	internal/comet/bucket.go	/^func (b *Bucket) ChannelCount() int {$/;"	f
 Client	examples/javascript/client.js	/^    var Client = function(options) {$/;"	c
-Client	internal/account/store/etcd/etcd.go	/^func (ds *datastore) Client() *clientv3.Client {$/;"	f
-Client	internal/account/store/store.go	/^func Client() Factory {$/;"	f
-Close	internal/account/store/etcd/etcd.go	/^func (ds *datastore) Close() error {$/;"	f
-Close	internal/account/store/fake/fake.go	/^func (ds *datastore) Close() error {$/;"	f
-Close	internal/account/store/mock_store.go	/^func (m *MockFactory) Close() error {$/;"	f
-Close	internal/account/store/mock_store.go	/^func (mr *MockFactoryMockRecorder) Close() *gomock.Call {$/;"	f
-Close	internal/account/store/mysql/mysql.go	/^func (ds *datastore) Close() error {$/;"	f
 Close	internal/comet/channel.go	/^func (c *Channel) Close() {$/;"	f
 Close	internal/comet/room.go	/^func (r *Room) Close() {$/;"	f
 Close	internal/comet/server.go	/^func (s *Server) Close() (err error) {$/;"	f
@@ -76,8 +55,6 @@ Close	pkg/websocket/conn.go	/^func (c *Conn) Close() error {$/;"	f
 CloseMessage	pkg/websocket/conn.go	/^	CloseMessage = 8$/;"	c
 Comet	internal/job/comet.go	/^type Comet struct {$/;"	t
 Comet	internal/job/conf/conf.go	/^type Comet struct {$/;"	t
-CometClient	api/comet/comet.pb.go	/^type CometClient interface {$/;"	t
-CometServer	api/comet/comet.pb.go	/^type CometServer interface {$/;"	t
 Conf	internal/comet/conf/conf.go	/^	Conf *Config$/;"	v
 Conf	internal/job/conf/conf.go	/^	Conf *Config$/;"	v
 Conf	internal/logic/conf/conf.go	/^	Conf *Config$/;"	v
@@ -85,39 +62,11 @@ Config	internal/comet/conf/conf.go	/^type Config struct {$/;"	t
 Config	internal/job/conf/conf.go	/^type Config struct {$/;"	t
 Config	internal/logic/conf/conf.go	/^type Config struct {$/;"	t
 Conn	pkg/websocket/conn.go	/^type Conn struct {$/;"	t
-Connect	api/logic/logic.pb.go	/^func (*UnimplementedLogicServer) Connect(ctx context.Context, req *ConnectReq) (*ConnectReply, error) {$/;"	f
-Connect	api/logic/logic.pb.go	/^func (c *logicClient) Connect(ctx context.Context, in *ConnectReq, opts ...grpc.CallOption) (*ConnectReply, error) {$/;"	f
 Connect	internal/comet/operation.go	/^func (s *Server) Connect(c context.Context, p *protocol.Proto, cookie string) (mid int64, key, rid string, accepts []int32, heartbeat time.Duration, err error) {$/;"	f
 Connect	internal/logic/conn.go	/^func (l *Logic) Connect(c context.Context, server, cookie string, token []byte) (mid int64, key, roomID string, accepts []int32, hb int64, err error) {$/;"	f
 Connect	internal/logic/grpc/server.go	/^func (s *server) Connect(ctx context.Context, req *pb.ConnectReq) (*pb.ConnectReply, error) {$/;"	f
-ConnectReply	api/logic/logic.pb.go	/^type ConnectReply struct {$/;"	t
-ConnectReq	api/logic/logic.pb.go	/^type ConnectReq struct {$/;"	t
 Consume	internal/job/job.go	/^func (j *Job) Consume() {$/;"	f
 Contains	internal/comet/whitelist.go	/^func (w *Whitelist) Contains(mid int64) (ok bool) {$/;"	f
-Create	internal/account/service/v1/mock_service.go	/^func (m *MockPolicySrv) Create(arg0 context.Context, arg1 *v1.Policy, arg2 v10.CreateOptions) error {$/;"	f
-Create	internal/account/service/v1/mock_service.go	/^func (m *MockSecretSrv) Create(arg0 context.Context, arg1 *v1.Secret, arg2 v10.CreateOptions) error {$/;"	f
-Create	internal/account/service/v1/mock_service.go	/^func (m *MockUserSrv) Create(arg0 context.Context, arg1 *v1.User, arg2 v10.CreateOptions) error {$/;"	f
-Create	internal/account/service/v1/mock_service.go	/^func (mr *MockPolicySrvMockRecorder) Create(arg0, arg1, arg2 interface{}) *gomock.Call {$/;"	f
-Create	internal/account/service/v1/mock_service.go	/^func (mr *MockSecretSrvMockRecorder) Create(arg0, arg1, arg2 interface{}) *gomock.Call {$/;"	f
-Create	internal/account/service/v1/mock_service.go	/^func (mr *MockUserSrvMockRecorder) Create(arg0, arg1, arg2 interface{}) *gomock.Call {$/;"	f
-Create	internal/account/service/v1/policy.go	/^func (s *policyService) Create(ctx context.Context, policy *v1.Policy, opts metav1.CreateOptions) error {$/;"	f
-Create	internal/account/service/v1/secret.go	/^func (s *secretService) Create(ctx context.Context, secret *v1.Secret, opts metav1.CreateOptions) error {$/;"	f
-Create	internal/account/service/v1/user.go	/^func (u *userService) Create(ctx context.Context, user *v1.User, opts metav1.CreateOptions) error {$/;"	f
-Create	internal/account/store/etcd/policy.go	/^func (p *policies) Create(ctx context.Context, policy *v1.Policy, opts metav1.CreateOptions) error {$/;"	f
-Create	internal/account/store/etcd/secret.go	/^func (s *secrets) Create(ctx context.Context, secret *v1.Secret, opts metav1.CreateOptions) error {$/;"	f
-Create	internal/account/store/etcd/user.go	/^func (u *users) Create(ctx context.Context, user *v1.User, opts metav1.CreateOptions) error {$/;"	f
-Create	internal/account/store/fake/policy.go	/^func (p *policies) Create(ctx context.Context, policy *v1.Policy, opts metav1.CreateOptions) error {$/;"	f
-Create	internal/account/store/fake/secret.go	/^func (s *secrets) Create(ctx context.Context, secret *v1.Secret, opts metav1.CreateOptions) error {$/;"	f
-Create	internal/account/store/fake/user.go	/^func (u *users) Create(ctx context.Context, user *v1.User, opts metav1.CreateOptions) error {$/;"	f
-Create	internal/account/store/mock_store.go	/^func (m *MockPolicyStore) Create(arg0 context.Context, arg1 *v1.Policy, arg2 v10.CreateOptions) error {$/;"	f
-Create	internal/account/store/mock_store.go	/^func (m *MockSecretStore) Create(arg0 context.Context, arg1 *v1.Secret, arg2 v10.CreateOptions) error {$/;"	f
-Create	internal/account/store/mock_store.go	/^func (m *MockUserStore) Create(arg0 context.Context, arg1 *v1.User, arg2 v10.CreateOptions) error {$/;"	f
-Create	internal/account/store/mock_store.go	/^func (mr *MockPolicyStoreMockRecorder) Create(arg0, arg1, arg2 interface{}) *gomock.Call {$/;"	f
-Create	internal/account/store/mock_store.go	/^func (mr *MockSecretStoreMockRecorder) Create(arg0, arg1, arg2 interface{}) *gomock.Call {$/;"	f
-Create	internal/account/store/mock_store.go	/^func (mr *MockUserStoreMockRecorder) Create(arg0, arg1, arg2 interface{}) *gomock.Call {$/;"	f
-Create	internal/account/store/mysql/policy.go	/^func (p *policies) Create(ctx context.Context, policy *v1.Policy, opts metav1.CreateOptions) error {$/;"	f
-Create	internal/account/store/mysql/secret.go	/^func (s *secrets) Create(ctx context.Context, secret *v1.Secret, opts metav1.CreateOptions) error {$/;"	f
-Create	internal/account/store/mysql/user.go	/^func (u *users) Create(ctx context.Context, user *v1.User, opts metav1.CreateOptions) error {$/;"	f
 Dao	internal/logic/dao/dao.go	/^type Dao struct {$/;"	t
 Debug	pkg/time/debug.go	/^	Debug = false$/;"	c
 DecodeRoomKey	internal/logic/model/room.go	/^func DecodeRoomKey(key string) (string, string, error) {$/;"	f
@@ -131,103 +80,13 @@ DelMapping	internal/logic/dao/redis.go	/^func (d *Dao) DelMapping(c context.Cont
 DelRoom	internal/comet/bucket.go	/^func (b *Bucket) DelRoom(room *Room) {$/;"	f
 DelServerOnline	internal/logic/dao/redis.go	/^func (d *Dao) DelServerOnline(c context.Context, server string) (err error) {$/;"	f
 Delay	pkg/time/timer.go	/^func (td *TimerData) Delay() itime.Duration {$/;"	f
-Delete	internal/account/service/v1/mock_service.go	/^func (m *MockPolicySrv) Delete(arg0 context.Context, arg1, arg2 string, arg3 v10.DeleteOptions) error {$/;"	f
-Delete	internal/account/service/v1/mock_service.go	/^func (m *MockSecretSrv) Delete(arg0 context.Context, arg1, arg2 string, arg3 v10.DeleteOptions) error {$/;"	f
-Delete	internal/account/service/v1/mock_service.go	/^func (m *MockUserSrv) Delete(arg0 context.Context, arg1 string, arg2 v10.DeleteOptions) error {$/;"	f
-Delete	internal/account/service/v1/mock_service.go	/^func (mr *MockPolicySrvMockRecorder) Delete(arg0, arg1, arg2, arg3 interface{}) *gomock.Call {$/;"	f
-Delete	internal/account/service/v1/mock_service.go	/^func (mr *MockSecretSrvMockRecorder) Delete(arg0, arg1, arg2, arg3 interface{}) *gomock.Call {$/;"	f
-Delete	internal/account/service/v1/mock_service.go	/^func (mr *MockUserSrvMockRecorder) Delete(arg0, arg1, arg2 interface{}) *gomock.Call {$/;"	f
-Delete	internal/account/service/v1/policy.go	/^func (s *policyService) Delete(ctx context.Context, username, name string, opts metav1.DeleteOptions) error {$/;"	f
-Delete	internal/account/service/v1/secret.go	/^func (s *secretService) Delete(ctx context.Context, username, secretID string, opts metav1.DeleteOptions) error {$/;"	f
-Delete	internal/account/service/v1/user.go	/^func (u *userService) Delete(ctx context.Context, username string, opts metav1.DeleteOptions) error {$/;"	f
-Delete	internal/account/store/etcd/etcd.go	/^func (ds *datastore) Delete(ctx context.Context, key string) ([]byte, error) {$/;"	f
-Delete	internal/account/store/etcd/policy.go	/^func (p *policies) Delete(ctx context.Context, username, name string, opts metav1.DeleteOptions) error {$/;"	f
-Delete	internal/account/store/etcd/secret.go	/^func (s *secrets) Delete(ctx context.Context, username, secretID string, opts metav1.DeleteOptions) error {$/;"	f
-Delete	internal/account/store/etcd/user.go	/^func (u *users) Delete(ctx context.Context, username string, opts metav1.DeleteOptions) error {$/;"	f
-Delete	internal/account/store/fake/policy.go	/^func (p *policies) Delete(ctx context.Context, username, name string, opts metav1.DeleteOptions) error {$/;"	f
-Delete	internal/account/store/fake/secret.go	/^func (s *secrets) Delete(ctx context.Context, username, name string, opts metav1.DeleteOptions) error {$/;"	f
-Delete	internal/account/store/fake/user.go	/^func (u *users) Delete(ctx context.Context, username string, opts metav1.DeleteOptions) error {$/;"	f
-Delete	internal/account/store/mock_store.go	/^func (m *MockPolicyStore) Delete(arg0 context.Context, arg1, arg2 string, arg3 v10.DeleteOptions) error {$/;"	f
-Delete	internal/account/store/mock_store.go	/^func (m *MockSecretStore) Delete(arg0 context.Context, arg1, arg2 string, arg3 v10.DeleteOptions) error {$/;"	f
-Delete	internal/account/store/mock_store.go	/^func (m *MockUserStore) Delete(arg0 context.Context, arg1 string, arg2 v10.DeleteOptions) error {$/;"	f
-Delete	internal/account/store/mock_store.go	/^func (mr *MockPolicyStoreMockRecorder) Delete(arg0, arg1, arg2, arg3 interface{}) *gomock.Call {$/;"	f
-Delete	internal/account/store/mock_store.go	/^func (mr *MockSecretStoreMockRecorder) Delete(arg0, arg1, arg2, arg3 interface{}) *gomock.Call {$/;"	f
-Delete	internal/account/store/mock_store.go	/^func (mr *MockUserStoreMockRecorder) Delete(arg0, arg1, arg2 interface{}) *gomock.Call {$/;"	f
-Delete	internal/account/store/mysql/policy.go	/^func (p *policies) Delete(ctx context.Context, username, name string, opts metav1.DeleteOptions) error {$/;"	f
-Delete	internal/account/store/mysql/secret.go	/^func (s *secrets) Delete(ctx context.Context, username, name string, opts metav1.DeleteOptions) error {$/;"	f
-Delete	internal/account/store/mysql/user.go	/^func (u *users) Delete(ctx context.Context, username string, opts metav1.DeleteOptions) error {$/;"	f
-DeleteByUser	internal/account/store/etcd/policy.go	/^func (p *policies) DeleteByUser(ctx context.Context, username string, opts metav1.DeleteOptions) error {$/;"	f
-DeleteByUser	internal/account/store/fake/policy.go	/^func (p *policies) DeleteByUser(ctx context.Context, username string, opts metav1.DeleteOptions) error {$/;"	f
-DeleteByUser	internal/account/store/mysql/policy.go	/^func (p *policies) DeleteByUser(ctx context.Context, username string, opts metav1.DeleteOptions) error {$/;"	f
-DeleteCollection	internal/account/service/v1/mock_service.go	/^func (m *MockPolicySrv) DeleteCollection(arg0 context.Context, arg1 string, arg2 []string, arg3 v10.DeleteOptions) error {$/;"	f
-DeleteCollection	internal/account/service/v1/mock_service.go	/^func (m *MockSecretSrv) DeleteCollection(arg0 context.Context, arg1 string, arg2 []string, arg3 v10.DeleteOptions) error {$/;"	f
-DeleteCollection	internal/account/service/v1/mock_service.go	/^func (m *MockUserSrv) DeleteCollection(arg0 context.Context, arg1 []string, arg2 v10.DeleteOptions) error {$/;"	f
-DeleteCollection	internal/account/service/v1/mock_service.go	/^func (mr *MockPolicySrvMockRecorder) DeleteCollection(arg0, arg1, arg2, arg3 interface{}) *gomock.Call {$/;"	f
-DeleteCollection	internal/account/service/v1/mock_service.go	/^func (mr *MockSecretSrvMockRecorder) DeleteCollection(arg0, arg1, arg2, arg3 interface{}) *gomock.Call {$/;"	f
-DeleteCollection	internal/account/service/v1/mock_service.go	/^func (mr *MockUserSrvMockRecorder) DeleteCollection(arg0, arg1, arg2 interface{}) *gomock.Call {$/;"	f
-DeleteCollection	internal/account/service/v1/policy.go	/^func (s *policyService) DeleteCollection($/;"	f
-DeleteCollection	internal/account/service/v1/secret.go	/^func (s *secretService) DeleteCollection($/;"	f
-DeleteCollection	internal/account/service/v1/user.go	/^func (u *userService) DeleteCollection(ctx context.Context, usernames []string, opts metav1.DeleteOptions) error {$/;"	f
-DeleteCollection	internal/account/store/etcd/policy.go	/^func (p *policies) DeleteCollection($/;"	f
-DeleteCollection	internal/account/store/etcd/secret.go	/^func (s *secrets) DeleteCollection($/;"	f
-DeleteCollection	internal/account/store/etcd/user.go	/^func (u *users) DeleteCollection(ctx context.Context, usernames []string, opts metav1.DeleteOptions) error {$/;"	f
-DeleteCollection	internal/account/store/fake/policy.go	/^func (p *policies) DeleteCollection($/;"	f
-DeleteCollection	internal/account/store/fake/secret.go	/^func (s *secrets) DeleteCollection($/;"	f
-DeleteCollection	internal/account/store/fake/user.go	/^func (u *users) DeleteCollection(ctx context.Context, usernames []string, opts metav1.DeleteOptions) error {$/;"	f
-DeleteCollection	internal/account/store/mock_store.go	/^func (m *MockPolicyStore) DeleteCollection(arg0 context.Context, arg1 string, arg2 []string, arg3 v10.DeleteOptions) error {$/;"	f
-DeleteCollection	internal/account/store/mock_store.go	/^func (m *MockSecretStore) DeleteCollection(arg0 context.Context, arg1 string, arg2 []string, arg3 v10.DeleteOptions) error {$/;"	f
-DeleteCollection	internal/account/store/mock_store.go	/^func (m *MockUserStore) DeleteCollection(arg0 context.Context, arg1 []string, arg2 v10.DeleteOptions) error {$/;"	f
-DeleteCollection	internal/account/store/mock_store.go	/^func (mr *MockPolicyStoreMockRecorder) DeleteCollection(arg0, arg1, arg2, arg3 interface{}) *gomock.Call {$/;"	f
-DeleteCollection	internal/account/store/mock_store.go	/^func (mr *MockSecretStoreMockRecorder) DeleteCollection(arg0, arg1, arg2, arg3 interface{}) *gomock.Call {$/;"	f
-DeleteCollection	internal/account/store/mock_store.go	/^func (mr *MockUserStoreMockRecorder) DeleteCollection(arg0, arg1, arg2 interface{}) *gomock.Call {$/;"	f
-DeleteCollection	internal/account/store/mysql/policy.go	/^func (p *policies) DeleteCollection($/;"	f
-DeleteCollection	internal/account/store/mysql/secret.go	/^func (s *secrets) DeleteCollection($/;"	f
-DeleteCollection	internal/account/store/mysql/user.go	/^func (u *users) DeleteCollection(ctx context.Context, usernames []string, opts metav1.DeleteOptions) error {$/;"	f
-DeleteCollectionByUser	internal/account/store/etcd/policy.go	/^func (p *policies) DeleteCollectionByUser(ctx context.Context, usernames []string, opts metav1.DeleteOptions) error {$/;"	f
-DeleteCollectionByUser	internal/account/store/fake/policy.go	/^func (p *policies) DeleteCollectionByUser(ctx context.Context, usernames []string, opts metav1.DeleteOptions) error {$/;"	f
-DeleteCollectionByUser	internal/account/store/mysql/policy.go	/^func (p *policies) DeleteCollectionByUser(ctx context.Context, usernames []string, opts metav1.DeleteOptions) error {$/;"	f
-Descriptor	api/comet/comet.pb.go	/^func (*BroadcastReply) Descriptor() ([]byte, []int) {$/;"	f
-Descriptor	api/comet/comet.pb.go	/^func (*BroadcastReq) Descriptor() ([]byte, []int) {$/;"	f
-Descriptor	api/comet/comet.pb.go	/^func (*BroadcastRoomReply) Descriptor() ([]byte, []int) {$/;"	f
-Descriptor	api/comet/comet.pb.go	/^func (*BroadcastRoomReq) Descriptor() ([]byte, []int) {$/;"	f
-Descriptor	api/comet/comet.pb.go	/^func (*PushMsgReply) Descriptor() ([]byte, []int) {$/;"	f
-Descriptor	api/comet/comet.pb.go	/^func (*PushMsgReq) Descriptor() ([]byte, []int) {$/;"	f
-Descriptor	api/comet/comet.pb.go	/^func (*RoomsReply) Descriptor() ([]byte, []int) {$/;"	f
-Descriptor	api/comet/comet.pb.go	/^func (*RoomsReq) Descriptor() ([]byte, []int) {$/;"	f
-Descriptor	api/logic/logic.pb.go	/^func (*Backoff) Descriptor() ([]byte, []int) {$/;"	f
-Descriptor	api/logic/logic.pb.go	/^func (*ConnectReply) Descriptor() ([]byte, []int) {$/;"	f
-Descriptor	api/logic/logic.pb.go	/^func (*ConnectReq) Descriptor() ([]byte, []int) {$/;"	f
-Descriptor	api/logic/logic.pb.go	/^func (*DisconnectReply) Descriptor() ([]byte, []int) {$/;"	f
-Descriptor	api/logic/logic.pb.go	/^func (*DisconnectReq) Descriptor() ([]byte, []int) {$/;"	f
-Descriptor	api/logic/logic.pb.go	/^func (*HeartbeatReply) Descriptor() ([]byte, []int) {$/;"	f
-Descriptor	api/logic/logic.pb.go	/^func (*HeartbeatReq) Descriptor() ([]byte, []int) {$/;"	f
-Descriptor	api/logic/logic.pb.go	/^func (*NodesReply) Descriptor() ([]byte, []int) {$/;"	f
-Descriptor	api/logic/logic.pb.go	/^func (*NodesReq) Descriptor() ([]byte, []int) {$/;"	f
-Descriptor	api/logic/logic.pb.go	/^func (*OnlineReply) Descriptor() ([]byte, []int) {$/;"	f
-Descriptor	api/logic/logic.pb.go	/^func (*OnlineReq) Descriptor() ([]byte, []int) {$/;"	f
-Descriptor	api/logic/logic.pb.go	/^func (*PushMsg) Descriptor() ([]byte, []int) {$/;"	f
-Descriptor	api/logic/logic.pb.go	/^func (*ReceiveReply) Descriptor() ([]byte, []int) {$/;"	f
-Descriptor	api/logic/logic.pb.go	/^func (*ReceiveReq) Descriptor() ([]byte, []int) {$/;"	f
 Descriptor	api/protocol/protocol.pb.go	/^func (*Proto) Descriptor() ([]byte, []int) {$/;"	f
 Discard	pkg/bufio/bufio.go	/^func (b *Reader) Discard(n int) (discarded int, err error) {$/;"	f
-Disconnect	api/logic/logic.pb.go	/^func (*UnimplementedLogicServer) Disconnect(ctx context.Context, req *DisconnectReq) (*DisconnectReply, error) {$/;"	f
-Disconnect	api/logic/logic.pb.go	/^func (c *logicClient) Disconnect(ctx context.Context, in *DisconnectReq, opts ...grpc.CallOption) (*DisconnectReply, error) {$/;"	f
 Disconnect	internal/comet/operation.go	/^func (s *Server) Disconnect(c context.Context, mid int64, key string) (err error) {$/;"	f
 Disconnect	internal/logic/conn.go	/^func (l *Logic) Disconnect(c context.Context, mid int64, key, server string) (has bool, err error) {$/;"	f
 Disconnect	internal/logic/grpc/server.go	/^func (s *server) Disconnect(ctx context.Context, req *pb.DisconnectReq) (*pb.DisconnectReply, error) {$/;"	f
-DisconnectReply	api/logic/logic.pb.go	/^type DisconnectReply struct {$/;"	t
-DisconnectReq	api/logic/logic.pb.go	/^type DisconnectReq struct {$/;"	t
 Duration	pkg/time/duration.go	/^type Duration xtime.Duration$/;"	t
-EXPECT	internal/account/service/v1/mock_service.go	/^func (m *MockPolicySrv) EXPECT() *MockPolicySrvMockRecorder {$/;"	f
-EXPECT	internal/account/service/v1/mock_service.go	/^func (m *MockSecretSrv) EXPECT() *MockSecretSrvMockRecorder {$/;"	f
-EXPECT	internal/account/service/v1/mock_service.go	/^func (m *MockService) EXPECT() *MockServiceMockRecorder {$/;"	f
-EXPECT	internal/account/service/v1/mock_service.go	/^func (m *MockUserSrv) EXPECT() *MockUserSrvMockRecorder {$/;"	f
-EXPECT	internal/account/store/mock_store.go	/^func (m *MockFactory) EXPECT() *MockFactoryMockRecorder {$/;"	f
-EXPECT	internal/account/store/mock_store.go	/^func (m *MockPolicyStore) EXPECT() *MockPolicyStoreMockRecorder {$/;"	f
-EXPECT	internal/account/store/mock_store.go	/^func (m *MockSecretStore) EXPECT() *MockSecretStoreMockRecorder {$/;"	f
-EXPECT	internal/account/store/mock_store.go	/^func (m *MockUserStore) EXPECT() *MockUserStoreMockRecorder {$/;"	f
 EncodeRoomKey	internal/logic/model/room.go	/^func EncodeRoomKey(typ string, room string) string {$/;"	f
-EnumDescriptor	api/logic/logic.pb.go	/^func (PushMsg_Type) EnumDescriptor() ([]byte, []int) {$/;"	f
 Env	internal/comet/conf/conf.go	/^type Env struct {$/;"	t
 Env	internal/job/conf/conf.go	/^type Env struct {$/;"	t
 Env	internal/logic/conf/conf.go	/^type Env struct {$/;"	t
@@ -261,115 +120,24 @@ ErrRoomFull	internal/job/room.go	/^	ErrRoomFull = errors.New("room proto chan fu
 ErrTimerEmpty	internal/comet/errors/errors.go	/^	ErrTimerEmpty  = errors.New("timer empty")$/;"	v
 ErrTimerFull	internal/comet/errors/errors.go	/^	ErrTimerFull   = errors.New("timer full")$/;"	v
 ErrTimerNoItem	internal/comet/errors/errors.go	/^	ErrTimerNoItem = errors.New("timer item not exist")$/;"	v
-EtcdCreateEventFunc	internal/account/store/etcd/etcd.go	/^type EtcdCreateEventFunc func(ctx context.Context, key, value []byte)$/;"	t
-EtcdDeleteEventFunc	internal/account/store/etcd/etcd.go	/^type EtcdDeleteEventFunc func(ctx context.Context, key []byte)$/;"	t
-EtcdKeyValue	internal/account/store/etcd/etcd.go	/^type EtcdKeyValue struct {$/;"	t
-EtcdModifyEventFunc	internal/account/store/etcd/etcd.go	/^type EtcdModifyEventFunc func(ctx context.Context, key, oldvalue, value []byte)$/;"	t
-EtcdWatcher	internal/account/store/etcd/etcd.go	/^type EtcdWatcher struct {$/;"	t
 ExpireMapping	internal/logic/dao/redis.go	/^func (d *Dao) ExpireMapping(c context.Context, mid int64, key string) (has bool, err error) {$/;"	f
 ExpireString	pkg/time/timer.go	/^func (td *TimerData) ExpireString() string {$/;"	f
-Factory	internal/account/store/store.go	/^type Factory interface {$/;"	t
-FakePolicies	internal/account/store/fake/fake.go	/^func FakePolicies(count int) []*v1.Policy {$/;"	f
-FakeSecrets	internal/account/store/fake/fake.go	/^func FakeSecrets(count int) []*v1.Secret {$/;"	f
-FakeUsers	internal/account/store/fake/fake.go	/^func FakeUsers(count int) []*v1.User {$/;"	f
 Flush	pkg/bufio/bufio.go	/^func (b *Writer) Flush() error {$/;"	f
 Flush	pkg/websocket/conn.go	/^func (c *Conn) Flush() error {$/;"	f
 GOBUILD	Makefile	/^GOBUILD=$(GOCMD) build$/;"	m
 GOCMD	Makefile	/^GOCMD=GO111MODULE=on go$/;"	m
 GOTEST	Makefile	/^GOTEST=$(GOCMD) test$/;"	m
-Get	internal/account/service/v1/mock_service.go	/^func (m *MockPolicySrv) Get(arg0 context.Context, arg1, arg2 string, arg3 v10.GetOptions) (*v1.Policy, error) {$/;"	f
-Get	internal/account/service/v1/mock_service.go	/^func (m *MockSecretSrv) Get(arg0 context.Context, arg1, arg2 string, arg3 v10.GetOptions) (*v1.Secret, error) {$/;"	f
-Get	internal/account/service/v1/mock_service.go	/^func (m *MockUserSrv) Get(arg0 context.Context, arg1 string, arg2 v10.GetOptions) (*v1.User, error) {$/;"	f
-Get	internal/account/service/v1/mock_service.go	/^func (mr *MockPolicySrvMockRecorder) Get(arg0, arg1, arg2, arg3 interface{}) *gomock.Call {$/;"	f
-Get	internal/account/service/v1/mock_service.go	/^func (mr *MockSecretSrvMockRecorder) Get(arg0, arg1, arg2, arg3 interface{}) *gomock.Call {$/;"	f
-Get	internal/account/service/v1/mock_service.go	/^func (mr *MockUserSrvMockRecorder) Get(arg0, arg1, arg2 interface{}) *gomock.Call {$/;"	f
-Get	internal/account/service/v1/policy.go	/^func (s *policyService) Get(ctx context.Context, username, name string, opts metav1.GetOptions) (*v1.Policy, error) {$/;"	f
-Get	internal/account/service/v1/secret.go	/^func (s *secretService) Get($/;"	f
-Get	internal/account/service/v1/user.go	/^func (u *userService) Get(ctx context.Context, username string, opts metav1.GetOptions) (*v1.User, error) {$/;"	f
-Get	internal/account/store/etcd/etcd.go	/^func (ds *datastore) Get(ctx context.Context, key string) ([]byte, error) {$/;"	f
-Get	internal/account/store/etcd/policy.go	/^func (p *policies) Get(ctx context.Context, username, name string, opts metav1.GetOptions) (*v1.Policy, error) {$/;"	f
-Get	internal/account/store/etcd/secret.go	/^func (s *secrets) Get(ctx context.Context, username, secretID string, opts metav1.GetOptions) (*v1.Secret, error) {$/;"	f
-Get	internal/account/store/etcd/user.go	/^func (u *users) Get(ctx context.Context, username string, opts metav1.GetOptions) (*v1.User, error) {$/;"	f
-Get	internal/account/store/fake/policy.go	/^func (p *policies) Get(ctx context.Context, username, name string, opts metav1.GetOptions) (*v1.Policy, error) {$/;"	f
-Get	internal/account/store/fake/secret.go	/^func (s *secrets) Get(ctx context.Context, username, name string, opts metav1.GetOptions) (*v1.Secret, error) {$/;"	f
-Get	internal/account/store/fake/user.go	/^func (u *users) Get(ctx context.Context, username string, opts metav1.GetOptions) (*v1.User, error) {$/;"	f
-Get	internal/account/store/mock_store.go	/^func (m *MockPolicyStore) Get(arg0 context.Context, arg1, arg2 string, arg3 v10.GetOptions) (*v1.Policy, error) {$/;"	f
-Get	internal/account/store/mock_store.go	/^func (m *MockSecretStore) Get(arg0 context.Context, arg1, arg2 string, arg3 v10.GetOptions) (*v1.Secret, error) {$/;"	f
-Get	internal/account/store/mock_store.go	/^func (m *MockUserStore) Get(arg0 context.Context, arg1 string, arg2 v10.GetOptions) (*v1.User, error) {$/;"	f
-Get	internal/account/store/mock_store.go	/^func (mr *MockPolicyStoreMockRecorder) Get(arg0, arg1, arg2, arg3 interface{}) *gomock.Call {$/;"	f
-Get	internal/account/store/mock_store.go	/^func (mr *MockSecretStoreMockRecorder) Get(arg0, arg1, arg2, arg3 interface{}) *gomock.Call {$/;"	f
-Get	internal/account/store/mock_store.go	/^func (mr *MockUserStoreMockRecorder) Get(arg0, arg1, arg2 interface{}) *gomock.Call {$/;"	f
-Get	internal/account/store/mysql/policy.go	/^func (p *policies) Get(ctx context.Context, username, name string, opts metav1.GetOptions) (*v1.Policy, error) {$/;"	f
-Get	internal/account/store/mysql/secret.go	/^func (s *secrets) Get(ctx context.Context, username, name string, opts metav1.GetOptions) (*v1.Secret, error) {$/;"	f
-Get	internal/account/store/mysql/user.go	/^func (u *users) Get(ctx context.Context, username string, opts metav1.GetOptions) (*v1.User, error) {$/;"	f
 Get	internal/comet/ring.go	/^func (r *Ring) Get() (proto *protocol.Proto, err error) {$/;"	f
 Get	pkg/bytes/buffer.go	/^func (p *Pool) Get() (b *Buffer) {$/;"	f
-GetAccepts	api/logic/logic.pb.go	/^func (m *ConnectReply) GetAccepts() []int32 {$/;"	f
 GetAdv	internal/comet/ring.go	/^func (r *Ring) GetAdv() {$/;"	f
-GetAllRoomCount	api/logic/logic.pb.go	/^func (m *OnlineReply) GetAllRoomCount() map[string]int32 {$/;"	f
-GetBackoff	api/logic/logic.pb.go	/^func (m *NodesReply) GetBackoff() *Backoff {$/;"	f
-GetBaseDelay	api/logic/logic.pb.go	/^func (m *Backoff) GetBaseDelay() int32 {$/;"	f
 GetBody	api/protocol/protocol.pb.go	/^func (m *Proto) GetBody() []byte {$/;"	f
-GetClientIP	api/logic/logic.pb.go	/^func (m *NodesReq) GetClientIP() string {$/;"	f
-GetCookie	api/logic/logic.pb.go	/^func (m *ConnectReq) GetCookie() string {$/;"	f
-GetDomain	api/logic/logic.pb.go	/^func (m *NodesReply) GetDomain() string {$/;"	f
-GetEtcdFactoryOr	internal/account/store/etcd/etcd.go	/^func GetEtcdFactoryOr(opt *genericoptions.EtcdOptions, onKeepaliveFailure func()) (store.Factory, error) {$/;"	f
-GetFactor	api/logic/logic.pb.go	/^func (m *Backoff) GetFactor() float32 {$/;"	f
-GetFakeFactoryOr	internal/account/store/fake/fake.go	/^func GetFakeFactoryOr() (store.Factory, error) {$/;"	f
-GetHas	api/logic/logic.pb.go	/^func (m *DisconnectReply) GetHas() bool {$/;"	f
-GetHeartbeat	api/logic/logic.pb.go	/^func (m *ConnectReply) GetHeartbeat() int64 {$/;"	f
-GetHeartbeat	api/logic/logic.pb.go	/^func (m *NodesReply) GetHeartbeat() int32 {$/;"	f
-GetHeartbeatMax	api/logic/logic.pb.go	/^func (m *NodesReply) GetHeartbeatMax() int32 {$/;"	f
-GetJitter	api/logic/logic.pb.go	/^func (m *Backoff) GetJitter() float32 {$/;"	f
-GetKey	api/logic/logic.pb.go	/^func (m *ConnectReply) GetKey() string {$/;"	f
-GetKey	api/logic/logic.pb.go	/^func (m *DisconnectReq) GetKey() string {$/;"	f
-GetKey	api/logic/logic.pb.go	/^func (m *HeartbeatReq) GetKey() string {$/;"	f
-GetKeys	api/comet/comet.pb.go	/^func (m *PushMsgReq) GetKeys() []string {$/;"	f
-GetKeys	api/logic/logic.pb.go	/^func (m *PushMsg) GetKeys() []string {$/;"	f
-GetMaxDelay	api/logic/logic.pb.go	/^func (m *Backoff) GetMaxDelay() int32 {$/;"	f
-GetMid	api/logic/logic.pb.go	/^func (m *ConnectReply) GetMid() int64 {$/;"	f
-GetMid	api/logic/logic.pb.go	/^func (m *DisconnectReq) GetMid() int64 {$/;"	f
-GetMid	api/logic/logic.pb.go	/^func (m *HeartbeatReq) GetMid() int64 {$/;"	f
-GetMid	api/logic/logic.pb.go	/^func (m *ReceiveReq) GetMid() int64 {$/;"	f
-GetMsg	api/logic/logic.pb.go	/^func (m *PushMsg) GetMsg() []byte {$/;"	f
-GetMySQLFactoryOr	internal/account/store/mysql/mysql.go	/^func GetMySQLFactoryOr(opts *genericoptions.MySQLOptions) (store.Factory, error) {$/;"	f
-GetNodes	api/logic/logic.pb.go	/^func (m *NodesReply) GetNodes() []string {$/;"	f
 GetOp	api/protocol/protocol.pb.go	/^func (m *Proto) GetOp() int32 {$/;"	f
-GetOperation	api/logic/logic.pb.go	/^func (m *PushMsg) GetOperation() int32 {$/;"	f
-GetPlatform	api/logic/logic.pb.go	/^func (m *NodesReq) GetPlatform() string {$/;"	f
-GetProto	api/comet/comet.pb.go	/^func (m *BroadcastReq) GetProto() *protocol.Proto {$/;"	f
-GetProto	api/comet/comet.pb.go	/^func (m *BroadcastRoomReq) GetProto() *protocol.Proto {$/;"	f
-GetProto	api/comet/comet.pb.go	/^func (m *PushMsgReq) GetProto() *protocol.Proto {$/;"	f
-GetProto	api/logic/logic.pb.go	/^func (m *ReceiveReq) GetProto() *protocol.Proto {$/;"	f
-GetProtoOp	api/comet/comet.pb.go	/^func (m *BroadcastReq) GetProtoOp() int32 {$/;"	f
-GetProtoOp	api/comet/comet.pb.go	/^func (m *PushMsgReq) GetProtoOp() int32 {$/;"	f
-GetRoom	api/logic/logic.pb.go	/^func (m *PushMsg) GetRoom() string {$/;"	f
-GetRoomCount	api/logic/logic.pb.go	/^func (m *OnlineReq) GetRoomCount() map[string]int32 {$/;"	f
-GetRoomID	api/comet/comet.pb.go	/^func (m *BroadcastRoomReq) GetRoomID() string {$/;"	f
-GetRoomID	api/logic/logic.pb.go	/^func (m *ConnectReply) GetRoomID() string {$/;"	f
-GetRooms	api/comet/comet.pb.go	/^func (m *RoomsReply) GetRooms() map[string]bool {$/;"	f
 GetSeq	api/protocol/protocol.pb.go	/^func (m *Proto) GetSeq() int32 {$/;"	f
-GetServer	api/logic/logic.pb.go	/^func (m *ConnectReq) GetServer() string {$/;"	f
-GetServer	api/logic/logic.pb.go	/^func (m *DisconnectReq) GetServer() string {$/;"	f
-GetServer	api/logic/logic.pb.go	/^func (m *HeartbeatReq) GetServer() string {$/;"	f
-GetServer	api/logic/logic.pb.go	/^func (m *OnlineReq) GetServer() string {$/;"	f
-GetServer	api/logic/logic.pb.go	/^func (m *PushMsg) GetServer() string {$/;"	f
-GetSpeed	api/comet/comet.pb.go	/^func (m *BroadcastReq) GetSpeed() int32 {$/;"	f
-GetSpeed	api/logic/logic.pb.go	/^func (m *PushMsg) GetSpeed() int32 {$/;"	f
-GetTcpPort	api/logic/logic.pb.go	/^func (m *NodesReply) GetTcpPort() int32 {$/;"	f
-GetToken	api/logic/logic.pb.go	/^func (m *ConnectReq) GetToken() []byte {$/;"	f
-GetType	api/logic/logic.pb.go	/^func (m *PushMsg) GetType() PushMsg_Type {$/;"	f
 GetVer	api/protocol/protocol.pb.go	/^func (m *Proto) GetVer() int32 {$/;"	f
-GetWsPort	api/logic/logic.pb.go	/^func (m *NodesReply) GetWsPort() int32 {$/;"	f
-GetWssPort	api/logic/logic.pb.go	/^func (m *NodesReply) GetWssPort() int32 {$/;"	f
 HTTPServer	internal/logic/conf/conf.go	/^type HTTPServer struct {$/;"	t
-Heartbeat	api/logic/logic.pb.go	/^func (*UnimplementedLogicServer) Heartbeat(ctx context.Context, req *HeartbeatReq) (*HeartbeatReply, error) {$/;"	f
-Heartbeat	api/logic/logic.pb.go	/^func (c *logicClient) Heartbeat(ctx context.Context, in *HeartbeatReq, opts ...grpc.CallOption) (*HeartbeatReply, error) {$/;"	f
 Heartbeat	internal/comet/operation.go	/^func (s *Server) Heartbeat(ctx context.Context, mid int64, key string) (err error) {$/;"	f
 Heartbeat	internal/logic/conn.go	/^func (l *Logic) Heartbeat(c context.Context, mid int64, key, server string) (err error) {$/;"	f
 Heartbeat	internal/logic/grpc/server.go	/^func (s *server) Heartbeat(ctx context.Context, req *pb.HeartbeatReq) (*pb.HeartbeatReply, error) {$/;"	f
-HeartbeatReply	api/logic/logic.pb.go	/^type HeartbeatReply struct {$/;"	t
-HeartbeatReq	api/logic/logic.pb.go	/^type HeartbeatReq struct {$/;"	t
 IPCount	internal/comet/bucket.go	/^func (b *Bucket) IPCount() (res map[string]struct{}) {$/;"	f
 Init	internal/comet/conf/conf.go	/^func Init() (err error) {$/;"	f
 Init	internal/comet/ring.go	/^func (r *Ring) Init(num int) {$/;"	f
@@ -392,61 +160,14 @@ Kafka	internal/job/conf/conf.go	/^type Kafka struct {$/;"	t
 Kafka	internal/logic/conf/conf.go	/^type Kafka struct {$/;"	t
 KeysByMids	internal/logic/dao/redis.go	/^func (d *Dao) KeysByMids(c context.Context, mids []int64) (ress map[string]string, olMids []int64, err error) {$/;"	f
 Len	pkg/bytes/writer.go	/^func (w *Writer) Len() int {$/;"	f
-List	internal/account/service/v1/mock_service.go	/^func (m *MockPolicySrv) List(arg0 context.Context, arg1 string, arg2 v10.ListOptions) (*v1.PolicyList, error) {$/;"	f
-List	internal/account/service/v1/mock_service.go	/^func (m *MockSecretSrv) List(arg0 context.Context, arg1 string, arg2 v10.ListOptions) (*v1.SecretList, error) {$/;"	f
-List	internal/account/service/v1/mock_service.go	/^func (m *MockUserSrv) List(arg0 context.Context, arg1 v10.ListOptions) (*v1.UserList, error) {$/;"	f
-List	internal/account/service/v1/mock_service.go	/^func (mr *MockPolicySrvMockRecorder) List(arg0, arg1, arg2 interface{}) *gomock.Call {$/;"	f
-List	internal/account/service/v1/mock_service.go	/^func (mr *MockSecretSrvMockRecorder) List(arg0, arg1, arg2 interface{}) *gomock.Call {$/;"	f
-List	internal/account/service/v1/mock_service.go	/^func (mr *MockUserSrvMockRecorder) List(arg0, arg1 interface{}) *gomock.Call {$/;"	f
-List	internal/account/service/v1/policy.go	/^func (s *policyService) List(ctx context.Context, username string, opts metav1.ListOptions) (*v1.PolicyList, error) {$/;"	f
-List	internal/account/service/v1/secret.go	/^func (s *secretService) List(ctx context.Context, username string, opts metav1.ListOptions) (*v1.SecretList, error) {$/;"	f
-List	internal/account/service/v1/user.go	/^func (u *userService) List(ctx context.Context, opts metav1.ListOptions) (*v1.UserList, error) {$/;"	f
-List	internal/account/store/etcd/etcd.go	/^func (ds *datastore) List(ctx context.Context, prefix string) ([]EtcdKeyValue, error) {$/;"	f
-List	internal/account/store/etcd/policy.go	/^func (p *policies) List(ctx context.Context, username string, opts metav1.ListOptions) (*v1.PolicyList, error) {$/;"	f
-List	internal/account/store/etcd/secret.go	/^func (s *secrets) List(ctx context.Context, username string, opts metav1.ListOptions) (*v1.SecretList, error) {$/;"	f
-List	internal/account/store/etcd/user.go	/^func (u *users) List(ctx context.Context, opts metav1.ListOptions) (*v1.UserList, error) {$/;"	f
-List	internal/account/store/fake/policy.go	/^func (p *policies) List(ctx context.Context, username string, opts metav1.ListOptions) (*v1.PolicyList, error) {$/;"	f
-List	internal/account/store/fake/secret.go	/^func (s *secrets) List(ctx context.Context, username string, opts metav1.ListOptions) (*v1.SecretList, error) {$/;"	f
-List	internal/account/store/fake/user.go	/^func (u *users) List(ctx context.Context, opts metav1.ListOptions) (*v1.UserList, error) {$/;"	f
-List	internal/account/store/mock_store.go	/^func (m *MockPolicyStore) List(arg0 context.Context, arg1 string, arg2 v10.ListOptions) (*v1.PolicyList, error) {$/;"	f
-List	internal/account/store/mock_store.go	/^func (m *MockSecretStore) List(arg0 context.Context, arg1 string, arg2 v10.ListOptions) (*v1.SecretList, error) {$/;"	f
-List	internal/account/store/mock_store.go	/^func (m *MockUserStore) List(arg0 context.Context, arg1 v10.ListOptions) (*v1.UserList, error) {$/;"	f
-List	internal/account/store/mock_store.go	/^func (mr *MockPolicyStoreMockRecorder) List(arg0, arg1, arg2 interface{}) *gomock.Call {$/;"	f
-List	internal/account/store/mock_store.go	/^func (mr *MockSecretStoreMockRecorder) List(arg0, arg1, arg2 interface{}) *gomock.Call {$/;"	f
-List	internal/account/store/mock_store.go	/^func (mr *MockUserStoreMockRecorder) List(arg0, arg1 interface{}) *gomock.Call {$/;"	f
-List	internal/account/store/mysql/policy.go	/^func (p *policies) List(ctx context.Context, username string, opts metav1.ListOptions) (*v1.PolicyList, error) {$/;"	f
-List	internal/account/store/mysql/secret.go	/^func (s *secrets) List(ctx context.Context, username string, opts metav1.ListOptions) (*v1.SecretList, error) {$/;"	f
-List	internal/account/store/mysql/user.go	/^func (u *users) List(ctx context.Context, opts metav1.ListOptions) (*v1.UserList, error) {$/;"	f
-ListOptional	internal/account/store/mysql/user.go	/^func (u *users) ListOptional(ctx context.Context, opts metav1.ListOptions) (*v1.UserList, error) {$/;"	f
-ListWithBadPerformance	internal/account/service/v1/mock_service.go	/^func (m *MockUserSrv) ListWithBadPerformance(arg0 context.Context, arg1 v10.ListOptions) (*v1.UserList, error) {$/;"	f
-ListWithBadPerformance	internal/account/service/v1/mock_service.go	/^func (mr *MockUserSrvMockRecorder) ListWithBadPerformance(arg0, arg1 interface{}) *gomock.Call {$/;"	f
-ListWithBadPerformance	internal/account/service/v1/user.go	/^func (u *userService) ListWithBadPerformance(ctx context.Context, opts metav1.ListOptions) (*v1.UserList, error) {$/;"	f
 LoadBalancer	internal/logic/balancer.go	/^type LoadBalancer struct {$/;"	t
 Logic	internal/logic/logic.go	/^type Logic struct {$/;"	t
-LogicClient	api/logic/logic.pb.go	/^type LogicClient interface {$/;"	t
-LogicServer	api/logic/logic.pb.go	/^type LogicServer interface {$/;"	t
 MaxBodySize	api/protocol/protocol.go	/^	MaxBodySize = int32(1 << 12)$/;"	c
 MetaAddrs	internal/logic/model/metadata.go	/^	MetaAddrs = "addrs"$/;"	c
 MetaConnCount	internal/logic/model/metadata.go	/^	MetaConnCount = "conn_count"$/;"	c
 MetaIPCount	internal/logic/model/metadata.go	/^	MetaIPCount = "ip_count"$/;"	c
 MetaOffline	internal/logic/model/metadata.go	/^	MetaOffline = "offline"$/;"	c
 MetaWeight	internal/logic/model/metadata.go	/^	MetaWeight = "weight"$/;"	c
-MockFactory	internal/account/store/mock_store.go	/^type MockFactory struct {$/;"	t
-MockFactoryMockRecorder	internal/account/store/mock_store.go	/^type MockFactoryMockRecorder struct {$/;"	t
-MockPolicySrv	internal/account/service/v1/mock_service.go	/^type MockPolicySrv struct {$/;"	t
-MockPolicySrvMockRecorder	internal/account/service/v1/mock_service.go	/^type MockPolicySrvMockRecorder struct {$/;"	t
-MockPolicyStore	internal/account/store/mock_store.go	/^type MockPolicyStore struct {$/;"	t
-MockPolicyStoreMockRecorder	internal/account/store/mock_store.go	/^type MockPolicyStoreMockRecorder struct {$/;"	t
-MockSecretSrv	internal/account/service/v1/mock_service.go	/^type MockSecretSrv struct {$/;"	t
-MockSecretSrvMockRecorder	internal/account/service/v1/mock_service.go	/^type MockSecretSrvMockRecorder struct {$/;"	t
-MockSecretStore	internal/account/store/mock_store.go	/^type MockSecretStore struct {$/;"	t
-MockSecretStoreMockRecorder	internal/account/store/mock_store.go	/^type MockSecretStoreMockRecorder struct {$/;"	t
-MockService	internal/account/service/v1/mock_service.go	/^type MockService struct {$/;"	t
-MockServiceMockRecorder	internal/account/service/v1/mock_service.go	/^type MockServiceMockRecorder struct {$/;"	t
-MockUserSrv	internal/account/service/v1/mock_service.go	/^type MockUserSrv struct {$/;"	t
-MockUserSrvMockRecorder	internal/account/service/v1/mock_service.go	/^type MockUserSrvMockRecorder struct {$/;"	t
-MockUserStore	internal/account/store/mock_store.go	/^type MockUserStore struct {$/;"	t
-MockUserStoreMockRecorder	internal/account/store/mock_store.go	/^type MockUserStoreMockRecorder struct {$/;"	t
 NeedPush	internal/comet/channel.go	/^func (c *Channel) NeedPush(op int32) bool {$/;"	f
 New	internal/comet/grpc/server.go	/^func New(c *conf.RPCServer, s *comet.Server) *grpc.Server {$/;"	f
 New	internal/job/job.go	/^func New(c *conf.Config) *Job {$/;"	f
@@ -457,17 +178,7 @@ New	internal/logic/logic.go	/^func New(c *conf.Config) (l *Logic) {$/;"	f
 NewBucket	internal/comet/bucket.go	/^func NewBucket(c *conf.Bucket) (b *Bucket) {$/;"	f
 NewChannel	internal/comet/channel.go	/^func NewChannel(cli, svr int) *Channel {$/;"	f
 NewComet	internal/job/comet.go	/^func NewComet(in *naming.Instance, c *conf.Comet) (*Comet, error) {$/;"	f
-NewCometClient	api/comet/comet.pb.go	/^func NewCometClient(cc *grpc.ClientConn) CometClient {$/;"	f
 NewLoadBalancer	internal/logic/balancer.go	/^func NewLoadBalancer() *LoadBalancer {$/;"	f
-NewLogicClient	api/logic/logic.pb.go	/^func NewLogicClient(cc *grpc.ClientConn) LogicClient {$/;"	f
-NewMockFactory	internal/account/store/mock_store.go	/^func NewMockFactory(ctrl *gomock.Controller) *MockFactory {$/;"	f
-NewMockPolicySrv	internal/account/service/v1/mock_service.go	/^func NewMockPolicySrv(ctrl *gomock.Controller) *MockPolicySrv {$/;"	f
-NewMockPolicyStore	internal/account/store/mock_store.go	/^func NewMockPolicyStore(ctrl *gomock.Controller) *MockPolicyStore {$/;"	f
-NewMockSecretSrv	internal/account/service/v1/mock_service.go	/^func NewMockSecretSrv(ctrl *gomock.Controller) *MockSecretSrv {$/;"	f
-NewMockSecretStore	internal/account/store/mock_store.go	/^func NewMockSecretStore(ctrl *gomock.Controller) *MockSecretStore {$/;"	f
-NewMockService	internal/account/service/v1/mock_service.go	/^func NewMockService(ctrl *gomock.Controller) *MockService {$/;"	f
-NewMockUserSrv	internal/account/service/v1/mock_service.go	/^func NewMockUserSrv(ctrl *gomock.Controller) *MockUserSrv {$/;"	f
-NewMockUserStore	internal/account/store/mock_store.go	/^func NewMockUserStore(ctrl *gomock.Controller) *MockUserStore {$/;"	f
 NewPool	pkg/bytes/buffer.go	/^func NewPool(num, size int) (p *Pool) {$/;"	f
 NewReader	pkg/bufio/bufio.go	/^func NewReader(rd io.Reader) *Reader {$/;"	f
 NewReaderSize	pkg/bufio/bufio.go	/^func NewReaderSize(rd io.Reader, size int) *Reader {$/;"	f
@@ -476,25 +187,18 @@ NewRoom	internal/comet/room.go	/^func NewRoom(id string) (r *Room) {$/;"	f
 NewRoom	internal/job/room.go	/^func NewRoom(job *Job, id string, c *conf.Room) (r *Room) {$/;"	f
 NewRound	internal/comet/round.go	/^func NewRound(c *conf.Config) (r *Round) {$/;"	f
 NewServer	internal/comet/server.go	/^func NewServer(c *conf.Config) *Server {$/;"	f
-NewService	internal/account/service/v1/service.go	/^func NewService(store store.Factory) Service {$/;"	f
 NewTimer	pkg/time/timer.go	/^func NewTimer(num int) (t *Timer) {$/;"	f
 NewWriter	pkg/bufio/bufio.go	/^func NewWriter(w io.Writer) *Writer {$/;"	f
 NewWriterSize	pkg/bufio/bufio.go	/^func NewWriterSize(w io.Writer, size int) *Writer {$/;"	f
 NewWriterSize	pkg/bytes/writer.go	/^func NewWriterSize(n int) *Writer {$/;"	f
 Node	internal/logic/conf/conf.go	/^type Node struct {$/;"	t
 NodeAddrs	internal/logic/balancer.go	/^func (lb *LoadBalancer) NodeAddrs(region, domain string, regionWeight float64) (domains, addrs []string) {$/;"	f
-Nodes	api/logic/logic.pb.go	/^func (*UnimplementedLogicServer) Nodes(ctx context.Context, req *NodesReq) (*NodesReply, error) {$/;"	f
-Nodes	api/logic/logic.pb.go	/^func (c *logicClient) Nodes(ctx context.Context, in *NodesReq, opts ...grpc.CallOption) (*NodesReply, error) {$/;"	f
 Nodes	internal/logic/grpc/server.go	/^func (s *server) Nodes(ctx context.Context, req *pb.NodesReq) (*pb.NodesReply, error) {$/;"	f
 NodesInstances	internal/logic/nodes.go	/^func (l *Logic) NodesInstances(c context.Context) (res []*naming.Instance) {$/;"	f
-NodesReply	api/logic/logic.pb.go	/^type NodesReply struct {$/;"	t
-NodesReq	api/logic/logic.pb.go	/^type NodesReq struct {$/;"	t
 NodesWeighted	internal/logic/nodes.go	/^func (l *Logic) NodesWeighted(c context.Context, platform, clientIP string) *pb.NodesReply {$/;"	f
 OK	internal/logic/http/result.go	/^	OK = 0$/;"	c
 Online	internal/logic/model/online.go	/^type Online struct {$/;"	t
 OnlineNum	internal/comet/room.go	/^func (r *Room) OnlineNum() int32 {$/;"	f
-OnlineReply	api/logic/logic.pb.go	/^type OnlineReply struct {$/;"	t
-OnlineReq	api/logic/logic.pb.go	/^type OnlineReq struct {$/;"	t
 OnlineRoom	internal/logic/online.go	/^func (l *Logic) OnlineRoom(c context.Context, typ string, rooms []string) (res map[string]int32, err error) {$/;"	f
 OnlineTop	internal/logic/online.go	/^func (l *Logic) OnlineTop(c context.Context, typ string, n int) (tops []*model.Top, err error) {$/;"	f
 OnlineTotal	internal/logic/online.go	/^func (l *Logic) OnlineTotal(c context.Context) (int64, int64) {$/;"	f
@@ -525,16 +229,6 @@ Ping	internal/logic/dao/dao.go	/^func (d *Dao) Ping(c context.Context) error {$/
 Ping	internal/logic/logic.go	/^func (l *Logic) Ping(c context.Context) (err error) {$/;"	f
 PingMessage	pkg/websocket/conn.go	/^	PingMessage = 9$/;"	c
 PlatformWeb	internal/logic/model/metadata.go	/^	PlatformWeb = "web"$/;"	c
-Policies	internal/account/service/v1/mock_service.go	/^func (m *MockService) Policies() PolicySrv {$/;"	f
-Policies	internal/account/service/v1/mock_service.go	/^func (mr *MockServiceMockRecorder) Policies() *gomock.Call {$/;"	f
-Policies	internal/account/service/v1/service.go	/^func (s *service) Policies() PolicySrv {$/;"	f
-Policies	internal/account/store/etcd/etcd.go	/^func (ds *datastore) Policies() store.PolicyStore {$/;"	f
-Policies	internal/account/store/fake/fake.go	/^func (ds *datastore) Policies() store.PolicyStore {$/;"	f
-Policies	internal/account/store/mock_store.go	/^func (m *MockFactory) Policies() PolicyStore {$/;"	f
-Policies	internal/account/store/mock_store.go	/^func (mr *MockFactoryMockRecorder) Policies() *gomock.Call {$/;"	f
-Policies	internal/account/store/mysql/mysql.go	/^func (ds *datastore) Policies() store.PolicyStore {$/;"	f
-PolicySrv	internal/account/service/v1/policy.go	/^type PolicySrv interface {$/;"	t
-PolicyStore	internal/account/store/policy.go	/^type PolicyStore interface {$/;"	t
 PongMessage	pkg/websocket/conn.go	/^	PongMessage = 10$/;"	c
 Pool	pkg/bytes/buffer.go	/^type Pool struct {$/;"	t
 Pop	pkg/bufio/bufio.go	/^func (b *Reader) Pop(n int) ([]byte, error) {$/;"	f
@@ -542,28 +236,6 @@ Printf	internal/comet/whitelist.go	/^func (w *Whitelist) Printf(format string, v
 Proto	api/protocol/protocol.pb.go	/^type Proto struct {$/;"	t
 Proto	benchmarks/client/main.go	/^type Proto struct {$/;"	t
 ProtoFinish	api/protocol/protocol.go	/^	ProtoFinish = &Proto{Op: OpProtoFinish}$/;"	v
-ProtoMessage	api/comet/comet.pb.go	/^func (*BroadcastReply) ProtoMessage()    {}$/;"	f
-ProtoMessage	api/comet/comet.pb.go	/^func (*BroadcastReq) ProtoMessage()    {}$/;"	f
-ProtoMessage	api/comet/comet.pb.go	/^func (*BroadcastRoomReply) ProtoMessage()    {}$/;"	f
-ProtoMessage	api/comet/comet.pb.go	/^func (*BroadcastRoomReq) ProtoMessage()    {}$/;"	f
-ProtoMessage	api/comet/comet.pb.go	/^func (*PushMsgReply) ProtoMessage()    {}$/;"	f
-ProtoMessage	api/comet/comet.pb.go	/^func (*PushMsgReq) ProtoMessage()    {}$/;"	f
-ProtoMessage	api/comet/comet.pb.go	/^func (*RoomsReply) ProtoMessage()    {}$/;"	f
-ProtoMessage	api/comet/comet.pb.go	/^func (*RoomsReq) ProtoMessage()    {}$/;"	f
-ProtoMessage	api/logic/logic.pb.go	/^func (*Backoff) ProtoMessage()    {}$/;"	f
-ProtoMessage	api/logic/logic.pb.go	/^func (*ConnectReply) ProtoMessage()    {}$/;"	f
-ProtoMessage	api/logic/logic.pb.go	/^func (*ConnectReq) ProtoMessage()    {}$/;"	f
-ProtoMessage	api/logic/logic.pb.go	/^func (*DisconnectReply) ProtoMessage()    {}$/;"	f
-ProtoMessage	api/logic/logic.pb.go	/^func (*DisconnectReq) ProtoMessage()    {}$/;"	f
-ProtoMessage	api/logic/logic.pb.go	/^func (*HeartbeatReply) ProtoMessage()    {}$/;"	f
-ProtoMessage	api/logic/logic.pb.go	/^func (*HeartbeatReq) ProtoMessage()    {}$/;"	f
-ProtoMessage	api/logic/logic.pb.go	/^func (*NodesReply) ProtoMessage()    {}$/;"	f
-ProtoMessage	api/logic/logic.pb.go	/^func (*NodesReq) ProtoMessage()    {}$/;"	f
-ProtoMessage	api/logic/logic.pb.go	/^func (*OnlineReply) ProtoMessage()    {}$/;"	f
-ProtoMessage	api/logic/logic.pb.go	/^func (*OnlineReq) ProtoMessage()    {}$/;"	f
-ProtoMessage	api/logic/logic.pb.go	/^func (*PushMsg) ProtoMessage()    {}$/;"	f
-ProtoMessage	api/logic/logic.pb.go	/^func (*ReceiveReply) ProtoMessage()    {}$/;"	f
-ProtoMessage	api/logic/logic.pb.go	/^func (*ReceiveReq) ProtoMessage()    {}$/;"	f
 ProtoMessage	api/protocol/protocol.pb.go	/^func (*Proto) ProtoMessage()    {}$/;"	f
 ProtoReady	api/protocol/protocol.go	/^	ProtoReady = &Proto{Op: OpProtoReady}$/;"	v
 Protocol	internal/comet/conf/conf.go	/^type Protocol struct {$/;"	t
@@ -574,29 +246,15 @@ Push	internal/job/room.go	/^func (r *Room) Push(op int32, msg []byte) (err error
 PushAll	internal/logic/push.go	/^func (l *Logic) PushAll(c context.Context, op, speed int32, msg []byte) (err error) {$/;"	f
 PushKeys	internal/logic/push.go	/^func (l *Logic) PushKeys(c context.Context, op int32, keys []string, msg []byte) (err error) {$/;"	f
 PushMids	internal/logic/push.go	/^func (l *Logic) PushMids(c context.Context, op int32, mids []int64, msg []byte) (err error) {$/;"	f
-PushMsg	api/comet/comet.pb.go	/^func (*UnimplementedCometServer) PushMsg(ctx context.Context, req *PushMsgReq) (*PushMsgReply, error) {$/;"	f
-PushMsg	api/comet/comet.pb.go	/^func (c *cometClient) PushMsg(ctx context.Context, in *PushMsgReq, opts ...grpc.CallOption) (*PushMsgReply, error) {$/;"	f
-PushMsg	api/logic/logic.pb.go	/^type PushMsg struct {$/;"	t
 PushMsg	internal/comet/grpc/server.go	/^func (s *server) PushMsg(ctx context.Context, req *pb.PushMsgReq) (reply *pb.PushMsgReply, err error) {$/;"	f
 PushMsg	internal/logic/dao/kafka.go	/^func (d *Dao) PushMsg(c context.Context, op int32, server string, keys []string, msg []byte) (err error) {$/;"	f
-PushMsgReply	api/comet/comet.pb.go	/^type PushMsgReply struct {$/;"	t
-PushMsgReq	api/comet/comet.pb.go	/^type PushMsgReq struct {$/;"	t
-PushMsg_BROADCAST	api/logic/logic.pb.go	/^	PushMsg_BROADCAST PushMsg_Type = 2$/;"	c
-PushMsg_PUSH	api/logic/logic.pb.go	/^	PushMsg_PUSH      PushMsg_Type = 0$/;"	c
-PushMsg_ROOM	api/logic/logic.pb.go	/^	PushMsg_ROOM      PushMsg_Type = 1$/;"	c
-PushMsg_Type	api/logic/logic.pb.go	/^type PushMsg_Type int32$/;"	t
-PushMsg_Type_name	api/logic/logic.pb.go	/^var PushMsg_Type_name = map[int32]string{$/;"	v
-PushMsg_Type_value	api/logic/logic.pb.go	/^var PushMsg_Type_value = map[string]int32{$/;"	v
 PushRoom	internal/logic/push.go	/^func (l *Logic) PushRoom(c context.Context, op int32, typ, room string, msg []byte) (err error) {$/;"	f
-Put	internal/account/store/etcd/etcd.go	/^func (ds *datastore) Put(ctx context.Context, key string, val string) error {$/;"	f
 Put	internal/comet/bucket.go	/^func (b *Bucket) Put(rid string, ch *Channel) (err error) {$/;"	f
 Put	internal/comet/room.go	/^func (r *Room) Put(ch *Channel) (err error) {$/;"	f
 Put	pkg/bytes/buffer.go	/^func (p *Pool) Put(b *Buffer) {$/;"	f
 PutInt16	pkg/encoding/binary/endian.go	/^func (bigEndian) PutInt16(b []byte, v int16) {$/;"	f
 PutInt32	pkg/encoding/binary/endian.go	/^func (bigEndian) PutInt32(b []byte, v int32) {$/;"	f
 PutInt8	pkg/encoding/binary/endian.go	/^func (bigEndian) PutInt8(b []byte, v int8) {$/;"	f
-PutSession	internal/account/store/etcd/etcd.go	/^func (ds *datastore) PutSession(ctx context.Context, key string, val string) error {$/;"	f
-PutWithLease	internal/account/store/etcd/etcd.go	/^func (ds *datastore) PutWithLease(ctx context.Context, key string, val string, ttlSeconds int64) error {$/;"	f
 RPCClient	internal/comet/conf/conf.go	/^type RPCClient struct {$/;"	t
 RPCClient	internal/logic/conf/conf.go	/^type RPCClient struct {$/;"	t
 RPCServer	internal/comet/conf/conf.go	/^type RPCServer struct {$/;"	t
@@ -620,45 +278,15 @@ ReadWebsocket	api/protocol/protocol.go	/^func (p *Proto) ReadWebsocket(ws *webso
 Reader	internal/comet/round.go	/^func (r *Round) Reader(rn int) *bytes.Pool {$/;"	f
 Reader	pkg/bufio/bufio.go	/^type Reader struct {$/;"	t
 Ready	internal/comet/channel.go	/^func (c *Channel) Ready() *protocol.Proto {$/;"	f
-Receive	api/logic/logic.pb.go	/^func (*UnimplementedLogicServer) Receive(ctx context.Context, req *ReceiveReq) (*ReceiveReply, error) {$/;"	f
-Receive	api/logic/logic.pb.go	/^func (c *logicClient) Receive(ctx context.Context, in *ReceiveReq, opts ...grpc.CallOption) (*ReceiveReply, error) {$/;"	f
 Receive	internal/comet/operation.go	/^func (s *Server) Receive(ctx context.Context, mid int64, p *protocol.Proto) (err error) {$/;"	f
 Receive	internal/logic/conn.go	/^func (l *Logic) Receive(c context.Context, mid int64, proto *protocol.Proto) (err error) {$/;"	f
 Receive	internal/logic/grpc/server.go	/^func (s *server) Receive(ctx context.Context, req *pb.ReceiveReq) (*pb.ReceiveReply, error) {$/;"	f
-ReceiveReply	api/logic/logic.pb.go	/^type ReceiveReply struct {$/;"	t
-ReceiveReq	api/logic/logic.pb.go	/^type ReceiveReq struct {$/;"	t
 Redis	internal/logic/conf/conf.go	/^type Redis struct {$/;"	t
-RegisterCometServer	api/comet/comet.pb.go	/^func RegisterCometServer(s *grpc.Server, srv CometServer) {$/;"	f
-RegisterLogicServer	api/logic/logic.pb.go	/^func RegisterLogicServer(s *grpc.Server, srv LogicServer) {$/;"	f
-RenewOnline	api/logic/logic.pb.go	/^func (*UnimplementedLogicServer) RenewOnline(ctx context.Context, req *OnlineReq) (*OnlineReply, error) {$/;"	f
-RenewOnline	api/logic/logic.pb.go	/^func (c *logicClient) RenewOnline(ctx context.Context, in *OnlineReq, opts ...grpc.CallOption) (*OnlineReply, error) {$/;"	f
 RenewOnline	internal/comet/operation.go	/^func (s *Server) RenewOnline(ctx context.Context, serverID string, roomCount map[string]int32) (allRoom map[string]int32, err error) {$/;"	f
 RenewOnline	internal/logic/conn.go	/^func (l *Logic) RenewOnline(c context.Context, server string, roomCount map[string]int32) (map[string]int32, error) {$/;"	f
 RenewOnline	internal/logic/grpc/server.go	/^func (s *server) RenewOnline(ctx context.Context, req *pb.OnlineReq) (*pb.OnlineReply, error) {$/;"	f
 Request	pkg/websocket/request.go	/^type Request struct {$/;"	t
 RequestErr	internal/logic/http/result.go	/^	RequestErr = -400$/;"	c
-Reset	api/comet/comet.pb.go	/^func (m *BroadcastReply) Reset()         { *m = BroadcastReply{} }$/;"	f
-Reset	api/comet/comet.pb.go	/^func (m *BroadcastReq) Reset()         { *m = BroadcastReq{} }$/;"	f
-Reset	api/comet/comet.pb.go	/^func (m *BroadcastRoomReply) Reset()         { *m = BroadcastRoomReply{} }$/;"	f
-Reset	api/comet/comet.pb.go	/^func (m *BroadcastRoomReq) Reset()         { *m = BroadcastRoomReq{} }$/;"	f
-Reset	api/comet/comet.pb.go	/^func (m *PushMsgReply) Reset()         { *m = PushMsgReply{} }$/;"	f
-Reset	api/comet/comet.pb.go	/^func (m *PushMsgReq) Reset()         { *m = PushMsgReq{} }$/;"	f
-Reset	api/comet/comet.pb.go	/^func (m *RoomsReply) Reset()         { *m = RoomsReply{} }$/;"	f
-Reset	api/comet/comet.pb.go	/^func (m *RoomsReq) Reset()         { *m = RoomsReq{} }$/;"	f
-Reset	api/logic/logic.pb.go	/^func (m *Backoff) Reset()         { *m = Backoff{} }$/;"	f
-Reset	api/logic/logic.pb.go	/^func (m *ConnectReply) Reset()         { *m = ConnectReply{} }$/;"	f
-Reset	api/logic/logic.pb.go	/^func (m *ConnectReq) Reset()         { *m = ConnectReq{} }$/;"	f
-Reset	api/logic/logic.pb.go	/^func (m *DisconnectReply) Reset()         { *m = DisconnectReply{} }$/;"	f
-Reset	api/logic/logic.pb.go	/^func (m *DisconnectReq) Reset()         { *m = DisconnectReq{} }$/;"	f
-Reset	api/logic/logic.pb.go	/^func (m *HeartbeatReply) Reset()         { *m = HeartbeatReply{} }$/;"	f
-Reset	api/logic/logic.pb.go	/^func (m *HeartbeatReq) Reset()         { *m = HeartbeatReq{} }$/;"	f
-Reset	api/logic/logic.pb.go	/^func (m *NodesReply) Reset()         { *m = NodesReply{} }$/;"	f
-Reset	api/logic/logic.pb.go	/^func (m *NodesReq) Reset()         { *m = NodesReq{} }$/;"	f
-Reset	api/logic/logic.pb.go	/^func (m *OnlineReply) Reset()         { *m = OnlineReply{} }$/;"	f
-Reset	api/logic/logic.pb.go	/^func (m *OnlineReq) Reset()         { *m = OnlineReq{} }$/;"	f
-Reset	api/logic/logic.pb.go	/^func (m *PushMsg) Reset()         { *m = PushMsg{} }$/;"	f
-Reset	api/logic/logic.pb.go	/^func (m *ReceiveReply) Reset()         { *m = ReceiveReply{} }$/;"	f
-Reset	api/logic/logic.pb.go	/^func (m *ReceiveReq) Reset()         { *m = ReceiveReq{} }$/;"	f
 Reset	api/protocol/protocol.pb.go	/^func (m *Proto) Reset()         { *m = Proto{} }$/;"	f
 Reset	internal/comet/ring.go	/^func (r *Ring) Reset() {$/;"	f
 Reset	pkg/bufio/bufio.go	/^func (b *Reader) Reset(r io.Reader) {$/;"	f
@@ -666,33 +294,17 @@ Reset	pkg/bufio/bufio.go	/^func (b *Writer) Reset(w io.Writer) {$/;"	f
 Reset	pkg/bytes/writer.go	/^func (w *Writer) Reset() {$/;"	f
 ResetBuffer	pkg/bufio/bufio.go	/^func (b *Reader) ResetBuffer(r io.Reader, buf []byte) {$/;"	f
 ResetBuffer	pkg/bufio/bufio.go	/^func (b *Writer) ResetBuffer(w io.Writer, buf []byte) {$/;"	f
-ResourceCount	internal/account/store/fake/fake.go	/^const ResourceCount = 1000$/;"	c
-RestartSession	internal/account/store/etcd/etcd.go	/^func (ds *datastore) RestartSession() error {$/;"	f
 Ring	internal/comet/ring.go	/^type Ring struct {$/;"	t
 Room	internal/comet/bucket.go	/^func (b *Bucket) Room(rid string) (room *Room) {$/;"	f
 Room	internal/comet/room.go	/^type Room struct {$/;"	t
 Room	internal/job/conf/conf.go	/^type Room struct {$/;"	t
 Room	internal/job/room.go	/^type Room struct {$/;"	t
 RoomCount	internal/comet/bucket.go	/^func (b *Bucket) RoomCount() int {$/;"	f
-Rooms	api/comet/comet.pb.go	/^func (*UnimplementedCometServer) Rooms(ctx context.Context, req *RoomsReq) (*RoomsReply, error) {$/;"	f
-Rooms	api/comet/comet.pb.go	/^func (c *cometClient) Rooms(ctx context.Context, in *RoomsReq, opts ...grpc.CallOption) (*RoomsReply, error) {$/;"	f
 Rooms	internal/comet/bucket.go	/^func (b *Bucket) Rooms() (res map[string]struct{}) {$/;"	f
 Rooms	internal/comet/grpc/server.go	/^func (s *server) Rooms(ctx context.Context, req *pb.RoomsReq) (*pb.RoomsReply, error) {$/;"	f
 RoomsCount	internal/comet/bucket.go	/^func (b *Bucket) RoomsCount() (res map[string]int32) {$/;"	f
-RoomsReply	api/comet/comet.pb.go	/^type RoomsReply struct {$/;"	t
-RoomsReq	api/comet/comet.pb.go	/^type RoomsReq struct {$/;"	t
 Round	internal/comet/round.go	/^type Round struct {$/;"	t
 RoundOptions	internal/comet/round.go	/^type RoundOptions struct {$/;"	t
-SecretSrv	internal/account/service/v1/secret.go	/^type SecretSrv interface {$/;"	t
-SecretStore	internal/account/store/secret.go	/^type SecretStore interface {$/;"	t
-Secrets	internal/account/service/v1/mock_service.go	/^func (m *MockService) Secrets() SecretSrv {$/;"	f
-Secrets	internal/account/service/v1/mock_service.go	/^func (mr *MockServiceMockRecorder) Secrets() *gomock.Call {$/;"	f
-Secrets	internal/account/service/v1/service.go	/^func (s *service) Secrets() SecretSrv {$/;"	f
-Secrets	internal/account/store/etcd/etcd.go	/^func (ds *datastore) Secrets() store.SecretStore {$/;"	f
-Secrets	internal/account/store/fake/fake.go	/^func (ds *datastore) Secrets() store.SecretStore {$/;"	f
-Secrets	internal/account/store/mock_store.go	/^func (m *MockFactory) Secrets() SecretStore {$/;"	f
-Secrets	internal/account/store/mock_store.go	/^func (mr *MockFactoryMockRecorder) Secrets() *gomock.Call {$/;"	f
-Secrets	internal/account/store/mysql/mysql.go	/^func (ds *datastore) Secrets() store.SecretStore {$/;"	f
 ServeTCP	internal/comet/server_tcp.go	/^func (s *Server) ServeTCP(conn *net.TCPConn, rp, wp *bytes.Pool, tr *xtime.Timer) {$/;"	f
 ServeWebsocket	internal/comet/server_websocket.go	/^func (s *Server) ServeWebsocket(conn net.Conn, rp, wp *bytes.Pool, tr *xtime.Timer) {$/;"	f
 Server	internal/comet/server.go	/^type Server struct {$/;"	t
@@ -700,44 +312,16 @@ Server	internal/logic/http/server.go	/^type Server struct {$/;"	t
 ServerErr	internal/logic/http/result.go	/^	ServerErr = -500$/;"	c
 ServerOnline	internal/logic/dao/redis.go	/^func (d *Dao) ServerOnline(c context.Context, server string) (online *model.Online, err error) {$/;"	f
 ServersByKeys	internal/logic/dao/redis.go	/^func (d *Dao) ServersByKeys(c context.Context, keys []string) (res []string, err error) {$/;"	f
-Service	internal/account/service/v1/service.go	/^type Service interface {$/;"	t
-SessionLiving	internal/account/store/etcd/etcd.go	/^func (ds *datastore) SessionLiving() bool {$/;"	f
 Set	internal/comet/ring.go	/^func (r *Ring) Set() (proto *protocol.Proto, err error) {$/;"	f
 Set	pkg/time/timer.go	/^func (t *Timer) Set(td *TimerData, expire itime.Duration) {$/;"	f
 SetAdv	internal/comet/ring.go	/^func (r *Ring) SetAdv() {$/;"	f
-SetClient	internal/account/store/store.go	/^func SetClient(factory Factory) {$/;"	f
-SetupSuite	internal/account/service/v1/policy_test.go	/^func (s *Suite) SetupSuite() {$/;"	f
 Signal	internal/comet/channel.go	/^func (c *Channel) Signal() {$/;"	f
 Size	internal/logic/balancer.go	/^func (lb *LoadBalancer) Size() int {$/;"	f
 Size	pkg/bytes/writer.go	/^func (w *Writer) Size() int {$/;"	f
 SplitInt32s	pkg/strings/ints.go	/^func SplitInt32s(s, p string) ([]int32, error) {$/;"	f
 SplitInt64s	pkg/strings/ints.go	/^func SplitInt64s(s, p string) ([]int64, error) {$/;"	f
-String	api/comet/comet.pb.go	/^func (m *BroadcastReply) String() string { return proto.CompactTextString(m) }$/;"	f
-String	api/comet/comet.pb.go	/^func (m *BroadcastReq) String() string { return proto.CompactTextString(m) }$/;"	f
-String	api/comet/comet.pb.go	/^func (m *BroadcastRoomReply) String() string { return proto.CompactTextString(m) }$/;"	f
-String	api/comet/comet.pb.go	/^func (m *BroadcastRoomReq) String() string { return proto.CompactTextString(m) }$/;"	f
-String	api/comet/comet.pb.go	/^func (m *PushMsgReply) String() string { return proto.CompactTextString(m) }$/;"	f
-String	api/comet/comet.pb.go	/^func (m *PushMsgReq) String() string { return proto.CompactTextString(m) }$/;"	f
-String	api/comet/comet.pb.go	/^func (m *RoomsReply) String() string { return proto.CompactTextString(m) }$/;"	f
-String	api/comet/comet.pb.go	/^func (m *RoomsReq) String() string { return proto.CompactTextString(m) }$/;"	f
-String	api/logic/logic.pb.go	/^func (m *Backoff) String() string { return proto.CompactTextString(m) }$/;"	f
-String	api/logic/logic.pb.go	/^func (m *ConnectReply) String() string { return proto.CompactTextString(m) }$/;"	f
-String	api/logic/logic.pb.go	/^func (m *ConnectReq) String() string { return proto.CompactTextString(m) }$/;"	f
-String	api/logic/logic.pb.go	/^func (m *DisconnectReply) String() string { return proto.CompactTextString(m) }$/;"	f
-String	api/logic/logic.pb.go	/^func (m *DisconnectReq) String() string { return proto.CompactTextString(m) }$/;"	f
-String	api/logic/logic.pb.go	/^func (m *HeartbeatReply) String() string { return proto.CompactTextString(m) }$/;"	f
-String	api/logic/logic.pb.go	/^func (m *HeartbeatReq) String() string { return proto.CompactTextString(m) }$/;"	f
-String	api/logic/logic.pb.go	/^func (m *NodesReply) String() string { return proto.CompactTextString(m) }$/;"	f
-String	api/logic/logic.pb.go	/^func (m *NodesReq) String() string { return proto.CompactTextString(m) }$/;"	f
-String	api/logic/logic.pb.go	/^func (m *OnlineReply) String() string { return proto.CompactTextString(m) }$/;"	f
-String	api/logic/logic.pb.go	/^func (m *OnlineReq) String() string { return proto.CompactTextString(m) }$/;"	f
-String	api/logic/logic.pb.go	/^func (m *PushMsg) String() string { return proto.CompactTextString(m) }$/;"	f
-String	api/logic/logic.pb.go	/^func (m *ReceiveReply) String() string { return proto.CompactTextString(m) }$/;"	f
-String	api/logic/logic.pb.go	/^func (m *ReceiveReq) String() string { return proto.CompactTextString(m) }$/;"	f
-String	api/logic/logic.pb.go	/^func (x PushMsg_Type) String() string {$/;"	f
 String	api/protocol/protocol.pb.go	/^func (m *Proto) String() string { return proto.CompactTextString(m) }$/;"	f
 String	internal/logic/balancer.go	/^func (w *weightedNode) String() string {$/;"	f
-Suite	internal/account/service/v1/policy_test.go	/^type Suite struct {$/;"	t
 TCP	internal/comet/conf/conf.go	/^type TCP struct {$/;"	t
 TestBuffer	pkg/bytes/buffer_test.go	/^func TestBuffer(t *testing.T) {$/;"	f
 TestBufferFull	pkg/bufio/bufio_test.go	/^func TestBufferFull(t *testing.T) {$/;"	f
@@ -758,17 +342,14 @@ TestInt8	pkg/encoding/binary/endian_test.go	/^func TestInt8(t *testing.T) {$/;"	
 TestLineTooLong	pkg/bufio/bufio_test.go	/^func TestLineTooLong(t *testing.T) {$/;"	f
 TestLinesAfterRead	pkg/bufio/bufio_test.go	/^func TestLinesAfterRead(t *testing.T) {$/;"	f
 TestLoadBalancer	internal/logic/balancer_test.go	/^func TestLoadBalancer(t *testing.T) {$/;"	f
-TestMain	internal/account/service/v1/user_test.go	/^func TestMain(m *testing.M) {$/;"	f
 TestMain	internal/logic/dao/dao_test.go	/^func TestMain(m *testing.M) {$/;"	f
 TestMain	internal/logic/logic_test.go	/^func TestMain(m *testing.M) {$/;"	f
 TestNegativeRead	pkg/bufio/bufio_test.go	/^func TestNegativeRead(t *testing.T) {$/;"	f
 TestNewReaderSizeIdempotent	pkg/bufio/bufio_test.go	/^func TestNewReaderSizeIdempotent(t *testing.T) {$/;"	f
-TestNewService	internal/account/service/v1/service_test.go	/^func TestNewService(t *testing.T) {$/;"	f
 TestNewWriterSizeIdempotent	pkg/bufio/bufio_test.go	/^func TestNewWriterSizeIdempotent(t *testing.T) {$/;"	f
 TestNodes	internal/logic/nodes_test.go	/^func TestNodes(t *testing.T) {$/;"	f
 TestOnline	internal/logic/online_test.go	/^func TestOnline(t *testing.T) {$/;"	f
 TestPeek	pkg/bufio/bufio_test.go	/^func TestPeek(t *testing.T) {$/;"	f
-TestPolicy	internal/account/service/v1/policy_test.go	/^func TestPolicy(t *testing.T) {$/;"	f
 TestPushAll	internal/logic/push_test.go	/^func TestPushAll(t *testing.T) {$/;"	f
 TestPushKeys	internal/logic/push_test.go	/^func TestPushKeys(t *testing.T) {$/;"	f
 TestPushMids	internal/logic/push_test.go	/^func TestPushMids(t *testing.T) {$/;"	f
@@ -793,80 +374,16 @@ TestWriter	pkg/bytes/writer_test.go	/^func TestWriter(t *testing.T) {$/;"	f
 TestWriterReadFromCounts	pkg/bufio/bufio_test.go	/^func TestWriterReadFromCounts(t *testing.T) {$/;"	f
 TestWriterReset	pkg/bufio/bufio_test.go	/^func TestWriterReset(t *testing.T) {$/;"	f
 TestZeroReader	pkg/bufio/bufio_test.go	/^func TestZeroReader(t *testing.T) {$/;"	f
-Test_newPolicies	internal/account/service/v1/policy_test.go	/^func Test_newPolicies(t *testing.T) {$/;"	f
-Test_newSecrets	internal/account/service/v1/secret_test.go	/^func Test_newSecrets(t *testing.T) {$/;"	f
-Test_newUsers	internal/account/service/v1/user_test.go	/^func Test_newUsers(t *testing.T) {$/;"	f
-Test_policyService_Create	internal/account/service/v1/policy_test.go	/^func (s *Suite) Test_policyService_Create() {$/;"	f
-Test_policyService_Delete	internal/account/service/v1/policy_test.go	/^func (s *Suite) Test_policyService_Delete() {$/;"	f
-Test_policyService_DeleteCollection	internal/account/service/v1/policy_test.go	/^func (s *Suite) Test_policyService_DeleteCollection() {$/;"	f
-Test_policyService_Get	internal/account/service/v1/policy_test.go	/^func (s *Suite) Test_policyService_Get() {$/;"	f
-Test_policyService_List	internal/account/service/v1/policy_test.go	/^func (s *Suite) Test_policyService_List() {$/;"	f
-Test_policyService_Update	internal/account/service/v1/policy_test.go	/^func (s *Suite) Test_policyService_Update() {$/;"	f
-Test_secretService_Create	internal/account/service/v1/secret_test.go	/^func (s *Suite) Test_secretService_Create() {$/;"	f
-Test_secretService_Delete	internal/account/service/v1/secret_test.go	/^func (s *Suite) Test_secretService_Delete() {$/;"	f
-Test_secretService_DeleteCollection	internal/account/service/v1/secret_test.go	/^func (s *Suite) Test_secretService_DeleteCollection() {$/;"	f
-Test_secretService_Get	internal/account/service/v1/secret_test.go	/^func (s *Suite) Test_secretService_Get() {$/;"	f
-Test_secretService_List	internal/account/service/v1/secret_test.go	/^func (s *Suite) Test_secretService_List() {$/;"	f
-Test_secretService_Update	internal/account/service/v1/secret_test.go	/^func (s *Suite) Test_secretService_Update() {$/;"	f
-Test_service_Policies	internal/account/service/v1/service_test.go	/^func Test_service_Policies(t *testing.T) {$/;"	f
-Test_service_Secrets	internal/account/service/v1/service_test.go	/^func Test_service_Secrets(t *testing.T) {$/;"	f
-Test_service_Users	internal/account/service/v1/service_test.go	/^func Test_service_Users(t *testing.T) {$/;"	f
-Test_userService_ChangePassword	internal/account/service/v1/user_test.go	/^func (s *Suite) Test_userService_ChangePassword() {$/;"	f
-Test_userService_Create	internal/account/service/v1/user_test.go	/^func (s *Suite) Test_userService_Create() {$/;"	f
-Test_userService_Delete	internal/account/service/v1/user_test.go	/^func (s *Suite) Test_userService_Delete() {$/;"	f
-Test_userService_DeleteCollection	internal/account/service/v1/user_test.go	/^func (s *Suite) Test_userService_DeleteCollection() {$/;"	f
-Test_userService_Get	internal/account/service/v1/user_test.go	/^func (s *Suite) Test_userService_Get() {$/;"	f
-Test_userService_List	internal/account/service/v1/user_test.go	/^func (s *Suite) Test_userService_List() {$/;"	f
-Test_userService_ListWithBadPerformance	internal/account/service/v1/user_test.go	/^func (s *Suite) Test_userService_ListWithBadPerformance() {$/;"	f
-Test_userService_Update	internal/account/service/v1/user_test.go	/^func (s *Suite) Test_userService_Update() {$/;"	f
 TextMessage	pkg/websocket/conn.go	/^	TextMessage = 1$/;"	c
 Timer	internal/comet/round.go	/^func (r *Round) Timer(rn int) *time.Timer {$/;"	f
 Timer	pkg/time/timer.go	/^type Timer struct {$/;"	t
 TimerData	pkg/time/timer.go	/^type TimerData struct {$/;"	t
 Top	internal/logic/model/online.go	/^type Top struct {$/;"	t
 UnWatch	internal/comet/channel.go	/^func (c *Channel) UnWatch(accepts ...int32) {$/;"	f
-UnimplementedCometServer	api/comet/comet.pb.go	/^type UnimplementedCometServer struct {$/;"	t
-UnimplementedLogicServer	api/logic/logic.pb.go	/^type UnimplementedLogicServer struct {$/;"	t
 UnmarshalText	pkg/time/duration.go	/^func (d *Duration) UnmarshalText(text []byte) error {$/;"	f
-Unwatch	internal/account/store/etcd/etcd.go	/^func (ds *datastore) Unwatch(prefix string) {$/;"	f
 UpRoomsCount	internal/comet/bucket.go	/^func (b *Bucket) UpRoomsCount(roomCountMap map[string]int32) {$/;"	f
-Update	internal/account/service/v1/mock_service.go	/^func (m *MockPolicySrv) Update(arg0 context.Context, arg1 *v1.Policy, arg2 v10.UpdateOptions) error {$/;"	f
-Update	internal/account/service/v1/mock_service.go	/^func (m *MockSecretSrv) Update(arg0 context.Context, arg1 *v1.Secret, arg2 v10.UpdateOptions) error {$/;"	f
-Update	internal/account/service/v1/mock_service.go	/^func (m *MockUserSrv) Update(arg0 context.Context, arg1 *v1.User, arg2 v10.UpdateOptions) error {$/;"	f
-Update	internal/account/service/v1/mock_service.go	/^func (mr *MockPolicySrvMockRecorder) Update(arg0, arg1, arg2 interface{}) *gomock.Call {$/;"	f
-Update	internal/account/service/v1/mock_service.go	/^func (mr *MockSecretSrvMockRecorder) Update(arg0, arg1, arg2 interface{}) *gomock.Call {$/;"	f
-Update	internal/account/service/v1/mock_service.go	/^func (mr *MockUserSrvMockRecorder) Update(arg0, arg1, arg2 interface{}) *gomock.Call {$/;"	f
-Update	internal/account/service/v1/policy.go	/^func (s *policyService) Update(ctx context.Context, policy *v1.Policy, opts metav1.UpdateOptions) error {$/;"	f
-Update	internal/account/service/v1/secret.go	/^func (s *secretService) Update(ctx context.Context, secret *v1.Secret, opts metav1.UpdateOptions) error {$/;"	f
-Update	internal/account/service/v1/user.go	/^func (u *userService) Update(ctx context.Context, user *v1.User, opts metav1.UpdateOptions) error {$/;"	f
-Update	internal/account/store/etcd/policy.go	/^func (p *policies) Update(ctx context.Context, policy *v1.Policy, opts metav1.UpdateOptions) error {$/;"	f
-Update	internal/account/store/etcd/secret.go	/^func (s *secrets) Update(ctx context.Context, secret *v1.Secret, opts metav1.UpdateOptions) error {$/;"	f
-Update	internal/account/store/etcd/user.go	/^func (u *users) Update(ctx context.Context, user *v1.User, opts metav1.UpdateOptions) error {$/;"	f
-Update	internal/account/store/fake/policy.go	/^func (p *policies) Update(ctx context.Context, policy *v1.Policy, opts metav1.UpdateOptions) error {$/;"	f
-Update	internal/account/store/fake/secret.go	/^func (s *secrets) Update(ctx context.Context, secret *v1.Secret, opts metav1.UpdateOptions) error {$/;"	f
-Update	internal/account/store/fake/user.go	/^func (u *users) Update(ctx context.Context, user *v1.User, opts metav1.UpdateOptions) error {$/;"	f
-Update	internal/account/store/mock_store.go	/^func (m *MockPolicyStore) Update(arg0 context.Context, arg1 *v1.Policy, arg2 v10.UpdateOptions) error {$/;"	f
-Update	internal/account/store/mock_store.go	/^func (m *MockSecretStore) Update(arg0 context.Context, arg1 *v1.Secret, arg2 v10.UpdateOptions) error {$/;"	f
-Update	internal/account/store/mock_store.go	/^func (m *MockUserStore) Update(arg0 context.Context, arg1 *v1.User, arg2 v10.UpdateOptions) error {$/;"	f
-Update	internal/account/store/mock_store.go	/^func (mr *MockPolicyStoreMockRecorder) Update(arg0, arg1, arg2 interface{}) *gomock.Call {$/;"	f
-Update	internal/account/store/mock_store.go	/^func (mr *MockSecretStoreMockRecorder) Update(arg0, arg1, arg2 interface{}) *gomock.Call {$/;"	f
-Update	internal/account/store/mock_store.go	/^func (mr *MockUserStoreMockRecorder) Update(arg0, arg1, arg2 interface{}) *gomock.Call {$/;"	f
-Update	internal/account/store/mysql/policy.go	/^func (p *policies) Update(ctx context.Context, policy *v1.Policy, opts metav1.UpdateOptions) error {$/;"	f
-Update	internal/account/store/mysql/secret.go	/^func (s *secrets) Update(ctx context.Context, secret *v1.Secret, opts metav1.UpdateOptions) error {$/;"	f
-Update	internal/account/store/mysql/user.go	/^func (u *users) Update(ctx context.Context, user *v1.User, opts metav1.UpdateOptions) error {$/;"	f
 Update	internal/logic/balancer.go	/^func (lb *LoadBalancer) Update(ins []*naming.Instance) {$/;"	f
 Upgrade	pkg/websocket/server.go	/^func Upgrade(rwc io.ReadWriteCloser, rr *bufio.Reader, wr *bufio.Writer, req *Request) (conn *Conn, err error) {$/;"	f
-UserSrv	internal/account/service/v1/user.go	/^type UserSrv interface {$/;"	t
-UserStore	internal/account/store/user.go	/^type UserStore interface {$/;"	t
-Users	internal/account/service/v1/mock_service.go	/^func (m *MockService) Users() UserSrv {$/;"	f
-Users	internal/account/service/v1/mock_service.go	/^func (mr *MockServiceMockRecorder) Users() *gomock.Call {$/;"	f
-Users	internal/account/service/v1/service.go	/^func (s *service) Users() UserSrv {$/;"	f
-Users	internal/account/store/etcd/etcd.go	/^func (ds *datastore) Users() store.UserStore {$/;"	f
-Users	internal/account/store/fake/fake.go	/^func (ds *datastore) Users() store.UserStore {$/;"	f
-Users	internal/account/store/mock_store.go	/^func (m *MockFactory) Users() UserStore {$/;"	f
-Users	internal/account/store/mock_store.go	/^func (mr *MockFactoryMockRecorder) Users() *gomock.Call {$/;"	f
-Users	internal/account/store/mysql/mysql.go	/^func (ds *datastore) Users() store.UserStore {$/;"	f
-Watch	internal/account/store/etcd/etcd.go	/^func (ds *datastore) Watch($/;"	f
 Watch	internal/comet/channel.go	/^func (c *Channel) Watch(accepts ...int32) {$/;"	f
 Websocket	internal/comet/conf/conf.go	/^type Websocket struct {$/;"	t
 Whitelist	internal/comet/conf/conf.go	/^type Whitelist struct {$/;"	t
@@ -888,156 +405,17 @@ WriteWebsocketHeart	api/protocol/protocol.go	/^func (p *Proto) WriteWebsocketHea
 Writer	internal/comet/round.go	/^func (r *Round) Writer(rn int) *bytes.Pool {$/;"	f
 Writer	pkg/bufio/bufio.go	/^type Writer struct {$/;"	t
 Writer	pkg/bytes/writer.go	/^type Writer struct {$/;"	t
-XXX_DiscardUnknown	api/comet/comet.pb.go	/^func (m *BroadcastReply) XXX_DiscardUnknown() {$/;"	f
-XXX_DiscardUnknown	api/comet/comet.pb.go	/^func (m *BroadcastReq) XXX_DiscardUnknown() {$/;"	f
-XXX_DiscardUnknown	api/comet/comet.pb.go	/^func (m *BroadcastRoomReply) XXX_DiscardUnknown() {$/;"	f
-XXX_DiscardUnknown	api/comet/comet.pb.go	/^func (m *BroadcastRoomReq) XXX_DiscardUnknown() {$/;"	f
-XXX_DiscardUnknown	api/comet/comet.pb.go	/^func (m *PushMsgReply) XXX_DiscardUnknown() {$/;"	f
-XXX_DiscardUnknown	api/comet/comet.pb.go	/^func (m *PushMsgReq) XXX_DiscardUnknown() {$/;"	f
-XXX_DiscardUnknown	api/comet/comet.pb.go	/^func (m *RoomsReply) XXX_DiscardUnknown() {$/;"	f
-XXX_DiscardUnknown	api/comet/comet.pb.go	/^func (m *RoomsReq) XXX_DiscardUnknown() {$/;"	f
-XXX_DiscardUnknown	api/logic/logic.pb.go	/^func (m *Backoff) XXX_DiscardUnknown() {$/;"	f
-XXX_DiscardUnknown	api/logic/logic.pb.go	/^func (m *ConnectReply) XXX_DiscardUnknown() {$/;"	f
-XXX_DiscardUnknown	api/logic/logic.pb.go	/^func (m *ConnectReq) XXX_DiscardUnknown() {$/;"	f
-XXX_DiscardUnknown	api/logic/logic.pb.go	/^func (m *DisconnectReply) XXX_DiscardUnknown() {$/;"	f
-XXX_DiscardUnknown	api/logic/logic.pb.go	/^func (m *DisconnectReq) XXX_DiscardUnknown() {$/;"	f
-XXX_DiscardUnknown	api/logic/logic.pb.go	/^func (m *HeartbeatReply) XXX_DiscardUnknown() {$/;"	f
-XXX_DiscardUnknown	api/logic/logic.pb.go	/^func (m *HeartbeatReq) XXX_DiscardUnknown() {$/;"	f
-XXX_DiscardUnknown	api/logic/logic.pb.go	/^func (m *NodesReply) XXX_DiscardUnknown() {$/;"	f
-XXX_DiscardUnknown	api/logic/logic.pb.go	/^func (m *NodesReq) XXX_DiscardUnknown() {$/;"	f
-XXX_DiscardUnknown	api/logic/logic.pb.go	/^func (m *OnlineReply) XXX_DiscardUnknown() {$/;"	f
-XXX_DiscardUnknown	api/logic/logic.pb.go	/^func (m *OnlineReq) XXX_DiscardUnknown() {$/;"	f
-XXX_DiscardUnknown	api/logic/logic.pb.go	/^func (m *PushMsg) XXX_DiscardUnknown() {$/;"	f
-XXX_DiscardUnknown	api/logic/logic.pb.go	/^func (m *ReceiveReply) XXX_DiscardUnknown() {$/;"	f
-XXX_DiscardUnknown	api/logic/logic.pb.go	/^func (m *ReceiveReq) XXX_DiscardUnknown() {$/;"	f
 XXX_DiscardUnknown	api/protocol/protocol.pb.go	/^func (m *Proto) XXX_DiscardUnknown() {$/;"	f
-XXX_Marshal	api/comet/comet.pb.go	/^func (m *BroadcastReply) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {$/;"	f
-XXX_Marshal	api/comet/comet.pb.go	/^func (m *BroadcastReq) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {$/;"	f
-XXX_Marshal	api/comet/comet.pb.go	/^func (m *BroadcastRoomReply) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {$/;"	f
-XXX_Marshal	api/comet/comet.pb.go	/^func (m *BroadcastRoomReq) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {$/;"	f
-XXX_Marshal	api/comet/comet.pb.go	/^func (m *PushMsgReply) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {$/;"	f
-XXX_Marshal	api/comet/comet.pb.go	/^func (m *PushMsgReq) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {$/;"	f
-XXX_Marshal	api/comet/comet.pb.go	/^func (m *RoomsReply) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {$/;"	f
-XXX_Marshal	api/comet/comet.pb.go	/^func (m *RoomsReq) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {$/;"	f
-XXX_Marshal	api/logic/logic.pb.go	/^func (m *Backoff) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {$/;"	f
-XXX_Marshal	api/logic/logic.pb.go	/^func (m *ConnectReply) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {$/;"	f
-XXX_Marshal	api/logic/logic.pb.go	/^func (m *ConnectReq) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {$/;"	f
-XXX_Marshal	api/logic/logic.pb.go	/^func (m *DisconnectReply) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {$/;"	f
-XXX_Marshal	api/logic/logic.pb.go	/^func (m *DisconnectReq) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {$/;"	f
-XXX_Marshal	api/logic/logic.pb.go	/^func (m *HeartbeatReply) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {$/;"	f
-XXX_Marshal	api/logic/logic.pb.go	/^func (m *HeartbeatReq) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {$/;"	f
-XXX_Marshal	api/logic/logic.pb.go	/^func (m *NodesReply) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {$/;"	f
-XXX_Marshal	api/logic/logic.pb.go	/^func (m *NodesReq) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {$/;"	f
-XXX_Marshal	api/logic/logic.pb.go	/^func (m *OnlineReply) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {$/;"	f
-XXX_Marshal	api/logic/logic.pb.go	/^func (m *OnlineReq) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {$/;"	f
-XXX_Marshal	api/logic/logic.pb.go	/^func (m *PushMsg) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {$/;"	f
-XXX_Marshal	api/logic/logic.pb.go	/^func (m *ReceiveReply) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {$/;"	f
-XXX_Marshal	api/logic/logic.pb.go	/^func (m *ReceiveReq) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {$/;"	f
 XXX_Marshal	api/protocol/protocol.pb.go	/^func (m *Proto) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {$/;"	f
-XXX_Merge	api/comet/comet.pb.go	/^func (m *BroadcastReply) XXX_Merge(src proto.Message) {$/;"	f
-XXX_Merge	api/comet/comet.pb.go	/^func (m *BroadcastReq) XXX_Merge(src proto.Message) {$/;"	f
-XXX_Merge	api/comet/comet.pb.go	/^func (m *BroadcastRoomReply) XXX_Merge(src proto.Message) {$/;"	f
-XXX_Merge	api/comet/comet.pb.go	/^func (m *BroadcastRoomReq) XXX_Merge(src proto.Message) {$/;"	f
-XXX_Merge	api/comet/comet.pb.go	/^func (m *PushMsgReply) XXX_Merge(src proto.Message) {$/;"	f
-XXX_Merge	api/comet/comet.pb.go	/^func (m *PushMsgReq) XXX_Merge(src proto.Message) {$/;"	f
-XXX_Merge	api/comet/comet.pb.go	/^func (m *RoomsReply) XXX_Merge(src proto.Message) {$/;"	f
-XXX_Merge	api/comet/comet.pb.go	/^func (m *RoomsReq) XXX_Merge(src proto.Message) {$/;"	f
-XXX_Merge	api/logic/logic.pb.go	/^func (m *Backoff) XXX_Merge(src proto.Message) {$/;"	f
-XXX_Merge	api/logic/logic.pb.go	/^func (m *ConnectReply) XXX_Merge(src proto.Message) {$/;"	f
-XXX_Merge	api/logic/logic.pb.go	/^func (m *ConnectReq) XXX_Merge(src proto.Message) {$/;"	f
-XXX_Merge	api/logic/logic.pb.go	/^func (m *DisconnectReply) XXX_Merge(src proto.Message) {$/;"	f
-XXX_Merge	api/logic/logic.pb.go	/^func (m *DisconnectReq) XXX_Merge(src proto.Message) {$/;"	f
-XXX_Merge	api/logic/logic.pb.go	/^func (m *HeartbeatReply) XXX_Merge(src proto.Message) {$/;"	f
-XXX_Merge	api/logic/logic.pb.go	/^func (m *HeartbeatReq) XXX_Merge(src proto.Message) {$/;"	f
-XXX_Merge	api/logic/logic.pb.go	/^func (m *NodesReply) XXX_Merge(src proto.Message) {$/;"	f
-XXX_Merge	api/logic/logic.pb.go	/^func (m *NodesReq) XXX_Merge(src proto.Message) {$/;"	f
-XXX_Merge	api/logic/logic.pb.go	/^func (m *OnlineReply) XXX_Merge(src proto.Message) {$/;"	f
-XXX_Merge	api/logic/logic.pb.go	/^func (m *OnlineReq) XXX_Merge(src proto.Message) {$/;"	f
-XXX_Merge	api/logic/logic.pb.go	/^func (m *PushMsg) XXX_Merge(src proto.Message) {$/;"	f
-XXX_Merge	api/logic/logic.pb.go	/^func (m *ReceiveReply) XXX_Merge(src proto.Message) {$/;"	f
-XXX_Merge	api/logic/logic.pb.go	/^func (m *ReceiveReq) XXX_Merge(src proto.Message) {$/;"	f
 XXX_Merge	api/protocol/protocol.pb.go	/^func (m *Proto) XXX_Merge(src proto.Message) {$/;"	f
-XXX_Size	api/comet/comet.pb.go	/^func (m *BroadcastReply) XXX_Size() int {$/;"	f
-XXX_Size	api/comet/comet.pb.go	/^func (m *BroadcastReq) XXX_Size() int {$/;"	f
-XXX_Size	api/comet/comet.pb.go	/^func (m *BroadcastRoomReply) XXX_Size() int {$/;"	f
-XXX_Size	api/comet/comet.pb.go	/^func (m *BroadcastRoomReq) XXX_Size() int {$/;"	f
-XXX_Size	api/comet/comet.pb.go	/^func (m *PushMsgReply) XXX_Size() int {$/;"	f
-XXX_Size	api/comet/comet.pb.go	/^func (m *PushMsgReq) XXX_Size() int {$/;"	f
-XXX_Size	api/comet/comet.pb.go	/^func (m *RoomsReply) XXX_Size() int {$/;"	f
-XXX_Size	api/comet/comet.pb.go	/^func (m *RoomsReq) XXX_Size() int {$/;"	f
-XXX_Size	api/logic/logic.pb.go	/^func (m *Backoff) XXX_Size() int {$/;"	f
-XXX_Size	api/logic/logic.pb.go	/^func (m *ConnectReply) XXX_Size() int {$/;"	f
-XXX_Size	api/logic/logic.pb.go	/^func (m *ConnectReq) XXX_Size() int {$/;"	f
-XXX_Size	api/logic/logic.pb.go	/^func (m *DisconnectReply) XXX_Size() int {$/;"	f
-XXX_Size	api/logic/logic.pb.go	/^func (m *DisconnectReq) XXX_Size() int {$/;"	f
-XXX_Size	api/logic/logic.pb.go	/^func (m *HeartbeatReply) XXX_Size() int {$/;"	f
-XXX_Size	api/logic/logic.pb.go	/^func (m *HeartbeatReq) XXX_Size() int {$/;"	f
-XXX_Size	api/logic/logic.pb.go	/^func (m *NodesReply) XXX_Size() int {$/;"	f
-XXX_Size	api/logic/logic.pb.go	/^func (m *NodesReq) XXX_Size() int {$/;"	f
-XXX_Size	api/logic/logic.pb.go	/^func (m *OnlineReply) XXX_Size() int {$/;"	f
-XXX_Size	api/logic/logic.pb.go	/^func (m *OnlineReq) XXX_Size() int {$/;"	f
-XXX_Size	api/logic/logic.pb.go	/^func (m *PushMsg) XXX_Size() int {$/;"	f
-XXX_Size	api/logic/logic.pb.go	/^func (m *ReceiveReply) XXX_Size() int {$/;"	f
-XXX_Size	api/logic/logic.pb.go	/^func (m *ReceiveReq) XXX_Size() int {$/;"	f
 XXX_Size	api/protocol/protocol.pb.go	/^func (m *Proto) XXX_Size() int {$/;"	f
-XXX_Unmarshal	api/comet/comet.pb.go	/^func (m *BroadcastReply) XXX_Unmarshal(b []byte) error {$/;"	f
-XXX_Unmarshal	api/comet/comet.pb.go	/^func (m *BroadcastReq) XXX_Unmarshal(b []byte) error {$/;"	f
-XXX_Unmarshal	api/comet/comet.pb.go	/^func (m *BroadcastRoomReply) XXX_Unmarshal(b []byte) error {$/;"	f
-XXX_Unmarshal	api/comet/comet.pb.go	/^func (m *BroadcastRoomReq) XXX_Unmarshal(b []byte) error {$/;"	f
-XXX_Unmarshal	api/comet/comet.pb.go	/^func (m *PushMsgReply) XXX_Unmarshal(b []byte) error {$/;"	f
-XXX_Unmarshal	api/comet/comet.pb.go	/^func (m *PushMsgReq) XXX_Unmarshal(b []byte) error {$/;"	f
-XXX_Unmarshal	api/comet/comet.pb.go	/^func (m *RoomsReply) XXX_Unmarshal(b []byte) error {$/;"	f
-XXX_Unmarshal	api/comet/comet.pb.go	/^func (m *RoomsReq) XXX_Unmarshal(b []byte) error {$/;"	f
-XXX_Unmarshal	api/logic/logic.pb.go	/^func (m *Backoff) XXX_Unmarshal(b []byte) error {$/;"	f
-XXX_Unmarshal	api/logic/logic.pb.go	/^func (m *ConnectReply) XXX_Unmarshal(b []byte) error {$/;"	f
-XXX_Unmarshal	api/logic/logic.pb.go	/^func (m *ConnectReq) XXX_Unmarshal(b []byte) error {$/;"	f
-XXX_Unmarshal	api/logic/logic.pb.go	/^func (m *DisconnectReply) XXX_Unmarshal(b []byte) error {$/;"	f
-XXX_Unmarshal	api/logic/logic.pb.go	/^func (m *DisconnectReq) XXX_Unmarshal(b []byte) error {$/;"	f
-XXX_Unmarshal	api/logic/logic.pb.go	/^func (m *HeartbeatReply) XXX_Unmarshal(b []byte) error {$/;"	f
-XXX_Unmarshal	api/logic/logic.pb.go	/^func (m *HeartbeatReq) XXX_Unmarshal(b []byte) error {$/;"	f
-XXX_Unmarshal	api/logic/logic.pb.go	/^func (m *NodesReply) XXX_Unmarshal(b []byte) error {$/;"	f
-XXX_Unmarshal	api/logic/logic.pb.go	/^func (m *NodesReq) XXX_Unmarshal(b []byte) error {$/;"	f
-XXX_Unmarshal	api/logic/logic.pb.go	/^func (m *OnlineReply) XXX_Unmarshal(b []byte) error {$/;"	f
-XXX_Unmarshal	api/logic/logic.pb.go	/^func (m *OnlineReq) XXX_Unmarshal(b []byte) error {$/;"	f
-XXX_Unmarshal	api/logic/logic.pb.go	/^func (m *PushMsg) XXX_Unmarshal(b []byte) error {$/;"	f
-XXX_Unmarshal	api/logic/logic.pb.go	/^func (m *ReceiveReply) XXX_Unmarshal(b []byte) error {$/;"	f
-XXX_Unmarshal	api/logic/logic.pb.go	/^func (m *ReceiveReq) XXX_Unmarshal(b []byte) error {$/;"	f
 XXX_Unmarshal	api/protocol/protocol.pb.go	/^func (m *Proto) XXX_Unmarshal(b []byte) error {$/;"	f
-_	api/comet/comet.pb.go	/^const _ = grpc.SupportPackageIsVersion4$/;"	c
-_	api/comet/comet.pb.go	/^const _ = proto.ProtoPackageIsVersion3 \/\/ please upgrade the proto package$/;"	c
-_	api/comet/comet.pb.go	/^var _ = fmt.Errorf$/;"	v
-_	api/comet/comet.pb.go	/^var _ = math.Inf$/;"	v
-_	api/comet/comet.pb.go	/^var _ = proto.Marshal$/;"	v
-_	api/comet/comet.pb.go	/^var _ context.Context$/;"	v
-_	api/comet/comet.pb.go	/^var _ grpc.ClientConn$/;"	v
-_	api/logic/logic.pb.go	/^const _ = grpc.SupportPackageIsVersion4$/;"	c
-_	api/logic/logic.pb.go	/^const _ = proto.ProtoPackageIsVersion3 \/\/ please upgrade the proto package$/;"	c
-_	api/logic/logic.pb.go	/^var _ = fmt.Errorf$/;"	v
-_	api/logic/logic.pb.go	/^var _ = math.Inf$/;"	v
-_	api/logic/logic.pb.go	/^var _ = proto.Marshal$/;"	v
-_	api/logic/logic.pb.go	/^var _ context.Context$/;"	v
-_	api/logic/logic.pb.go	/^var _ grpc.ClientConn$/;"	v
 _	api/protocol/protocol.pb.go	/^const _ = proto.ProtoPackageIsVersion3 \/\/ please upgrade the proto package$/;"	c
 _	api/protocol/protocol.pb.go	/^var _ = fmt.Errorf$/;"	v
 _	api/protocol/protocol.pb.go	/^var _ = math.Inf$/;"	v
 _	api/protocol/protocol.pb.go	/^var _ = proto.Marshal$/;"	v
-_	internal/account/service/v1/policy.go	/^var _ PolicySrv = (*policyService)(nil)$/;"	v
-_	internal/account/service/v1/secret.go	/^var _ SecretSrv = (*secretService)(nil)$/;"	v
-_	internal/account/service/v1/user.go	/^var _ UserSrv = (*userService)(nil)$/;"	v
 _	internal/comet/grpc/server.go	/^var _ pb.CometServer = &server{}$/;"	v
 _	internal/logic/grpc/server.go	/^var _ pb.LogicServer = &server{}$/;"	v
-_Comet_BroadcastRoom_Handler	api/comet/comet.pb.go	/^func _Comet_BroadcastRoom_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {$/;"	f
-_Comet_Broadcast_Handler	api/comet/comet.pb.go	/^func _Comet_Broadcast_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {$/;"	f
-_Comet_PushMsg_Handler	api/comet/comet.pb.go	/^func _Comet_PushMsg_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {$/;"	f
-_Comet_Rooms_Handler	api/comet/comet.pb.go	/^func _Comet_Rooms_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {$/;"	f
-_Comet_serviceDesc	api/comet/comet.pb.go	/^var _Comet_serviceDesc = grpc.ServiceDesc{$/;"	v
-_Logic_Connect_Handler	api/logic/logic.pb.go	/^func _Logic_Connect_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {$/;"	f
-_Logic_Disconnect_Handler	api/logic/logic.pb.go	/^func _Logic_Disconnect_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {$/;"	f
-_Logic_Heartbeat_Handler	api/logic/logic.pb.go	/^func _Logic_Heartbeat_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {$/;"	f
-_Logic_Nodes_Handler	api/logic/logic.pb.go	/^func _Logic_Nodes_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {$/;"	f
-_Logic_Receive_Handler	api/logic/logic.pb.go	/^func _Logic_Receive_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {$/;"	f
-_Logic_RenewOnline_Handler	api/logic/logic.pb.go	/^func _Logic_RenewOnline_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {$/;"	f
-_Logic_serviceDesc	api/logic/logic.pb.go	/^var _Logic_serviceDesc = grpc.ServiceDesc{$/;"	v
 _emptyTops	internal/logic/online.go	/^	_emptyTops = make([]*model.Top, 0)$/;"	v
 _headerOffset	api/protocol/protocol.go	/^	_headerOffset = _packOffset + _packSize$/;"	c
 _headerSize	api/protocol/protocol.go	/^	_headerSize    = 2$/;"	c
@@ -1070,7 +448,7 @@ addrs	internal/comet/conf/conf.go	/^	addrs     string$/;"	v
 aliveCount	benchmarks/client/main.go	/^	aliveCount int64$/;"	v
 api	api/generate.go	/^package api$/;"	p
 appendMsg	examples/javascript/client.js	/^    var appendMsg = function(text) {$/;"	f
-appid	cmd/comet/main.go	/^	appid = "goim.comet"$/;"	c
+appid	cmd/comet/main.go	/^	appid = "qqqg.comet"$/;"	c
 appid	cmd/logic/main.go	/^	appid = "goim.logic"$/;"	c
 auth	examples/javascript/client.js	/^            function auth() {$/;"	f	function:function
 authTCP	internal/comet/server_tcp.go	/^func (s *Server) authTCP(ctx context.Context, rr *bufio.Reader, wr *bufio.Writer, p *protocol.Proto) (mid int64, key, rid string, accepts []int32, hb time.Duration, err error) {$/;"	f
@@ -1093,10 +471,7 @@ bytes	pkg/bytes/writer_test.go	/^package bytes$/;"	p
 calculateWeight	internal/logic/balancer.go	/^func (w *weightedNode) calculateWeight(totalWeight, totalConns int64, gainWeight float64) {$/;"	f
 char2ab	examples/javascript/client.js	/^            function char2ab(str) {$/;"	f	function:function
 chosen	internal/logic/balancer.go	/^func (w *weightedNode) chosen() {$/;"	f
-cleanDatabase	internal/account/store/mysql/mysql.go	/^func cleanDatabase(db *gorm.DB) error {$/;"	f
 client	benchmarks/client/main.go	/^func client(mid int64) {$/;"	f
-client	internal/account/store/store.go	/^var client Factory$/;"	v
-comet	api/comet/comet.pb.go	/^package comet$/;"	p
 comet	internal/comet/bucket.go	/^package comet$/;"	p
 comet	internal/comet/channel.go	/^package comet$/;"	p
 comet	internal/comet/operation.go	/^package comet$/;"	p
@@ -1107,7 +482,6 @@ comet	internal/comet/server.go	/^package comet$/;"	p
 comet	internal/comet/server_tcp.go	/^package comet$/;"	p
 comet	internal/comet/server_websocket.go	/^package comet$/;"	p
 comet	internal/comet/whitelist.go	/^package comet$/;"	p
-cometClient	api/comet/comet.pb.go	/^type cometClient struct {$/;"	t
 computeAcceptKey	pkg/websocket/server.go	/^func computeAcceptKey(challengeKey string) string {$/;"	f
 conf	Makefile	/^	nohup target\/comet -conf=target\/comet.toml -region=sh -zone=sh001 -deploy.env=dev -weight=10 -addrs=127.0.0.1 -debug=true 2>&1 > target\/comet.log &$/;"	m
 conf	Makefile	/^	nohup target\/job -conf=target\/job.toml -region=sh -zone=sh001 -deploy.env=dev 2>&1 > target\/job.log &$/;"	m
@@ -1131,12 +505,8 @@ dao	internal/logic/dao/kafka_test.go	/^package dao$/;"	p
 dao	internal/logic/dao/redis.go	/^package dao$/;"	p
 dao	internal/logic/dao/redis_test.go	/^package dao$/;"	p
 dataAndEOFReader	pkg/bufio/bufio_test.go	/^type dataAndEOFReader string$/;"	t
-datastore	internal/account/store/etcd/etcd.go	/^type datastore struct {$/;"	t
-datastore	internal/account/store/fake/fake.go	/^type datastore struct {$/;"	t
-datastore	internal/account/store/mysql/mysql.go	/^type datastore struct {$/;"	t
 debug	internal/comet/conf/conf.go	/^	debug     bool$/;"	v
 defaultBufSize	pkg/bufio/bufio.go	/^	defaultBufSize = 4096$/;"	c
-defaultOnKeepAliveFailed	internal/account/store/etcd/etcd.go	/^func defaultOnKeepAliveFailed() {$/;"	f
 del	pkg/time/timer.go	/^func (t *Timer) del(td *TimerData) {$/;"	f
 delRoom	internal/job/room.go	/^func (j *Job) delRoom(roomID string) {$/;"	f
 deployEnv	internal/comet/conf/conf.go	/^	deployEnv string$/;"	v
@@ -1152,32 +522,13 @@ errorWriterTest	pkg/bufio/bufio_test.go	/^type errorWriterTest struct {$/;"	t
 errorWriterTests	pkg/bufio/bufio_test.go	/^var errorWriterTests = []errorWriterTest{$/;"	v
 errors	internal/comet/errors/errors.go	/^package errors$/;"	p
 errors	internal/logic/http/result.go	/^func errors(c *gin.Context, code int, msg string) {$/;"	f
-etcd	internal/account/store/etcd/doc.go	/^package etcd$/;"	p
-etcd	internal/account/store/etcd/etcd.go	/^package etcd$/;"	p
-etcd	internal/account/store/etcd/policy.go	/^package etcd$/;"	p
-etcd	internal/account/store/etcd/secret.go	/^package etcd$/;"	p
-etcd	internal/account/store/etcd/user.go	/^package etcd$/;"	p
-etcdFactory	internal/account/store/etcd/etcd.go	/^	etcdFactory store.Factory$/;"	v
 expire	pkg/time/timer.go	/^func (t *Timer) expire() {$/;"	f
-fake	internal/account/store/fake/doc.go	/^package fake$/;"	p
-fake	internal/account/store/fake/fake.go	/^package fake$/;"	p
-fake	internal/account/store/fake/policy.go	/^package fake$/;"	p
-fake	internal/account/store/fake/secret.go	/^package fake$/;"	p
-fake	internal/account/store/fake/user.go	/^package fake$/;"	p
-fakeFactory	internal/account/store/fake/fake.go	/^	fakeFactory store.Factory$/;"	v
-fileDescriptor_2dfb3aef05fe3328	api/logic/logic.pb.go	/^var fileDescriptor_2dfb3aef05fe3328 = []byte{$/;"	v
-fileDescriptor_327b4a7d084564be	api/comet/comet.pb.go	/^var fileDescriptor_327b4a7d084564be = []byte{$/;"	v
 fileDescriptor_87968d26f3046c60	api/protocol/protocol.pb.go	/^var fileDescriptor_87968d26f3046c60 = []byte{$/;"	v
 fill	pkg/bufio/bufio.go	/^func (b *Reader) fill() {$/;"	f
 finBit	pkg/websocket/conn.go	/^	finBit  = 1 << 7$/;"	c
 flush	pkg/bufio/bufio.go	/^func (b *Writer) flush() error {$/;"	f
 get	pkg/time/timer.go	/^func (t *Timer) get() (td *TimerData) {$/;"	f
-getKey	internal/account/store/etcd/etcd.go	/^func (ds *datastore) getKey(key string) string {$/;"	f
-getKey	internal/account/store/etcd/policy.go	/^func (p *policies) getKey(username string, name string) string {$/;"	f
-getKey	internal/account/store/etcd/secret.go	/^func (s *secrets) getKey(username string, secretID string) string {$/;"	f
-getKey	internal/account/store/etcd/user.go	/^func (u *users) getKey(name string) string {$/;"	f
 getRoom	internal/job/room.go	/^func (j *Job) getRoom(roomID string) *Room {$/;"	f
-grantLease	internal/account/store/etcd/etcd.go	/^func (ds *datastore) grantLease(ctx context.Context, ttlSeconds int64) (*clientv3.LeaseGrantResponse, error) {$/;"	f
 grow	pkg/bytes/buffer.go	/^func (p *Pool) grow() {$/;"	f
 grow	pkg/bytes/writer.go	/^func (w *Writer) grow(n int) {$/;"	f
 grow	pkg/time/timer.go	/^func (t *Timer) grow() {$/;"	f
@@ -1214,10 +565,6 @@ httpClient	benchmarks/push_rooms/main.go	/^	httpClient *http.Client$/;"	v
 httpPost	benchmarks/multi_push/main.go	/^func httpPost(url string, contentType string, body io.Reader) (*http.Response, error) {$/;"	f
 httpPost	benchmarks/push/main.go	/^func httpPost(url string, contentType string, body io.Reader) (*http.Response, error) {$/;"	f
 infiniteDuration	pkg/time/timer.go	/^	infiniteDuration = itime.Duration(1<<63 - 1)$/;"	c
-init	api/comet/comet.pb.go	/^func init() { proto.RegisterFile("comet\/comet.proto", fileDescriptor_327b4a7d084564be) }$/;"	f
-init	api/comet/comet.pb.go	/^func init() {$/;"	f
-init	api/logic/logic.pb.go	/^func init() { proto.RegisterFile("logic\/logic.proto", fileDescriptor_2dfb3aef05fe3328) }$/;"	f
-init	api/logic/logic.pb.go	/^func init() {$/;"	f
 init	api/protocol/protocol.pb.go	/^func init() { proto.RegisterFile("protocol\/protocol.proto", fileDescriptor_87968d26f3046c60) }$/;"	f
 init	api/protocol/protocol.pb.go	/^func init() {$/;"	f
 init	benchmarks/multi_push/main.go	/^func init() {$/;"	f
@@ -1241,10 +588,7 @@ job	internal/job/room.go	/^package job$/;"	p
 keyGUID	pkg/websocket/server.go	/^	keyGUID = []byte("258EAFA5-E914-47DA-95CA-C5AB0DC85B11")$/;"	v
 keyKeyServer	internal/logic/dao/redis.go	/^func keyKeyServer(key string) string {$/;"	f
 keyMidServer	internal/logic/dao/redis.go	/^func keyMidServer(mid int64) string {$/;"	f
-keyPolicy	internal/account/store/etcd/policy.go	/^var keyPolicy = "\/policies\/%v\/%v"$/;"	v
-keySecret	internal/account/store/etcd/secret.go	/^var keySecret = "\/secrets\/%v\/%v"$/;"	v
 keyServerOnline	internal/logic/dao/redis.go	/^func keyServerOnline(key string) string {$/;"	f
-keyUser	internal/account/store/etcd/user.go	/^var keyUser = "\/users\/%v"$/;"	v
 lenBit	pkg/websocket/conn.go	/^	lenBit  = 0x7f$/;"	c
 less	pkg/time/timer.go	/^func (t *Timer) less(i, j int) bool {$/;"	f
 lg	benchmarks/multi_push/main.go	/^	lg         *log.Logger$/;"	v
@@ -1252,7 +596,6 @@ lg	internal/logic/logic_test.go	/^	lg *Logic$/;"	v
 loadOnline	internal/logic/logic.go	/^func (l *Logic) loadOnline() (err error) {$/;"	f
 location	internal/logic/nodes.go	/^func (l *Logic) location(c context.Context, clientIP string) (province string, err error) {$/;"	f
 loggerHandler	internal/logic/http/middleware.go	/^func loggerHandler(c *gin.Context) {$/;"	f
-logic	api/logic/logic.pb.go	/^package logic$/;"	p
 logic	internal/logic/balancer.go	/^package logic$/;"	p
 logic	internal/logic/balancer_test.go	/^package logic$/;"	p
 logic	internal/logic/conn.go	/^package logic$/;"	p
@@ -1265,7 +608,6 @@ logic	internal/logic/online.go	/^package logic$/;"	p
 logic	internal/logic/online_test.go	/^package logic$/;"	p
 logic	internal/logic/push.go	/^package logic$/;"	p
 logic	internal/logic/push_test.go	/^package logic$/;"	p
-logicClient	api/logic/logic.pb.go	/^type logicClient struct {$/;"	t
 main	benchmarks/client/main.go	/^func main() {$/;"	f
 main	benchmarks/client/main.go	/^package main$/;"	p
 main	benchmarks/multi_push/main.go	/^func main() {$/;"	f
@@ -1291,19 +633,12 @@ maxInt	internal/comet/server_tcp.go	/^	maxInt = 1<<31 - 1$/;"	c
 maxServerHeartbeat	internal/comet/server.go	/^	maxServerHeartbeat = time.Minute * 30$/;"	c
 mergeArrayBuffer	examples/javascript/client.js	/^            function mergeArrayBuffer(ab1, ab2) {$/;"	f	function:function
 messageReceived	examples/javascript/client.js	/^            function messageReceived(ver, body) {$/;"	f	function:function
-migrateDatabase	internal/account/store/mysql/mysql.go	/^func migrateDatabase(db *gorm.DB) error {$/;"	f
 minReadBufferSize	pkg/bufio/bufio.go	/^const minReadBufferSize = 16$/;"	c
 minReadBufferSize	pkg/bufio/bufio_test.go	/^const minReadBufferSize = 16$/;"	c
 minServerHeartbeat	internal/comet/server.go	/^	minServerHeartbeat = time.Minute * 10$/;"	c
 model	internal/logic/model/metadata.go	/^package model$/;"	p
 model	internal/logic/model/online.go	/^package model$/;"	p
 model	internal/logic/model/room.go	/^package model$/;"	p
-mysql	internal/account/store/mysql/doc.go	/^package mysql$/;"	p
-mysql	internal/account/store/mysql/mysql.go	/^package mysql$/;"	p
-mysql	internal/account/store/mysql/policy.go	/^package mysql$/;"	p
-mysql	internal/account/store/mysql/secret.go	/^package mysql$/;"	p
-mysql	internal/account/store/mysql/user.go	/^package mysql$/;"	p
-mysqlFactory	internal/account/store/mysql/mysql.go	/^	mysqlFactory store.Factory$/;"	v
 negativeReader	pkg/bufio/bufio_test.go	/^type negativeReader int$/;"	t
 newAddress	internal/job/job.go	/^func (j *Job) newAddress(insMap map[string][]*naming.Instance) error {$/;"	f
 newCometClient	internal/job/comet.go	/^func newCometClient(addr string) (comet.CometClient, error) {$/;"	f
@@ -1312,28 +647,13 @@ newKafkaPub	internal/logic/dao/dao.go	/^func newKafkaPub(c *conf.Kafka) kafka.Sy
 newKafkaSub	internal/job/job.go	/^func newKafkaSub(c *conf.Kafka) *cluster.Consumer {$/;"	f
 newLogicClient	internal/comet/server.go	/^func newLogicClient(c *conf.RPCClient) logic.LogicClient {$/;"	f
 newNodes	internal/logic/logic.go	/^func (l *Logic) newNodes(res naming.Resolver) {$/;"	f
-newPolicies	internal/account/service/v1/policy.go	/^func newPolicies(srv *service) *policyService {$/;"	f
-newPolicies	internal/account/store/etcd/policy.go	/^func newPolicies(ds *datastore) *policies {$/;"	f
-newPolicies	internal/account/store/fake/policy.go	/^func newPolicies(ds *datastore) *policies {$/;"	f
-newPolicies	internal/account/store/mysql/policy.go	/^func newPolicies(ds *datastore) *policies {$/;"	f
 newRedis	internal/logic/dao/dao.go	/^func newRedis(c *conf.Redis) *redis.Pool {$/;"	f
 newRot13Reader	pkg/bufio/bufio_test.go	/^func newRot13Reader(r io.Reader) *rot13Reader {$/;"	f
 newScriptedReader	pkg/bufio/bufio_test.go	/^func newScriptedReader(steps ...func(p []byte) (n int, err error)) io.Reader {$/;"	f
-newSecrets	internal/account/service/v1/secret.go	/^func newSecrets(srv *service) *secretService {$/;"	f
-newSecrets	internal/account/store/etcd/secret.go	/^func newSecrets(ds *datastore) *secrets {$/;"	f
-newSecrets	internal/account/store/fake/secret.go	/^func newSecrets(ds *datastore) *secrets {$/;"	f
-newSecrets	internal/account/store/mysql/secret.go	/^func newSecrets(ds *datastore) *secrets {$/;"	f
-newUsers	internal/account/service/v1/user.go	/^func newUsers(srv *service) *userService {$/;"	f
-newUsers	internal/account/store/etcd/user.go	/^func newUsers(ds *datastore) *users {$/;"	f
-newUsers	internal/account/store/fake/user.go	/^func newUsers(ds *datastore) *users {$/;"	f
-newUsers	internal/account/store/mysql/user.go	/^func newUsers(ds *datastore) *users {$/;"	f
 nodeAddrs	internal/logic/nodes.go	/^func (l *Logic) nodeAddrs(c context.Context, clientIP string) (domains, addrs []string) {$/;"	f
 nodesInstances	internal/logic/http/nodes.go	/^func (s *Server) nodesInstances(c *gin.Context) {$/;"	f
 nodesWeighted	internal/logic/http/nodes.go	/^func (s *Server) nodesWeighted(c *gin.Context) {$/;"	f
 offline	internal/comet/conf/conf.go	/^	offline   bool$/;"	v
-once	internal/account/store/etcd/etcd.go	/^	once        sync.Once$/;"	v
-once	internal/account/store/fake/fake.go	/^	once        sync.Once$/;"	v
-once	internal/account/store/mysql/mysql.go	/^	once         sync.Once$/;"	v
 onlineRoom	internal/logic/http/online.go	/^func (s *Server) onlineRoom(c *gin.Context) {$/;"	f
 onlineTop	internal/logic/http/online.go	/^func (s *Server) onlineTop(c *gin.Context) {$/;"	f
 onlineTotal	internal/logic/http/online.go	/^func (s *Server) onlineTotal(c *gin.Context) {$/;"	f
@@ -1348,10 +668,6 @@ opHeartbeat	benchmarks/client/main.go	/^	opHeartbeat      = int32(2)$/;"	c
 opHeartbeatReply	benchmarks/client/main.go	/^	opHeartbeatReply = int32(3)$/;"	c
 parseRequestLine	pkg/websocket/request.go	/^func parseRequestLine(line string) (method, requestURI, proto string, ok bool) {$/;"	f
 pingRedis	internal/logic/dao/redis.go	/^func (d *Dao) pingRedis(c context.Context) (err error) {$/;"	f
-policies	internal/account/store/etcd/policy.go	/^type policies struct {$/;"	t
-policies	internal/account/store/fake/policy.go	/^type policies struct {$/;"	t
-policies	internal/account/store/mysql/policy.go	/^type policies struct {$/;"	t
-policyService	internal/account/service/v1/policy.go	/^type policyService struct {$/;"	t
 post	benchmarks/push_room/main.go	/^func post(addr string, i int64) {$/;"	f
 printTimer	pkg/time/timer_test.go	/^func printTimer(timer *Timer) {$/;"	f
 process	internal/job/comet.go	/^func (c *Comet) process(pushChan chan *comet.PushMsgReq, roomChan chan *comet.BroadcastRoomReq, broadcastChan chan *comet.BroadcastReq) {$/;"	f
@@ -1367,7 +683,6 @@ pushMids	internal/logic/http/push.go	/^func (s *Server) pushMids(c *gin.Context)
 pushRoom	internal/logic/http/push.go	/^func (s *Server) pushRoom(c *gin.Context) {$/;"	f
 pushproc	internal/job/room.go	/^func (r *Room) pushproc(batch int, sigTime time.Duration) {$/;"	f
 pushsBodyMsg	benchmarks/multi_push/main.go	/^type pushsBodyMsg struct {$/;"	t
-put	internal/account/store/etcd/etcd.go	/^func (ds *datastore) put(ctx context.Context, key string, val string, session bool) error {$/;"	f
 put	pkg/time/timer.go	/^func (t *Timer) put(td *TimerData) {$/;"	f
 rawHeaderLen	benchmarks/client/main.go	/^	rawHeaderLen = uint16(16)$/;"	c
 reConnect	examples/javascript/client.js	/^        function reConnect() {$/;"	f
@@ -1389,7 +704,6 @@ register	cmd/comet/main.go	/^func register(dis *naming.Discovery, srv *comet.Ser
 register	cmd/logic/main.go	/^func register(dis *naming.Discovery, srv *logic.Logic) context.CancelFunc {$/;"	f
 reset	internal/logic/balancer.go	/^func (w *weightedNode) reset() {$/;"	f
 reset	pkg/bufio/bufio.go	/^func (b *Reader) reset(buf []byte, r io.Reader) {$/;"	f
-resetDatabase	internal/account/store/mysql/mysql.go	/^func resetDatabase(db *gorm.DB) error {$/;"	f
 resp	internal/logic/http/result.go	/^type resp struct {$/;"	t
 result	benchmarks/client/main.go	/^func result() {$/;"	f
 result	internal/logic/http/result.go	/^func result(c *gin.Context, data interface{}, code int) {$/;"	f
@@ -1401,30 +715,18 @@ rsv2Bit	pkg/websocket/conn.go	/^	rsv2Bit = 1 << 5$/;"	c
 rsv3Bit	pkg/websocket/conn.go	/^	rsv3Bit = 1 << 4$/;"	c
 run	benchmarks/push_room/main.go	/^func run(addr string, delay time.Duration) {$/;"	f
 scriptedReader	pkg/bufio/bufio_test.go	/^type scriptedReader []func(p []byte) (n int, err error)$/;"	t
-secretService	internal/account/service/v1/secret.go	/^type secretService struct {$/;"	t
-secrets	internal/account/store/etcd/secret.go	/^type secrets struct {$/;"	t
-secrets	internal/account/store/fake/secret.go	/^type secrets struct {$/;"	t
-secrets	internal/account/store/mysql/secret.go	/^type secrets struct {$/;"	t
 serveTCP	internal/comet/server_tcp.go	/^func serveTCP(s *Server, conn *net.TCPConn, r int) {$/;"	f
 serveWebsocket	internal/comet/server_websocket.go	/^func serveWebsocket(s *Server, conn net.Conn, r int) {$/;"	f
 server	internal/comet/grpc/server.go	/^type server struct {$/;"	t
 server	internal/logic/grpc/server.go	/^type server struct {$/;"	t
 serverOnline	internal/logic/dao/redis.go	/^func (d *Dao) serverOnline(c context.Context, key string, hashKey string) (online *model.Online, err error) {$/;"	f
-service	internal/account/service/v1/service.go	/^type service struct {$/;"	t
 start	pkg/time/timer.go	/^func (t *Timer) start() {$/;"	f
 startClient	benchmarks/client/main.go	/^func startClient(key int64) {$/;"	f
 startPush	benchmarks/multi_push/main.go	/^func startPush(b, e int) {$/;"	f
 startPush	benchmarks/push/main.go	/^func startPush(b, e int) {$/;"	f
 startPush	benchmarks/push_rooms/main.go	/^func startPush(b, e int, delay time.Duration) {$/;"	f
-startSession	internal/account/store/etcd/etcd.go	/^func (ds *datastore) startSession() error {$/;"	f
 stop	benchmarks/multi_push/main.go	/^func stop() {$/;"	f
 stop	benchmarks/push/main.go	/^func stop() {$/;"	f
-store	internal/account/store/doc.go	/^package store$/;"	p
-store	internal/account/store/mock_store.go	/^package store$/;"	p
-store	internal/account/store/policy.go	/^package store$/;"	p
-store	internal/account/store/secret.go	/^package store$/;"	p
-store	internal/account/store/store.go	/^package store$/;"	p
-store	internal/account/store/user.go	/^package store$/;"	p
 strings	pkg/strings/ints.go	/^package strings$/;"	p
 strings	pkg/strings/ints_test.go	/^package strings$/;"	p
 swap	pkg/time/timer.go	/^func (t *Timer) swap(i, j int) {$/;"	f
@@ -1449,20 +751,6 @@ time	pkg/time/timer_test.go	/^package time$/;"	p
 timerFormat	pkg/time/timer.go	/^	timerFormat      = "2006-01-02 15:04:05"$/;"	c
 trim	pkg/websocket/request.go	/^func trim(s []byte) []byte {$/;"	f
 up	pkg/time/timer.go	/^func (t *Timer) up(j int) {$/;"	f
-userService	internal/account/service/v1/user.go	/^type userService struct {$/;"	t
-users	internal/account/store/etcd/user.go	/^type users struct {$/;"	t
-users	internal/account/store/fake/user.go	/^type users struct {$/;"	t
-users	internal/account/store/mysql/user.go	/^type users struct {$/;"	t
-v1	internal/account/service/v1/doc.go	/^package v1 \/\/ import "github.com\/marmotedu\/iam\/internal\/apiserver\/service\/v1"$/;"	p
-v1	internal/account/service/v1/mock_service.go	/^package v1$/;"	p
-v1	internal/account/service/v1/policy.go	/^package v1$/;"	p
-v1	internal/account/service/v1/policy_test.go	/^package v1$/;"	p
-v1	internal/account/service/v1/secret.go	/^package v1$/;"	p
-v1	internal/account/service/v1/secret_test.go	/^package v1$/;"	p
-v1	internal/account/service/v1/service.go	/^package v1$/;"	p
-v1	internal/account/service/v1/service_test.go	/^package v1$/;"	p
-v1	internal/account/service/v1/user.go	/^package v1$/;"	p
-v1	internal/account/service/v1/user_test.go	/^package v1$/;"	p
 ver	cmd/comet/main.go	/^	ver   = "2.0.0"$/;"	c
 ver	cmd/job/main.go	/^	ver = "2.0.0"$/;"	v
 ver	cmd/logic/main.go	/^	ver   = "2.0.0"$/;"	c
@@ -1480,29 +768,7 @@ writeCountingDiscard	pkg/bufio/bufio_test.go	/^type writeCountingDiscard int$/;"
 ws.onclose	examples/javascript/client.js	/^            }$/;"	f
 ws.onmessage	examples/javascript/client.js	/^            }$/;"	f
 ws.onopen	examples/javascript/client.js	/^            ws.binaryType = 'arraybuffer';$/;"	f
-xxx_messageInfo_Backoff	api/logic/logic.pb.go	/^var xxx_messageInfo_Backoff proto.InternalMessageInfo$/;"	v
-xxx_messageInfo_BroadcastReply	api/comet/comet.pb.go	/^var xxx_messageInfo_BroadcastReply proto.InternalMessageInfo$/;"	v
-xxx_messageInfo_BroadcastReq	api/comet/comet.pb.go	/^var xxx_messageInfo_BroadcastReq proto.InternalMessageInfo$/;"	v
-xxx_messageInfo_BroadcastRoomReply	api/comet/comet.pb.go	/^var xxx_messageInfo_BroadcastRoomReply proto.InternalMessageInfo$/;"	v
-xxx_messageInfo_BroadcastRoomReq	api/comet/comet.pb.go	/^var xxx_messageInfo_BroadcastRoomReq proto.InternalMessageInfo$/;"	v
-xxx_messageInfo_ConnectReply	api/logic/logic.pb.go	/^var xxx_messageInfo_ConnectReply proto.InternalMessageInfo$/;"	v
-xxx_messageInfo_ConnectReq	api/logic/logic.pb.go	/^var xxx_messageInfo_ConnectReq proto.InternalMessageInfo$/;"	v
-xxx_messageInfo_DisconnectReply	api/logic/logic.pb.go	/^var xxx_messageInfo_DisconnectReply proto.InternalMessageInfo$/;"	v
-xxx_messageInfo_DisconnectReq	api/logic/logic.pb.go	/^var xxx_messageInfo_DisconnectReq proto.InternalMessageInfo$/;"	v
-xxx_messageInfo_HeartbeatReply	api/logic/logic.pb.go	/^var xxx_messageInfo_HeartbeatReply proto.InternalMessageInfo$/;"	v
-xxx_messageInfo_HeartbeatReq	api/logic/logic.pb.go	/^var xxx_messageInfo_HeartbeatReq proto.InternalMessageInfo$/;"	v
-xxx_messageInfo_NodesReply	api/logic/logic.pb.go	/^var xxx_messageInfo_NodesReply proto.InternalMessageInfo$/;"	v
-xxx_messageInfo_NodesReq	api/logic/logic.pb.go	/^var xxx_messageInfo_NodesReq proto.InternalMessageInfo$/;"	v
-xxx_messageInfo_OnlineReply	api/logic/logic.pb.go	/^var xxx_messageInfo_OnlineReply proto.InternalMessageInfo$/;"	v
-xxx_messageInfo_OnlineReq	api/logic/logic.pb.go	/^var xxx_messageInfo_OnlineReq proto.InternalMessageInfo$/;"	v
 xxx_messageInfo_Proto	api/protocol/protocol.pb.go	/^var xxx_messageInfo_Proto proto.InternalMessageInfo$/;"	v
-xxx_messageInfo_PushMsg	api/logic/logic.pb.go	/^var xxx_messageInfo_PushMsg proto.InternalMessageInfo$/;"	v
-xxx_messageInfo_PushMsgReply	api/comet/comet.pb.go	/^var xxx_messageInfo_PushMsgReply proto.InternalMessageInfo$/;"	v
-xxx_messageInfo_PushMsgReq	api/comet/comet.pb.go	/^var xxx_messageInfo_PushMsgReq proto.InternalMessageInfo$/;"	v
-xxx_messageInfo_ReceiveReply	api/logic/logic.pb.go	/^var xxx_messageInfo_ReceiveReply proto.InternalMessageInfo$/;"	v
-xxx_messageInfo_ReceiveReq	api/logic/logic.pb.go	/^var xxx_messageInfo_ReceiveReq proto.InternalMessageInfo$/;"	v
-xxx_messageInfo_RoomsReply	api/comet/comet.pb.go	/^var xxx_messageInfo_RoomsReply proto.InternalMessageInfo$/;"	v
-xxx_messageInfo_RoomsReq	api/comet/comet.pb.go	/^var xxx_messageInfo_RoomsReq proto.InternalMessageInfo$/;"	v
 zeroReader	pkg/bufio/bufio_test.go	/^type zeroReader struct{}$/;"	t
 zone	internal/comet/conf/conf.go	/^	zone      string$/;"	v
 zone	internal/job/conf/conf.go	/^	zone      string$/;"	v

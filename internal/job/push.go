@@ -4,11 +4,11 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/Terry-Mao/goim/api/comet"
-	pb "github.com/Terry-Mao/goim/api/logic"
-	"github.com/Terry-Mao/goim/api/protocol"
-	"github.com/Terry-Mao/goim/pkg/bytes"
 	log "github.com/golang/glog"
+	"github.com/nanpingli/qqqg/api/comet"
+	pb "github.com/nanpingli/qqqg/api/logic"
+	"github.com/nanpingli/qqqg/api/protocol"
+	"github.com/nanpingli/qqqg/pkg/bytes"
 )
 
 func (j *Job) push(ctx context.Context, pushMsg *pb.PushMsg) (err error) {

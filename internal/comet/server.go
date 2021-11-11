@@ -5,9 +5,9 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/Terry-Mao/goim/api/logic"
-	"github.com/Terry-Mao/goim/internal/comet/conf"
 	log "github.com/golang/glog"
+	"github.com/nanpingli/qqqg/api/logic"
+	"github.com/nanpingli/qqqg/internal/comet/conf"
 	"github.com/zhenjl/cityhash"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/balancer/roundrobin"
@@ -60,7 +60,7 @@ type Server struct {
 
 	serverID  string
 	rpcClient logic.LogicClient
-	rpcClient account.AccounterClient
+	//accountClient account.AccounterClient
 }
 
 // NewServer returns a new Server.

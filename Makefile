@@ -3,7 +3,7 @@ GOCMD=GO111MODULE=on go
 GOBUILD=$(GOCMD) build
 GOTEST=$(GOCMD) test
 
-all: test build
+all:  build
 build:
 	rm -rf target/
 	mkdir target/
@@ -12,7 +12,7 @@ build:
 	cp cmd/job/job-example.toml target/job.toml
 	$(GOBUILD) -o target/comet cmd/comet/main.go
 	$(GOBUILD) -o target/logic cmd/logic/main.go
-	$(GOBUILD) -o target/job cmd/job/main.go
+	$(GOBUILD) -o target/job cmd/jocd ..b/main.go
 
 test:
 	$(GOTEST) -v ./...

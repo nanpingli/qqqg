@@ -16,17 +16,17 @@ import (
 
 	"github.com/bilibili/discovery/naming"
 	resolver "github.com/bilibili/discovery/naming/grpc"
-	"github.com/Terry-Mao/goim/internal/comet"
-	"github.com/Terry-Mao/goim/internal/comet/conf"
-	"github.com/Terry-Mao/goim/internal/comet/grpc"
-	md "github.com/Terry-Mao/goim/internal/logic/model"
-	"github.com/Terry-Mao/goim/pkg/ip"
 	log "github.com/golang/glog"
+	"github.com/nanpingli/qqqg/internal/comet"
+	"github.com/nanpingli/qqqg/internal/comet/conf"
+	"github.com/nanpingli/qqqg/internal/comet/grpc"
+	md "github.com/nanpingli/qqqg/internal/logic/model"
+	"github.com/nanpingli/qqqg/pkg/ip"
 )
 
 const (
 	ver   = "2.0.0"
-	appid = "goim.comet"
+	appid = "qqqg.comet"
 )
 
 func main() {
